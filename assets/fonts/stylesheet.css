@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Boahmed AlHarf';
+    src: url('BoahmedAlHarf-Bold.woff2') format('woff2'),
+        url('BoahmedAlHarf-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Arabic';
+    src: url('DINNextLTArabic-Light.woff2') format('woff2'),
+        url('DINNextLTArabic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Arabic';
+    src: url('DINNextLTArabic-Medium.woff2') format('woff2'),
+        url('DINNextLTArabic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Arabic';
+    src: url('DINNextLTArabic-Regular.woff2') format('woff2'),
+        url('DINNextLTArabic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SST Arabic';
+    src: url('SSTArabic-Light.woff2') format('woff2'),
+        url('SSTArabic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SST Arabic';
+    src: url('SSTArabic-Roman.woff2') format('woff2'),
+        url('SSTArabic-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

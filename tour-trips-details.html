@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+   <!-- Required meta tags -->
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="keywords" content="...">
+   <meta name="description" content="..." />
+   <title>Ghamra</title>
+
+
+
+   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/all.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <!-- <script data-require="jquery@3.1.1" data-semver="3.1.1"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
+   <style>
+      .banner_title h1 {
+         /* font-size: 50px; */
+         font-family: 'SST Arabic Bold';
+         font-size: 80px;
+         color: #fff;
+         font-weight: 700;
+         letter-spacing: 0.5px;
+      }
+
+      .adventure-trips-section .main-content .sort-field {
+         margin: 0 15px;
+      }
+
+      .adventure-trips-section .main-content .sort-field label {
+         font-size: 19px;
+         color: #919191;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+         margin-right: 1rem;
+      }
+
+      .adventure-trips-section .main-content .sort-field select {
+         font-size: 19px;
+         color: #919191;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+         background: transparent;
+         border: 2px solid #e0e5f3;
+         height: 57px;
+         width: 258px;
+      }
+
+      .side-menu-accordion-btn {
+         color: #fff;
+         cursor: pointer;
+         padding: 18px;
+         width: 100%;
+         border: none;
+         text-align: left;
+         outline: none;
+         transition: 0.4s;
+         background-color: #184041;
+         font-size: 24px;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+      }
+
+      .side-menu-accordion-btn:after {
+         content: '\2304';
+         color: #fff;
+         font-weight: bold;
+         float: right;
+         margin-left: 0;
+         letter-spacing: 5px;
+      }
+
+      .panel-active:after {
+         content: "\2303";
+      }
+
+      .panel {
+         padding: 0 20px;
+         background-color: #fff;
+         max-height: 0;
+         overflow: hidden;
+         transition: max-height 0.2s ease-out;
+         border-left: 3px solid #e0e5f3;
+         border-right: 3px solid #e0e5f3;
+         border-bottom: 3px solid #e0e5f3;
+      }
+
+      .filter-price p {
+         font-size: 16px;
+         letter-spacing: 0.5px;
+         color: #262525;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+         margin: 0;
+      }
+
+      .page-navigation .pagination .page-item .page-link {
+         font-size: 26px;
+         line-height: 26px;
+         color: #474747;
+         font-weight: 500;
+         font-family: "D IN Next LT Arabic";
+         text-align: center;
+         background-color: #ffffff;
+         border: 1.5px solid #e0e5f3;
+         border-right: 0 !important;
+         transition: 0.3s all;
+      }
+
+      .page-navigation .pagination .page-link:hover {
+         background-color: #cfb579;
+         transition: 0.3s all;
+         color: #fff;
+      }
+
+      .page-navigation .pagination .page-link.active {
+         background-color: #cfb579;
+         transition: 0.3s all;
+         color: #fff;
+      }
+
+      .page-navigation .pagination .page-link:focus {
+         box-shadow: none;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group {
+         display: block;
+         margin-bottom: 5px;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group input {
+         padding: 0;
+         height: initial;
+         width: initial;
+         margin-bottom: 0;
+         display: none;
+         cursor: pointer;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group label {
+         position: relative;
+         cursor: pointer;
+         font-size: 24px;
+         color: #313131;
+         font-family: 'SST Arabic Roman';
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group label:before {
+         content: '';
+         -webkit-appearance: none;
+         padding: 10px;
+         display: inline-block;
+         position: relative;
+         vertical-align: middle;
+         cursor: pointer;
+         margin-right: 10px;
+         width: 26px;
+         height: 24px;
+         background-color: #ffffff;
+         border: 2px solid #dbe0e9;
+         border-top-left-radius: 10px;
+         border-bottom-right-radius: 10px;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group input:checked+label:after {
+         content: '';
+         display: block;
+         position: absolute;
+         top: 12px;
+         left: 9px;
+         width: 6px;
+         height: 14px;
+         border: solid #184041;
+         border-width: 0 2px 2px 0;
+         transform: rotate(45deg);
+      }
+
+      .personalize-trip-head {
+         font-size: 34px;
+         color: #ffffff;
+         font-weight: bold;
+         font-family: "SST Arabic Bold";
+         text-align: center;
+         height: 77px;
+         background-color: #cfb579;
+         align-items: center;
+         display: flex;
+         justify-content: center;
+      }
+
+      .personalize-trip-content {
+         font-size: 18px;
+         color: #000000;
+         font-weight: 300;
+         font-family: "SST Arabic Light";
+         text-align: center;
+      }
+
+      .btn.show-result-gh-btn {
+         padding: 8px 50px;
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         font-size: 21px;
+         font-weight: 700;
+         color: #fff;
+         background: #CFB67A;
+         border-bottom: 3px solid #184041;
+         font-family: 'SST Arabic Bold';
+      }
+
+      .nav-tabs .nav-link {
+         min-width: 159px;
+         background-color: #d9e1ea;
+         border: 2px solid #e0e5f3;
+         margin-right: 4px;
+         color: #1a1a1a;
+         font-size: 19px;
+         font-family: "SST Arabic Bold";
+         letter-spacing: 0.5px;
+
+      }
+
+      .nav-tabs .nav-item.show .nav-link,
+      .nav-tabs .nav-link.active {
+         border-color: #dee2e6 #dee2e6 #fff;
+         background-color: #184041;
+         color: #fff;
+         font-size: 19px;
+         font-family: "SST Arabic Bold";
+         letter-spacing: 0.5px;
+      }
+
+      .nav-tabs {
+         border-bottom: none;
+      }
+
+      .tab-pane {
+         padding: 20px;
+         background-color: #ffffff;
+         border: 3px solid #e0e5f3;
+      }
+
+      .tab-pane h3 {
+         font-size: 19px;
+         color: #1a1a1a;
+         font-family: "SST Arabic Bold";
+         letter-spacing: 0.5px;
+         margin-bottom: 1rem;
+      }
+
+      .tab-pane p {
+         font-size: 21px;
+         color: #000000;
+         font-family: "SST Arabic Roman";
+         letter-spacing: 0.5px;
+      }
+
+
+      /* Hide the images by default */
+      .mySlides {
+         display: none;
+         /* background-color: #000000; */
+         /* border: 3px solid #e0e5f3; */
+         border-top-left-radius: 50px;
+         border-bottom-right-radius: 50px;
+         position: relative;
+         overflow: hidden;
+         height: 600px;
+      }
+
+      .mySlides img {
+         width: 100%;
+         height: 100%;
+         position: relative;
+      }
+
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+         cursor: pointer;
+      }
+
+      /* Next & previous buttons */
+      .prev {
+         cursor: pointer;
+         position: absolute;
+         top: 30%;
+         color: #184041 !important;
+         font-weight: bold;
+         font-size: 20px;
+         user-select: none;
+         -webkit-user-select: none;
+         z-index: 9;
+         border-radius: 50px;
+         height: 50px;
+         width: 50px;
+         border: 3px solid #184041;
+         text-align: center;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         left: 0;
+      }
+
+      .next {
+         cursor: pointer;
+         position: absolute;
+         top: 30%;
+         color: #184041 !important;
+         font-weight: bold;
+         font-size: 20px;
+         user-select: none;
+         -webkit-user-select: none;
+         z-index: 9;
+         border-radius: 50px;
+         height: 50px;
+         width: 50px;
+         border: 3px solid #184041;
+         text-align: center;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         right: 0 !important;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+         background-color: #184041;
+         color: #fff !important;
+      }
+
+      /* Container for image text */
+      .caption-container {
+         text-align: center;
+         background-color: #222;
+         padding: 2px 16px;
+         color: white;
+      }
+
+      .row-gallery:after {
+         content: "";
+         display: table;
+         clear: both;
+      }
+
+      /* Six columns side by side */
+      .grid-gallery {
+         float: left;
+         width: 20%;
+         margin: 0 10px;
+         border-top-left-radius: 30px;
+         border-bottom-right-radius: 30px;
+         position: relative;
+         overflow: hidden;
+         height: 150px;
+      }
+
+      .grid-gallery img {
+         width: 100%;
+         position: relative;
+         height: 100%;
+      }
+
+
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+         opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+         opacity: 1;
+      }
+
+      .card.card-testi {
+         border-top-left-radius: 0 !important;
+         border-bottom-right-radius: 0 !important;
+         margin: 30px 15px 30px 15px !important;
+         background-color: #ffffff !important;
+         border: 3px solid #e0e5f3 !important;
+      }
+
+      .card.card-testi .testi-prof {
+         /* width: 66px;
+         height: 66px; */
+         width: 85px;
+         height: 85px;
+         border-radius: 33px;
+         overflow: hidden;
+         position: relative;
+      }
+
+      .card.card-testi .testi-prof img {
+         width: 100%;
+         height: 100%;
+         position: relative;
+      }
+
+      .card.card-testi .card-title {
+         font-size: 21px;
+         color: #000000;
+         font-family: "SST Arabic Bold";
+         letter-spacing: 0.5px;
+      }
+
+      .card.card-testi .card-title i {
+         color: #ffa11a;
+      }
+
+      .card.card-testi .card-title span {
+         font-size: 14px;
+         color: #656565;
+         font-family: "SST Arabic Roman";
+         letter-spacing: 0.5px;
+      }
+
+      .card.card-testi .card-title span i {
+         color: #656565;
+      }
+
+      .card.card-testi .card-text {
+         font-size: 21px;
+         color: #000000;
+         font-family: "SST Arabic Roman";
+         letter-spacing: 0.5px;
+      }
+
+      .comment-btn {
+         font-size: 17px;
+         color: #fff;
+         font-family: "SST Arabic Bold";
+         background-color: #184041;
+         border: 0;
+         border-radius: 0;
+         margin-right: 10px;
+      }
+
+      .report-btn {
+         font-size: 17px;
+         color: #000;
+         font-family: "SST Arabic Bold";
+         background-color: transparent;
+         border: 0;
+         border-radius: 0;
+         margin-right: 10px;
+         transition: 0.3s all;
+      }
+
+      .report-btn:hover {
+         color: #fff;
+         background-color: #184041;
+         transition: 0.3s all;
+      }
+
+      .carousel-control {
+         position: absolute;
+         top: 40%;
+         bottom: 0;
+         left: 0;
+         text-align: center;
+         text-shadow: none;
+         background: transparent !important;
+         opacity: 1;
+         border-radius: 50%;
+         width: 50px;
+         height: 50px;
+         margin: 0 !important;
+         padding: 0 !important;
+         cursor: pointer;
+         color: #184041 !important;
+         font-weight: bold;
+         font-size: 20px;
+         z-index: 9;
+         border: 3px solid #184041;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         transition: 0.3s all;
+         font-size: 30px !important;
+      }
+
+      .carousel-control:hover {
+
+         background: #184041 !important;
+         color: #fff !important;
+         border: 3px solid #184041;
+         transition: 0.3s all;
+      }
+
+      a.left.carousel-control {
+         left: -22px;
+      }
+
+      a.right.carousel-control {
+         right: -22px;
+      }
+
+      .card.card-review-form {
+         border-top-left-radius: 0 !important;
+         border-bottom-right-radius: 0 !important;
+         border: 0 !important;
+         margin: 0 !important;
+         width: 100% !important;
+      }
+
+      .card.card-review-form .card-header {
+         background: #184041;
+         color: #fff;
+      }
+
+      .card.card-review-form .card-header h2 {
+         font-size: 30px;
+         color: #ffffff;
+         font-family: "SST Arabic Bold";
+         letter-spacing: 0.5px;
+      }
+
+      .card.card-review-form .card-body {
+         border: 3px solid #e0e5f3;
+      }
+
+      .adventure-review-form input {
+         height: 56px;
+      }
+
+      .adventure-review-form input,
+      .adventure-review-form textarea {
+         border: 2px solid #e0e5f3;
+         box-shadow: none;
+         border-radius: 0;
+         font-size: 24px;
+         color: #4f4f4f;
+         font-family: "SST Arabic Roman";
+         letter-spacing: 0.5px;
+      }
+
+      .adventure-review-form i {
+         color: #ffa11a;
+         font-size: 60px;
+      }
+
+      .gh-send-btn {
+         border: 0;
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         border-bottom: 3px solid #194041;
+         background: #CFB67A;
+         font-size: 28px;
+         font-weight: 700;
+         color: #fff;
+         width: 163px;
+      }
+
+      .adventure-image-gallery {
+         background-color: #ffffff;
+         border: 3px solid #e0e5f3;
+         padding: 15px;
+      }
+
+      .adventure-img-gallery-content .left {
+         max-width: 365px;
+         position: relative;
+         z-index: 1;
+      }
+
+      .adventure-img-gallery-content .patterng-bg::after {
+         background-image: url(assets/images/patterns/pattern-box-type.png);
+         background-repeat: no-repeat;
+         content: "";
+         position: absolute;
+         bottom: 0;
+         right: 15px;
+         width: 110px;
+         height: 70px;
+      }
+
+      .adventure-img-gallery-content .right h3 {
+         font-size: 28px;
+         color: #1a1a1a;
+         font-family: "SST Arabic Light";
+         letter-spacing: 0.5px;
+      }
+
+      .adventure-img-gallery-content .right h3 span {
+         font-size: 34px;
+         color: #184041;
+         letter-spacing: 0.5px;
+         font-family: "SST Arabic Bold";
+      }
+
+      .adventure-img-gallery-content .right h4 {
+         font-size: 24px;
+         color: #000000;
+         font-family: "SST Arabic Roman";
+         letter-spacing: 0.5px;
+      }
+
+      .adventure-img-gallery-content .left .social p {
+         font-size: 14px;
+         color: #000000;
+         font-family: "SST Arabic Bold";
+         letter-spacing: 0.5px;
+         margin-bottom: 0;
+      }
+
+      .adventure-img-gallery-content .left .social .icons {
+         width: 365px;
+         height: 44px;
+         background-color: #153d3f;
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         padding-left: 10px;
+      }
+
+      .adventure-img-gallery-content .left .social .icons i {
+         font-size: 26px;
+         padding: 8px 15px;
+         color: #fff;
+         border-right: 3px solid #CFB67A;
+      }
+
+      .adventure-img-gallery-content .left .social .icons i:last-child {
+         border-right: none;
+      }
+
+      .adventure-img-gallery-content .left .rating {
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         margin-top: 15px;
+      }
+
+      .adventure-img-gallery-content .left .rating i {
+         font-size: 28px;
+         color: #ffa11a;
+      }
+
+      .adventure-img-gallery-content .left .rating p {
+         margin: 0 5px;
+         font-size: 19px;
+         color: #585858;
+         font-family: "SST Arabic Bold";
+         letter-spacing: 0.5px;
+      }
+   </style>
+
+</head>
+
+<body class="inner-page-color">
+
+
+   <!-- /* ----- HEADER START ----------------------------------------------- */ -->
+   <div class="top_bar">
+      <div class="container-fluid">
+         <div class="row py-3">
+            <div class="col-md-6 col-sm-12 col-lg-6"></div>
+            <div class="col-md-6 col-sm-12 col-lg-6">
+               <div class="d-flex align-items-center justify-content-end topbar-right-div">
+                  <div class="topbar_right pr-3">
+                     <div class="lang_div">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right border-x-1 px-3">
+                     <div class="lang_div">
+                        <select name="currency" id="currency">
+                           <option value="currency" selected>Currency</option>
+                           <option value="pkr">PKR</option>
+                           <option value="yen">Yen</option>
+                           <option value="dollar">Dollar</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right pl-3">
+                     <div class="d-flex white align-items-center topbar_login">
+                        <div class="text-right mr-2 topbar_icon">
+                           <i class="fas fa-user mr-2"></i>
+                           <a href="" class="color-white">
+                              Login/Register
+                           </a>
+                        </div>
+                        <div class="footer_content">
+                           <a href="" class="color-white ml-4">
+                              <img src="assets/images/icons/calendar.svg" alt="">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse container-fluid" id="navbarTogglerDemo01">
+         <a class="navbar-brand" href="#">
+            <img src="assets/images/logo/Logo_1.svg" alt="nav_logo" width="150%">
+         </a>
+         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Journey
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Explore
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Safety & Quality</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Us
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <img src="assets/images/icons/cart.svg" alt="">
+               </a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <!-- /* ----- HEADER end ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME BANNER SECTION START ----------------------------------------------- */ -->
+
+   <section class="service-banner">
+      <div class="container-fluid">
+         <div class="banner_content">
+            <div class="banner_title text-center px-5">
+               <h1 class="brush_stroke_bg">Tours Trips</h1>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME BANNER SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME TOUR SECTION START ----------------------------------------------- */ -->
+
+   <section class="adventure-trips-section">
+      <div class="container-fluid">
+         <div class="py-5">
+
+            <div class="row mx-5 mt-0 mb-2 pt-2 px-5 pb-5w">
+               <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 main-content">
+
+                  <div class="row">
+                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="adventure-image-gallery">
+                           <div class="adventure-img-gallery-content">
+                              <div class="row">
+                                 <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="right">
+                                       <h3 class="my-2">
+                                          Tours Tour
+                                       </h3>
+                                       <h3 class="mt-3 mb-2">
+                                          <span>
+                                             Desert Safari Trips
+                                          </span>
+                                       </h3>
+                                       <h4 class="mt-0">
+                                          Remaining seats - 25
+                                       </h4>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12 col-md-6 col-lg-6 patterng-bg">
+                                    <div class="left">
+                                       <div class="social">
+                                          <p>Share <i class="fa fa-share-alt ml-1" aria-hidden="true"></i></p>
+                                          <div class="icons">
+                                             <i class=" fa fa-twitter" aria-hidden="true"></i>
+                                             <i class="fa fa-instagram" aria-hidden="true"></i>
+                                             <i class="fa fa-facebook" aria-hidden="true"></i>
+                                             <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                             <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                             <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+                                          </div>
+                                       </div>
+                                       <div class="rating">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="ml-2 fa fa-star" aria-hidden="true"></i>
+                                          <i class="ml-2 fa fa-star" aria-hidden="true"></i>
+                                          <i class="ml-2 fa fa-star" aria-hidden="true"></i>
+                                          <i class="ml-2 fa fa-star-o" aria-hidden="true"></i>
+                                          <p>4.5</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="image-gallery-carousel">
+                              <div class="mySlides">
+                                 <img src="assets/images/card-images/Image_26.png" style="width:100%">
+                              </div>
+
+                              <div class="mySlides">
+                                 <img src="assets/images/card-images/Image_27.png" style="width:100%">
+                              </div>
+
+                              <div class="mySlides">
+                                 <img src="assets/images/card-images/Image_28.png" style="width:100%">
+                              </div>
+
+                              <div class="mySlides">
+                                 <img src="assets/images/card-images/Image_29.png" style="width:100%">
+                              </div>
+
+                              <div class="row-gallery"
+                                 style="position: relative; display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+                                 <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                 <a class="next" onclick="plusSlides(1)">❯</a>
+                                 <div class="grid-gallery">
+                                    <img class="demo cursor" src="assets/images/card-images/Image_26.png"
+                                       style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                                 </div>
+                                 <div class="grid-gallery">
+                                    <img class="demo cursor" src="assets/images/card-images/Image_27.png"
+                                       style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                                 </div>
+                                 <div class="grid-gallery">
+                                    <img class="demo cursor" src="assets/images/card-images/Image_28.png"
+                                       style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                                 </div>
+                                 <div class="grid-gallery">
+                                    <img class="demo cursor" src="assets/images/card-images/Image_29.png"
+                                       style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="adventure-tabs py-5">
+                           <nav>
+                              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                                    href="#nav-home" role="tab" aria-controls="nav-home"
+                                    aria-selected="true">Description</a>
+                                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                    role="tab" aria-controls="nav-profile" aria-selected="false">Itinerary of the
+                                    trip</a>
+                                 <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                                    role="tab" aria-controls="nav-contact" aria-selected="false">What we provide</a>
+                                 <a class="nav-item nav-link" id="nav-tab-4" data-toggle="tab" href="#" role="tab"
+                                    aria-controls="nav-contact" aria-selected="false">What participant provide</a>
+                                 <a class="nav-item nav-link" id="nav-tab-5" data-toggle="tab" href="#" role="tab"
+                                    aria-controls="nav-contact" aria-selected="false">Video</a>
+                              </div>
+                           </nav>
+                           <div class="tab-content" id="nav-tabContent">
+                              <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                 aria-labelledby="nav-home-tab">
+
+                                 <h3>
+                                    Tour Trips
+                                 </h3>
+                                 <p>
+                                    Lorem ipsum is a name for a common type of placeholder text. Also known as filler or
+                                    dummy text, this is simply copy that serves to fill a space.Lorem ipsum is a name
+                                    for a
+                                    common type of placeholder text. Also known as filler or dummy text, this is simply
+                                    copy that serves to fill a space.Lorem ipsum is a name for a common type of
+                                    placeholder
+                                    text. Also known as filler or dummy text, this is simply copy that serves to fill a
+                                    space.
+                                 </p>
+
+                              </div>
+                              <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                 aria-labelledby="nav-profile-tab">...</div>
+                              <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                 aria-labelledby="nav-contact-tab">...</div>
+                              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-tab-4">
+                                 ...</div>
+                              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-tab-5">
+                                 ...</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 side-menu-adventure">
+                  <div class="side-menu-acoordion">
+                     <button class="side-menu-accordion-btn panel-active">Book Now</button>
+                     <div class="panel" style="max-height: 350px;">
+                        <div style="padding: 18px 0;">
+
+                           <div class="calendar-sidebar">
+
+                           </div>
+
+                           <div class="form-group text-center mt-3">
+                              <button onclick="" class="btn show-result-gh-btn">Book Now</button>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <button class="side-menu-accordion-btn panel-active">Price Per Person</button>
+                     <div class="panel text-center" style="max-height: 350px;">
+                        <div style="padding: 18px 0;">
+
+                           <h3
+                              style="font-size: 38px; color: #184041; font-family: 'SST Arabic Bold'; letter-spacing: 0.5px;">
+                              $2,000</h3>
+
+                        </div>
+                     </div>
+
+                     <button class="side-menu-accordion-btn panel-active">Points of Interest</button>
+                     <div class="panel" style="max-height: 350px;">
+                        <div style="padding: 18px 0;">
+
+                           <form>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox11" class="custom-theme-check">
+                                 <label for="checkbox11" class="custom-theme-label">Cities to Visit</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox12" class="custom-theme-check">
+                                 <label for="checkbox12" class="custom-theme-label">Cities to Visit</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox13" class="custom-theme-check">
+                                 <label for="checkbox13" class="custom-theme-label">Cities to Visit</label>
+                              </div>
+                           </form>
+
+                        </div>
+                     </div>
+
+                     <button class="side-menu-accordion-btn panel-active">Duration of the trip</button>
+                     <div class="panel" style="max-height: 350px; padding: 0;">
+                        <div style="padding: 18px;">
+                           <p class="m-0" style="font-size: 26px; color: #313131; font-family: 'SST Arabic Roman';">20 -
+                              25 Days</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row mx-5 mt-0 mb-2 pt-2 px-5 pb-5w">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="adventure-testimonial">
+                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                           <div class="item active">
+                              <div class="card-deck">
+                                 <div class="card card-testi">
+                                    <div class="row card-body">
+                                       <div class="col-sm-2">
+                                          <div class="testi-prof">
+                                             <img src="assets/images/profile-pic/p-1.png" alt="">
+                                          </div>
+                                       </div>
+                                       <div class="col-sm-10">
+                                          <div class="">
+                                             <h5 class="card-title">
+                                                Edward 4 <i class="fas fa-star ml-1"></i>
+                                                <span class="d-block">
+                                                   <i class="fa fa-calendar"></i>
+                                                   Dec 21st
+                                                </span>
+                                             </h5>
+                                             <p class="card-text py-4">
+                                                Lorem ipsum is a name for a common type of placeholder text. Also
+                                                known as fille r or dummy text, this is simply copy
+                                             </p>
+
+                                             <div class="link-comment">
+                                                <a href="#" class="btn btn-primary comment-btn">Comment</a>
+                                                <a href="#" class="btn btn-primary report-btn">Report</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="card card-testi">
+                                    <div class="row card-body">
+                                       <div class="col-sm-2">
+                                          <div class="testi-prof">
+                                             <img src="assets/images/profile-pic/p-1.png" alt="">
+                                          </div>
+                                       </div>
+                                       <div class="col-sm-10">
+                                          <div class="">
+                                             <h5 class="card-title">
+                                                Edward 4 <i class="fas fa-star ml-1"></i>
+                                                <span class="d-block">
+                                                   <i class="fa fa-calendar"></i>
+                                                   Dec 21st
+                                                </span>
+                                             </h5>
+                                             <p class="card-text py-4">
+                                                Lorem ipsum is a name for a common type of placeholder text. Also
+                                                known as fille r or dummy text, this is simply copy
+                                             </p>
+
+                                             <div class="link-comment">
+                                                <a href="#" class="btn btn-primary comment-btn">Comment</a>
+                                                <a href="#" class="btn btn-primary report-btn">Report</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="item">
+                              <div class="card-deck">
+                                 <div class="card card-testi">
+                                    <div class="row card-body">
+                                       <div class="col-sm-2">
+                                          <div class="testi-prof">
+                                             <img src="assets/images/profile-pic/p-1.png" alt="">
+                                          </div>
+                                       </div>
+                                       <div class="col-sm-10">
+                                          <div class="">
+                                             <h5 class="card-title">
+                                                Edward 4 <i class="fas fa-star ml-1"></i>
+                                                <span class="d-block">
+                                                   <i class="fa fa-calendar"></i>
+                                                   Dec 21st
+                                                </span>
+                                             </h5>
+                                             <p class="card-text py-4">
+                                                Lorem ipsum is a name for a common type of placeholder text. Also
+                                                known as fille r or dummy text, this is simply copy
+                                             </p>
+
+                                             <div class="link-comment">
+                                                <a href="#" class="btn btn-primary comment-btn">Comment</a>
+                                                <a href="#" class="btn btn-primary report-btn">Report</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="card card-testi">
+                                    <div class="row card-body">
+                                       <div class="col-sm-2">
+                                          <div class="testi-prof">
+                                             <img src="assets/images/profile-pic/p-1.png" alt="">
+                                          </div>
+                                       </div>
+                                       <div class="col-sm-10">
+                                          <div class="">
+                                             <h5 class="card-title">
+                                                Edward 4 <i class="fas fa-star ml-1"></i>
+                                                <span class="d-block">
+                                                   <i class="fa fa-calendar"></i>
+                                                   Dec 21st
+                                                </span>
+                                             </h5>
+                                             <p class="card-text py-4">
+                                                Lorem ipsum is a name for a common type of placeholder text. Also
+                                                known as fille r or dummy text, this is simply copy
+                                             </p>
+
+                                             <div class="link-comment">
+                                                <a href="#" class="btn btn-primary comment-btn">Comment</a>
+                                                <a href="#" class="btn btn-primary report-btn">Report</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                           ❮
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                           ❯
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="adventure-review-form">
+                     <div class="card card-review-form">
+                        <div class="card-header">
+                           <h2>
+                              Leave a Review
+                           </h2>
+                        </div>
+                        <div class="card-body">
+                           <form>
+                              <div class="form-row">
+                                 <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" id="validationTooltip01"
+                                       placeholder="Your Name">
+
+                                 </div>
+                                 <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" id="validationTooltip02"
+                                       placeholder="Email Address">
+                                 </div>
+                                 <div class="col-md-12 mb-3">
+                                    <div class="d-flex align-items-center justify-content-center py-4">
+                                       <i class="fa fa-star mr-4" aria-hidden="true"></i>
+                                       <i class="fa fa-star-o mr-4" aria-hidden="true"></i>
+                                       <i class="fa fa-star-o mr-4" aria-hidden="true"></i>
+                                       <i class="fa fa-star-o mr-4" aria-hidden="true"></i>
+                                       <i class="fa fa-star-o mr-4" aria-hidden="true"></i>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12 mb-3">
+                                    <div class="input-group">
+                                       <textarea class="form-control" placeholder="Comment" rows="5"></textarea>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12 py-4">
+                                    <button onclick="" class="btn gh-send-btn">Send</button>
+                                 </div>
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME TOUR SECTION END ----------------------------------------------- */ -->
+
+
+   <!-- /* ----- HOME Footer BG SECTION Start ----------------------------------------------- */ -->
+
+   <section class="back">
+      <img src="assets/images/background/footer.png" alt="" width="100%">
+   </section>
+
+   <!-- /* ----- HOME Footer BG SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- FOOTER START ----------------------------------------------- */ -->
+
+   <footer id="footer" class="footer p-5">
+      <div class="container-fluid">
+         <div class="row widgets">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+               <div class="footer_logo">
+                  <img src="assets/images/logo/Logo_2.png" alt="Footer Logo">
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 about-us pr-3">
+               <div class="sec-title">
+                  <div class="footer_map_div">
+                     <iframe src="https://www.google.com/maps/d/embed?mid=10HNhSmt3DIADu2pyqdFZTYOmatk"
+                        class="footer_map" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 contact-us pr-5 mt-4">
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>Address</h6>
+                     <p>Suite # 01, 2st Floor Tokyo Center</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>PHONE</h6>
+                     <p>+123 456 789 90</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>EMAIL</h6>
+                     <p>example@gmail.com</p>
+                  </div>
+               </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 quick-link pr-5">
+               <div class="sec-title">
+                  <h5 class="mb-3 white">Quick Links</h5>
+               </div>
+               <div class="row white">
+                  <div class="col-md-12">
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Privacy Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Terms of Use</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">FAQ</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Cancellation Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Explore</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 newsletter">
+               <div class="contact-us">
+                  <div class="sec-title">
+                     <h5 class="mb-3 white">Our Newsletter</h5>
+                  </div>
+                  <div class="newsletter-form mt-4">
+                     <form method="get" class="search-form" action="">
+                        <input type="search" class="form-control" placeholder="Your Email">
+                        <button class="btn" type="submit">Send</button>
+                     </form>
+                  </div>
+                  <div class="d-flex align-items-center my-4">
+                     <div class="social_icons">
+                        <ul class="d-flex align-items-center px-0 color-white my-0">
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-facebook-f"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-instagram"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-linkedin-in"></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="lang_div w-100 text-right">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div id="bottom-bar" class="bottom-bar p-3">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+               <div class="copyright-text">
+                  Copyright © 2020 <span class="highlight_brown">Kreatix</span> 2021 - 2022. All rights reserved.
+               </div>
+            </div>
+            <!-- <div class="col-lg-6 col-md-6 col-sm-12">
+               <ul class="d-flex align-items-center justify-content-end right_div">
+                  <li><a href="#">Privacy Policy </a></li>
+                  <li class="bottom_vr_gap"> | </li>
+                  <li><a href="#">Terms & Condition </a></li>
+               </ul>
+            </div> -->
+         </div>
+      </div>
+   </div>
+
+   <!-- /* ----- FOOTER END ----------------------------------------------- */ -->
+
+</body>
+
+<script>
+   var acc = document.getElementsByClassName("side-menu-accordion-btn");
+   var i;
+
+   for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+         this.classList.toggle("panel-active");
+         var panel = this.nextElementSibling;
+         if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+         } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+         }
+      });
+   }
+</script>
+
+<script>
+   var slideIndex = 1;
+   showSlides(slideIndex);
+
+   function plusSlides(n) {
+      showSlides(slideIndex += n);
+   }
+
+   function currentSlide(n) {
+      showSlides(slideIndex = n);
+   }
+
+   function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+   }
+</script>
+
+
+
+</html>

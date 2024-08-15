@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+   <!-- Required meta tags -->
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="keywords" content="...">
+   <meta name="description" content="..." />
+   <title>Ghamra</title>
+
+
+
+   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/all.css">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+   <style>
+      .store-section .card .card-overlay {
+         position: absolute;
+         bottom: 0;
+         background: rgb(25 64 65 / 30%);
+         color: #f1f1f1;
+         width: 100%;
+         transition: .5s ease;
+         opacity: 0;
+         color: white;
+         font-size: 20px;
+         padding: 20px;
+         text-align: center;
+         height: 100%;
+         border-top-left-radius: 50px;
+         display: flex;
+         align-items: flex-end;
+      }
+
+      .store-section .card:hover .card-overlay {
+         transition: .5s ease;
+         opacity: 1;
+      }
+
+      .card-img {
+         position: relative;
+      }
+
+      .shopping-card-btn {
+         background: #194041;
+         color: #fff;
+         margin: 0 10px;
+         border: 0;
+         border-top-right-radius: 15px;
+         border-bottom-left-radius: 15px;
+         border-top-left-radius: 0;
+         border-bottom-right-radius: 0;
+         display: flex;
+         align-items: center;
+      }
+   </style>
+
+</head>
+
+<body>
+
+
+   <!-- /* ----- HEADER START ----------------------------------------------- */ -->
+   <div class="top_bar">
+      <div class="container-fluid">
+         <div class="row py-3">
+            <div class="col-md-6 col-sm-12 col-lg-6"></div>
+            <div class="col-md-6 col-sm-12 col-lg-6">
+               <div class="d-flex align-items-center justify-content-end topbar-right-div">
+                  <div class="topbar_right pr-3">
+                     <div class="lang_div">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right border-x-1 px-3">
+                     <div class="lang_div">
+                        <select name="currency" id="currency">
+                           <option value="currency" selected>Currency</option>
+                           <option value="pkr">PKR</option>
+                           <option value="yen">Yen</option>
+                           <option value="dollar">Dollar</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right pl-3">
+                     <div class="d-flex white align-items-center topbar_login">
+                        <div class="text-right mr-2 topbar_icon">
+                           <i class="fas fa-user mr-2"></i>
+                           <a href="" class="color-white">
+                              Login/Register
+                           </a>
+                        </div>
+                        <div class="footer_content">
+                           <a href="" class="color-white ml-4">
+                              <img src="assets/images/icons/calendar.svg" alt="">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse container-fluid" id="navbarTogglerDemo01">
+         <a class="navbar-brand" href="#">
+            <img src="assets/images/logo/Logo_1.svg" alt="nav_logo" width="150%">
+         </a>
+         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Journey
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Explore
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Safety & Quality</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Us
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <img src="assets/images/icons/cart.svg" alt="">
+               </a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <!-- /* ----- HEADER end ----------------------------------------------- */ -->
+
+
+   <!-- /* ----- HOME BANNER SECTION START ----------------------------------------------- */ -->
+
+   <section class="home-banner">
+      <div class="container-fluid">
+         <div class="banner_content">
+            <div class="banner_title text-center px-5">
+               <h1 class="brush_stroke_bg">Your Journey Begins</h1>
+               <h6>A journey of a 1000 miles starts with a single step. Import the full demo content with 1 click and
+                  create a head-turning website for your travel agency.</h6>
+               <button onclick="" class="btn gh-btn-bw mt-3">Explore</button>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME BANNER SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME ADVENTRE SECTION START ----------------------------------------------- */ -->
+
+   <section class="adventure-section">
+      <div class="container-fluid">
+
+         <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+               <div class="container">
+                  <div class="section_title text-center px-5">
+                     <h1>Adventures</h1>
+                     <hr />
+                     <p>Lorem ipsum, in graphical and textual context</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="container-fluid">
+            <div class="card-deck mx-5 mb-2 p-5">
+               <div class="card border-0 shadow">
+                  <img class="card-img-top" src="assets/images/card-images/Image_4.png" alt="Card image cap">
+                  <div class="card-body text-center">
+                     <h4 class="card-title">Ireland Hiking</h4>
+                     <h6 class="card-title-2">Wild Atlantic</h6>
+                     <p class="card-text"></p>
+                     <div class="row">
+                        <div class="col-sm-12 col-md-8 col-lg-8 text-left">
+                           <div class="card-right-div">
+                              <div class="card-day-time">
+                                 <img src="assets/images/icons/clock.svg" class="mr-2" alt=""><span> 8 Days / 7
+                                    Nights</span>
+                              </div>
+                              <div class="card-rating">
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="far fa-star"></i>
+                                 <span>(1 Review)</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+                           <div class="card-left-div">
+                              <div class="card-price">
+                                 From
+                                 <span>$2,000</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="card border-0 shadow">
+                  <img class="card-img-top" src="assets/images/card-images/Image_5.png" alt="Card image cap">
+                  <div class="card-body text-center">
+                     <h4 class="card-title">AMALFI COAST</h4>
+                     <h6 class="card-title-2">SICILY</h6>
+                     <p class="card-text"></p>
+                     <div class="row">
+                        <div class="col-sm-12 col-md-8 col-lg-8 text-left">
+                           <div class="card-right-div">
+                              <div class="card-day-time">
+                                 <img src="assets/images/icons/clock.svg" class="mr-2" alt=""><span> 8 Days / 7
+                                    Nights</span>
+                              </div>
+                              <div class="card-rating">
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="far fa-star"></i>
+                                 <span>(1 Review)</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+                           <div class="card-left-div">
+                              <div class="card-price">
+                                 From
+                                 <span>$2,000</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="card border-0 shadow">
+                  <img class="card-img-top" src="assets/images/card-images/Image_6.png" alt="Card image cap">
+                  <div class="card-body text-center">
+                     <h4 class="card-title">ZION BRYCE GRAND</h4>
+                     <h6 class="card-title-2">CANYON TOUR</h6>
+                     <p class="card-text"></p>
+                     <div class="row">
+                        <div class="col-sm-12 col-md-8 col-lg-8 text-left">
+                           <div class="card-right-div">
+                              <div class="card-day-time">
+                                 <img src="assets/images/icons/clock.svg" class="mr-2" alt=""><span> 8 Days / 7
+                                    Nights</span>
+                              </div>
+                              <div class="card-rating">
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="far fa-star"></i>
+                                 <span>(1 Review)</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+                           <div class="card-left-div">
+                              <div class="card-price">
+                                 From
+                                 <span>$2,000</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                  <button onclick="" class="btn gh-btn">View More</button>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME ADVENTURE SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME TOUR SECTION START ----------------------------------------------- */ -->
+
+   <section class="tour-section">
+      <div class="container-fluid">
+
+         <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+               <div class="container">
+                  <div class="section_title text-center px-5">
+                     <h1 class="text-white">TOURS</h1>
+                     <hr />
+                     <p class="text-white">Lorem ipsum, in graphical and textual context</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="bg-pattern py-5">
+            <div class="card-deck mx-5 mt-0 mb-2 pt-2 px-5 pb-5">
+               <div class="card text-white border-0">
+                  <img class="card-img" src="assets/images/card-images/Image.png" alt="Card image">
+                  <div class="card-img-overlay">
+                     <h3 class="card-title my-0">Urban jungle your city</h3>
+                     <hr>
+                     <h5 class="card-title my-0">Two days package</h5>
+                  </div>
+               </div>
+               <div class="card text-white border-0">
+                  <img class="card-img" src="assets/images/card-images/Image_2.png" alt="Card image">
+                  <div class="card-img-overlay">
+                     <h3 class="card-title my-0">Top hiking trails forest</h3>
+                     <hr>
+                     <h5 class="card-title my-0">Two days package</h5>
+                  </div>
+               </div>
+               <div class="card text-white border-0">
+                  <img class="card-img" src="assets/images/card-images/Image_3.png" alt="Card image">
+                  <div class="card-img-overlay">
+                     <h3 class="card-title my-0">Hikes in iceland mountain</h3>
+                     <hr>
+                     <h5 class="card-title my-0">Two days package</h5>
+                  </div>
+               </div>
+
+            </div>
+            <div class="row">
+               <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                  <button onclick="" class="btn gh-btn-bw">View More</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME TOUR SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME STORE SECTION START ----------------------------------------------- */ -->
+
+   <section class="store-section">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+               <div class="container">
+                  <div class="section_title text-center px-5">
+                     <h1>Store</h1>
+                     <hr />
+                     <p>Lorem ipsum, in graphical and textual context</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid px-5 bg-pattern">
+            <div class="card-deck mx-5 mt-0 mb-2 p-5">
+               <div class="card border-0 shadow">
+                  <div class="card-img">
+                     <img class="card-img-top" src="assets/images/card-images/Image_7.png" alt="Card image cap">
+                     <div class="card-overlay">
+                        <div class="d-flex align-items-center justify-content-center w-100">
+                           <button class="btn shopping-card-btn">
+                              <img src="assets/images/icons/cart_white.svg" alt="cart">
+                           </button>
+                           <button class="btn shopping-card-btn">
+                              <img src="assets/images/icons/eye_white.svg" alt="cart">
+                           </button>
+                           <button class="btn shopping-card-btn">
+                              <img src="assets/images/icons/heart.svg" alt="cart">
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-body text-center">
+                     <h4 class="card-title">LED TORCH LIGHT</h4>
+                     <h5 class="card-title-2">$160.00</h5>
+                     <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                           <div class="card-right-div">
+
+                              <div class="card-rating">
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="far fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="card border-0 shadow">
+                  <div class="card-img">
+                     <img class="card-img-top" src="assets/images/card-images/Image_8.png" alt="Card image cap">
+                     <div class="card-overlay">
+                        <div class="d-flex align-items-center justify-content-center w-100">
+                           <button class="btn shopping-card-btn">
+                              <i class="fa fa-heart"></i>
+                           </button>
+                           <button class="btn shopping-card-btn">
+                              <i class="fas fa-eye"></i>
+                           </button>
+                           <button class="btn shopping-card-btn">
+                              <i class="fas fa-shopping-cart"></i>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-body text-center">
+                     <h4 class="card-title">LED TORCH LIGHT</h4>
+                     <h5 class="card-title-2">$160.00</h5>
+                     <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                           <div class="card-right-div">
+
+                              <div class="card-rating">
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="far fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="card border-0 shadow">
+                  <div class="card-img">
+                     <img class="card-img-top" src="assets/images/card-images/Image_9.png" alt="Card image cap">
+                     <div class="card-overlay">
+                        <div class="d-flex align-items-center justify-content-center w-100">
+                           <button class="btn shopping-card-btn">
+                              <i class="fa fa-heart"></i>
+                           </button>
+                           <button class="btn shopping-card-btn">
+                              <i class="fas fa-eye"></i>
+                           </button>
+                           <button class="btn shopping-card-btn">
+                              <i class="fas fa-shopping-cart"></i>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-body text-center">
+                     <h4 class="card-title">LED TORCH LIGHT</h4>
+                     <h5 class="card-title-2">$160.00</h5>
+                     <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                           <div class="card-right-div">
+
+                              <div class="card-rating">
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="far fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="card border-0 shadow">
+                  <div class="card-img">
+                     <img class="card-img-top" src="assets/images/card-images/Image_10.png" alt="Card image cap">
+                     <div class="card-overlay">
+                        <div class="d-flex align-items-center justify-content-center w-100">
+                           <button class="btn shopping-card-btn">
+                              <i class="fa fa-heart"></i>
+                           </button>
+                           <button class="btn shopping-card-btn">
+                              <i class="fas fa-eye"></i>
+                           </button>
+                           <button class="btn shopping-card-btn">
+                              <i class="fas fa-shopping-cart"></i>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-body text-center">
+                     <h4 class="card-title">LED TORCH LIGHT</h4>
+                     <h5 class="card-title-2">$160.00</h5>
+                     <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                           <div class="card-right-div">
+
+                              <div class="card-rating">
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="fas fa-star mr-1"></i>
+                                 <i class="far fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                  <button onclick="" class="btn gh-btn">View More</button>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME STORE SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME PERSONAL TRIP SECTION START ----------------------------------------------- */ -->
+
+   <section class="personal-trip">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+               <div class="section_title text-center px-5">
+                  <h1>How to find your customize trip</h1>
+                  <p>
+                     A journey of a 1000 miles starts with a single step. Import the full demo content with 1 click
+                     and create a head-turning website for your travel agency.
+                  </p>
+                  <button onclick="" class="btn gh-btn">Personalized Trip</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME PERSONAL TRIP SECTION END ----------------------------------------------- */ -->
+
+
+   <!-- /* ----- FOOTER START ----------------------------------------------- */ -->
+
+   <footer id="footer" class="footer p-5">
+      <div class="container-fluid">
+         <div class="row widgets">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+               <div class="footer_logo">
+                  <img src="assets/images/logo/Logo_2.png" alt="Footer Logo">
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 about-us pr-3">
+               <div class="sec-title">
+                  <div class="footer_map_div">
+                     <iframe src="https://www.google.com/maps/d/embed?mid=10HNhSmt3DIADu2pyqdFZTYOmatk"
+                        class="footer_map" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 contact-us pr-5 mt-4">
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>Address</h6>
+                     <p>Suite # 01, 2st Floor Tokyo Center</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>PHONE</h6>
+                     <p>+123 456 789 90</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>EMAIL</h6>
+                     <p>example@gmail.com</p>
+                  </div>
+               </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 quick-link pr-5">
+               <div class="sec-title">
+                  <h5 class="mb-3 white">Quick Links</h5>
+               </div>
+               <div class="row white">
+                  <div class="col-md-12">
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Privacy Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Terms of Use</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">FAQ</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Cancellation Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Explore</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 newsletter">
+               <div class="contact-us">
+                  <div class="sec-title">
+                     <h5 class="mb-3 white">Our Newsletter</h5>
+                  </div>
+                  <div class="newsletter-form mt-4">
+                     <form method="get" class="search-form" action="">
+                        <input type="search" class="form-control" placeholder="Your Email">
+                        <button class="btn" type="submit">Send</button>
+                     </form>
+                  </div>
+                  <div class="d-flex align-items-center my-4">
+                     <div class="social_icons">
+                        <ul class="d-flex align-items-center px-0 color-white my-0">
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-facebook-f"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-instagram"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-linkedin-in"></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="lang_div w-100 text-right">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div id="bottom-bar" class="bottom-bar p-3">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+               <div class="copyright-text">
+                  Copyright © 2020 <span class="highlight_brown">Kreatix</span> 2021 - 2022. All rights reserved.
+               </div>
+            </div>
+            <!-- <div class="col-lg-6 col-md-6 col-sm-12">
+               <ul class="d-flex align-items-center justify-content-end right_div">
+                  <li><a href="#">Privacy Policy </a></li>
+                  <li class="bottom_vr_gap"> | </li>
+                  <li><a href="#">Terms & Condition </a></li>
+               </ul>
+            </div> -->
+         </div>
+      </div>
+   </div>
+
+   <!-- /* ----- FOOTER END ----------------------------------------------- */ -->
+
+</body>
+
+</html>

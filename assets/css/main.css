@@ -1,0 +1,1823 @@
+/* 
+MAIN COLOR:
+#194041 = dark sea green
+#CFB67A = brownish golden 
+#f4f5f9 = inner body background color
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@font-face {
+    font-family: 'Boahmed AlHarf Bold';
+    src: url('../fonts/BoahmedAlHarf-Bold.woff2') format('woff2'), url('../fonts/BoahmedAlHarf-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Arabic Light';
+    src: url('../fonts/DINNextLTArabic-Light.woff2') format('woff2'), url('../fonts/DINNextLTArabic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Arabic Medium';
+    src: url('../fonts/DINNextLTArabic-Medium.woff2') format('woff2'), url('../fonts/DINNextLTArabic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Arabic Regular';
+    src: url('../fonts/DINNextLTArabic-Regular.woff2') format('woff2'), url('../fonts/DINNextLTArabic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SST Arabic Light';
+    src: url('../fonts/SSTArabic-Light.woff2') format('woff2'), url('../fonts/SSTArabic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SST Arabic Roman';
+    src: url('../fonts/SSTArabic-Roman.woff2') format('woff2'), url('../fonts/SSTArabic-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SST Arabic Bold';
+    src: url('../fonts/SSTArabic-Bold.woff2') format('woff2'), url('../fonts/SSTArabic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+a:hover {
+    text-decoration: none !important;
+    transition: 0.3s all;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.color-white {
+    color: #fff !important;
+}
+
+.btn.gh-btn-bw {
+    padding: 8px 50px;
+    border: 0;
+    /* border-top-right-radius: 50px; */
+    /* border-bottom-left-radius: 50px; */
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 3px solid #fff;
+    background: #CFB67A;
+    font-size: 38px;
+    color: #fff;
+    font-family: 'SST Arabic Bold';
+}
+
+.btn.gh-btn {
+    padding: 8px 50px;
+    border: 0;
+    /* border-top-right-radius: 50px; */
+    /* border-bottom-left-radius: 50px; */
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 3px solid #194041;
+    background: #CFB67A;
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.inner-page-color {
+    background: #f4f5f9;
+}
+
+.register-page-bg {
+    background: url('../images/background/BG_8.png');
+}
+
+.w-10 {
+    width: 10% !important;
+}
+.w-90 {
+    width: 90% !important;
+}
+
+/* ----- NAVBAR START ----------------------------------------------- */
+
+.top_bar {
+    background: #194041;
+}
+
+.top_bar .border-x-1 {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.topbar_right i {
+    color: #CFB67A;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-transparent {
+    background-image: url(../images/background/nav_BG.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* padding: 0 0 130px 0; */
+    padding: 20px 0 110px 0;
+}
+
+.navbar-brand {
+    width: 150px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 24px;
+    font-weight: 600;
+    color: #194041 !important;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-bottom: .3rem !important;
+    transition: 0.3s all;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-link {
+    border-bottom: 3px solid #CFB67A;
+    transition: 0.3s all;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link {
+    border-bottom: 3px solid #CFB67A;
+    transition: 0.3s all;
+}
+
+nav.navbar.navbar-expand-lg {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    z-index: 99;
+}
+
+/* ----- NAVBAR END ----------------------------------------------- */
+
+/* ----- SECTION TITLE START ----------------------------------------------- */
+
+.section_title h1 {
+    font-size: 80px;
+    letter-spacing: 0.5px;
+    color: #194041;
+    font-family: "SST Arabic Bold";
+}
+
+.section_title p {
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    color: #194041;
+    font-family: 'SST Arabic Light';
+}
+
+.section_title hr {
+    width: 100px;
+    border-top: 5px solid #CFB67A;
+    margin: 10px auto;
+}
+
+/* ----- SECTION TITLE END ----------------------------------------------- */
+
+/* ----- HOME BANNER START ----------------------------------------------- */
+
+.home-banner {
+    /* height: 100vh; */
+    background: url(../images/background/BG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain; */
+    background-size: cover;
+    /* padding: 550px 0; */
+    padding: 500px 0;
+    position: relative;
+}
+
+.banner_content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.banner_title h1 {
+    /* font-size: 50px; */
+    font-family: 'SST Arabic Bold';
+    font-size: 110px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.banner_title h6 {
+    /* font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.5px;
+    margin: 30px 0; */
+    font-size: 29px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    margin: 30px 0;
+    font-family: 'SST Arabic Light';
+    padding: 0 50px;
+}
+
+.brush_stroke_bg {
+    background: url('../images/patterns/brush_stroke_bg.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.arc {
+    min-height: 200px;
+    background: #fff;
+    border-radius: 55% 55% 0 0;
+    position: relative;
+    margin-top: -100px;
+}
+
+/* ----- HOME BANNER END ----------------------------------------------- */
+
+/* ----- Adventure SECTION START ----------------------------------------------- */
+
+.adventure-section {
+    position: relative;
+    padding: 80px 0 0 0;
+}
+
+.adventure-section::before {
+    /* background-image: url(../images/patterns/pattern-right.svg);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 100%;
+    height: 40%;
+    z-index: -1; */
+    background-image: url(../images/patterns/pattern-right.svg);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    /* right: -120px; */
+    right: 0px;
+    width: 280px;
+    height: 40%;
+    z-index: -1;
+}
+
+.adventure-section::after {
+    /* background-image: url(../images/patterns/pattern-left.svg);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -120px;
+    width: 420px;
+    height: 40%;
+    z-index: -1; */
+    background-image: url(../images/patterns/pattern-left.svg);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    height: 40%;
+    z-index: -1;
+}
+
+.adventure-section h3.card-title {
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    margin: 0 50px;
+}
+
+.adventure-section .card-deck .card {
+    /* box-shadow: 0px 8px 20px rgb(0 0 0 / 10%); */
+    box-shadow: 0px 10px 50px rgb(0 0 0 / 20%);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.adventure-section .card-img-top {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.adventure-section .card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 2.25rem 1.25rem;
+}
+
+.adventure-section h4.card-title {
+    letter-spacing: 1px;
+    font-size: 36px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    color: #194041;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: 'SST Arabic Bold';
+}
+
+.adventure-section h6.card-title-2 {
+    letter-spacing: 1px;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    color: #194041;
+    font-family: 'SST Arabic Bold';
+}
+
+.adventure-section p.card-text {
+    font-size: 14px;
+    color: #000000;
+    font-family: "S ST Arabic";
+    text-align: center;
+}
+
+.adventure-section .card-day-time {
+    font-size: 24px;
+    font-family: 'SST Arabic Bold';
+    align-items: center;
+    display: flex;
+}
+
+.adventure-section .card-day-time i {
+    color: #CFB67A;
+}
+
+.adventure-section .card-day-time span {
+    font-weight: 700;
+    color: #7C7C7C;
+}
+
+.adventure-section .card-rating {
+    font-size: 20px;
+}
+
+.adventure-section .card-rating i {
+    color: #FFA018;
+}
+
+.adventure-section .card-rating span {
+    font-size: 17px;
+    color: #7C7C7C;
+    font-family: 'SST Arabic Light';
+}
+
+.adventure-section .card-price {
+    font-size: 20px;
+    color: #7C7C7C;
+    font-family: 'SST Arabic Bold';
+}
+
+.adventure-section .card-price span {
+    font-weight: 700;
+    font-size: 30px;
+    color: #CFB67A;
+    display: block;
+}
+
+/* ----- Adventure SECTION END ----------------------------------------------- */
+
+/* ----- TOUR SECTION START ----------------------------------------------- */
+
+/* .tour-section {
+    position: relative;
+} */
+
+section.tour-section {
+    position: relative;
+    background-image: url(../images/background/BG_4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 130vh; */
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    /* padding: 200px 0; */
+    /* padding: 100px 0 250px 0; */
+    padding: 250px 0;
+}
+
+section.tour-section::before {
+    background-image: url(../images/patterns/G.png);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 200px;
+    width: 230px;
+    height: 330px;
+}
+
+section.tour-section .container-fluid.spacing {
+    position: relative;
+    padding: 80px 0;
+}
+
+section.tour-section .container-fluid {
+    position: relative;
+}
+
+.bg-pattern {
+    position: relative;
+}
+
+.bg-pattern::before {
+    background-image: url(../images/patterns/pattern-box-type.png);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    /* right: -120px; */
+    right: 0px;
+    width: 110px;
+    /* height: 100%; */
+    height: 70px;
+    /* z-index: -1; */
+    transform: scaleX(-1);
+}
+
+.bg-pattern::after {
+    background-image: url(../images/patterns/pattern-box-type.png);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    /* right: -120px; */
+    left: 0px;
+    width: 110px;
+    height: 70px;
+    /* z-index: -1; */
+}
+
+.tour-section .card-img-overlay {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 0.50rem;
+    text-align: center;
+}
+
+.tour-section .card {
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.tour-section img.card-img {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.tour-section h3.card-title {
+    letter-spacing: 0.5px;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: #194041;
+    font-family: 'SST Arabic Bold';
+}
+
+.tour-section hr {
+    width: 80%;
+    border-top: 3px solid #CFB67A;
+    margin: 2px auto;
+}
+
+.tour-section h5.card-title {
+    color: #000;
+    font-family: 'SST Arabic Bold';
+    font-size: 24px;
+}
+
+/* ----- TOUR SECTION END ----------------------------------------------- */
+
+/* ----- STORE SECTION START ----------------------------------------------- */
+
+section.store-section {
+    background-image: url('../images/background/BG_2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+
+section.store-section .container-fluid {
+    position: relative;
+}
+
+section.store-section .card {
+    box-shadow: 0px 6px 58.5px rgb(26 26 26 / 25%);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+section.store-section .card .card-img .card-img-top {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+section.store-section .card h4.card-title {
+    letter-spacing: 0.5px;
+    font-size: 32px;
+    padding-bottom: 5px;
+    color: #194041;
+    text-transform: uppercase;
+    font-family: 'SST Arabic Bold';
+}
+
+section.store-section .card .card-rating i {
+    color: #FFA018;
+}
+
+section.store-section .card .card-body {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+    padding: 1.25rem .25rem !important;
+}
+
+/* ----- STORE SECTION END ----------------------------------------------- */
+
+/* ----- STORE SECTION END ----------------------------------------------- */
+
+.personal-trip {
+    background-image: url(../images/background/BG_3.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 50px 0 400px 0;
+    margin: 0 0 -10px 0;
+}
+
+section.personal-trip .section_title h1 {
+    font-size: 64px;
+    letter-spacing: 0.5px;
+    color: #194041;
+    font-family: "SST Arabic Bold";
+    text-transform: uppercase;
+}
+
+section.personal-trip .section_title p {
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    color: #194041;
+    font-family: 'SST Arabic Light';
+    /* padding: 0 160px; */
+}
+
+/* ----- STORE SECTION END ----------------------------------------------- */
+
+/* ----- FOOTER START ----------------------------------------------- */
+
+li {
+    list-style: none;
+}
+
+.white {
+    color: #fff;
+}
+
+footer#footer {
+    background: #000;
+    /* background: url('../images/background/footer.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover; */
+}
+
+#bottom-bar a {
+    color: #fff;
+}
+
+div#bottom-bar {
+    background: #194041;
+    color: #fff;
+}
+
+footer#footer .sec-title hr {
+    background: #fff;
+}
+
+footer#footer .widgets .about-us .sec-title p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+}
+
+footer#footer .quick-link li a {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 0 20px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.8;
+}
+
+footer#footer .contact-us p {
+    position: relative;
+    /* margin-bottom: 20px; */
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+    font-family: 'DIN Next LT Arabic Regular';
+}
+
+footer#footer .contact-us h6 {
+    position: relative;
+    /* margin-bottom: 20px; */
+    /* margin-bottom: 0px; */
+    line-height: 23px;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'DIN Next LT Arabic Medium';
+}
+
+footer#footer .contact-us i {
+    color: #CFB67A;
+    font-size: 24px;
+}
+
+footer#footer .quick-link .sec-title h5 {
+    font-size: 30px;
+    font-family: 'DIN Next LT Arabic Medium';
+}
+
+footer#footer .newsletter .sec-title h5 {
+    font-size: 42px;
+    font-family: 'DIN Next LT Arabic Medium';
+}
+
+footer#footer .quick-link .footer_contact .footer_content a {
+    font-size: 22px;
+    font-family: 'DIN NEXT LT ARABIC MEDIUM';
+}
+
+footer#footer .contact-us i.fa-mobile {
+    font-size: 25px;
+}
+
+footer#footer .contact-us i.fa-envelope {
+    font-size: 18px;
+}
+
+footer#footer .contact-us i.fa-search {
+    color: #000;
+}
+
+footer#footer .newsletter .contact-us .newsletter-form form {
+    position: relative;
+}
+
+footer#footer .newsletter .contact-us .newsletter-form form input {
+    width: 100%;
+    padding: 13px 50px 13px 15px;
+    height: 44px;
+    border-radius: 0;
+}
+
+footer#footer .newsletter .contact-us .newsletter-form form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* width:100px; */
+    padding: 0 30px;
+    height: 44px;
+    border-radius: 0;
+    background: #CFB67A;
+    color: #fff;
+    text-align: center;
+    border: none;
+    font-size: 17px;
+    outline: none !important;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+#footer .social_icons i {
+    color: #fff !important;
+}
+
+div#bottom-bar.copyright-text {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.footer_logo {
+    width: 100%;
+}
+
+.footer_logo img {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.footer_map {
+    width: 100%;
+    /* height: 250px; */
+    height: 300px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 3px solid #CFB67A;
+}
+
+#footer .contact-us hr {
+    background: #6e6e6e;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer a:hover {
+    color: #fff;
+}
+
+.copyright-text {
+    font-size: 24px;
+    font-family: 'DIN Next LT Arabic Medium';
+}
+
+.highlight_brown {
+    color: #CFB67A;
+    font-weight: 600;
+}
+
+select.filter-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E); */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMiAxMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjIgMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiM5MTkxOTE7fQ0KPC9zdHlsZT4NCjx0aXRsZT5TaGFwZSAzMiBjb3B5IDc8L3RpdGxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEwLjksMTNMMCwyLjZsMi42LTIuNUwxMC45LDhsOC41LThMMjIsMi41TDEwLjksMTN6Ii8+DQo8L3N2Zz4NCg==);
+    background-size: .6em;
+    background-position: calc(100% - 1.3em) center;
+    background-repeat: no-repeat;
+}
+
+select#lang, select#currency {
+    background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") !important;
+    background-repeat: no-repeat !important;
+    background-position: calc(100% - 0.75rem) center !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    padding-right: 2rem !important;
+}
+
+select:focus {
+    outline: none;
+}
+
+select#lang {
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    padding: 4px 18px;
+    border: 1px solid #fff;
+}
+
+select#lang option {
+    color: #000;
+}
+
+select#currency {
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    padding: 4px 18px;
+    border: 1px solid #fff;
+}
+
+select#currency option {
+    color: #000;
+}
+
+.topbar_icon {
+    font-size: 20px;
+}
+
+.bottom_vr_gap {
+    margin: 0 10px;
+}
+
+/* ----- FOOTER END ----------------------------------------------- */
+
+/* -----*** INNER PAGES ***----------------------------------------------- */
+
+/* ----- Services PAGE START ----------------------------------------------- */
+
+.service-banner {
+    /* height: 100vh; */
+    background: url(../images/background/BG_5_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 450px 0;
+    position: relative;
+}
+
+.service-banner .banner_content {
+    width: 50%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.service-section {
+    position: relative;
+    padding: 80px 0 80px 0;
+}
+
+.service-section::before {
+    background-image: url(../images/patterns/pattern-right.svg);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    /* right: -120px; */
+    right: 0px;
+    width: 280px;
+    height: 40%;
+    z-index: -1;
+}
+
+.service-section::after {
+    background-image: url(../images/patterns/pattern-left.svg);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    height: 40%;
+    z-index: -1;
+}
+
+.service-section h3.card-title {
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    margin: 0 50px;
+}
+
+.service-section .card-deck .card {
+    /* box-shadow: 0px 8px 20px rgb(0 0 0 / 10%); */
+    box-shadow: 0px 10px 50px rgb(0 0 0 / 20%);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.service-section .card-img-top {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    height: 100%;
+}
+
+.service-section .card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 2.25rem 1.25rem;
+}
+
+.service-section h4.card-title {
+    letter-spacing: 1px;
+    font-size: 36px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    color: #194041;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: 'SST Arabic Bold';
+}
+
+.service-section p.card-text {
+    font-size: 14px;
+    color: #000000;
+    font-family: "SST Arabic Roman";
+    text-align: center;
+}
+
+/* ----- Services TRIP PAGE END ----------------------------------------------- */
+
+/* ----- Services Inner PAGE Start ----------------------------------------------- */
+
+.services-inner-section {
+    position: relative;
+    padding: 80px 0 80px 0;
+}
+
+/* ----- Services Inner PAGE END ----------------------------------------------- */
+
+/* ----- Schedule TRIP PAGE Start ----------------------------------------------- */
+
+.schedule-trip-section {
+    position: relative;
+    padding: 0px 0 80px 0;
+}
+
+.schedule-trip-section .card-img-overlay {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 0.50rem;
+    text-align: center;
+}
+
+.schedule-trip-section .card {
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.schedule-trip-section img.card-img {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.schedule-trip-section h3.card-title {
+    letter-spacing: 0.5px;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: #fff;
+    font-family: 'SST Arabic Bold';
+}
+
+.schedule-trip-section hr {
+    width: 80%;
+    border-top: 3px solid #CFB67A;
+    margin: 2px auto 8px auto;
+}
+
+.schedule-trip-section h5.card-title {
+    color: #fff;
+    font-family: 'SST Arabic Bold';
+    font-size: 24px;
+}
+
+/* ----- Schedule TRIP PAGE END ----------------------------------------------- */
+
+/* ----- Add to Cart PAGE Start ----------------------------------------------- */
+
+.add-to-cart-section {
+    position: relative;
+    padding: 80px 0 80px 0;
+}
+
+.add-to-cart-section .table, .add-to-cart-section .table:hover {
+    cursor: pointer;
+}
+
+.add-to-cart-section .table td, .add-to-cart-section .table th {
+    padding: 1.5rem .75rem;
+    vertical-align: top;
+    border-top: 0;
+}
+
+.add-to-cart-section .table tbody {
+    border-bottom: 3px solid #e0e5f3;
+}
+
+.add-to-cart-section .table thead th {
+    vertical-align: bottom;
+    border-bottom: 3px solid #e0e5f3;
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    font-family: "DIN Next LT Arabic Medium";
+    text-transform: uppercase;
+}
+
+.add-to-cart-section .table thead th:nth-child(2) {
+    color: #184041;
+}
+
+.add-to-cart-section .table td {
+    font-size: 28px;
+    color: #000;
+    font-weight: 500;
+    font-family: "DIN Next LT Arabic Medium";
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.add-to-cart-section .table td:nth-child(2) {
+    font-size: 30px;
+    color: #184041;
+    font-weight: 500;
+    font-family: "DIN Next LT Arabic Medium";
+    text-transform: uppercase;
+}
+
+.add-to-cart-section .table.cart-total-table td {
+    font-size: 21px;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    vertical-align: middle;
+    border-bottom: 3px solid #cfcfcf;
+}
+
+.add-to-cart-section .table.cart-total-table tbody, .add-to-cart-section .table.cart-total-table tr:nth-child(4) td {
+    border-bottom: 0;
+}
+
+.add-to-cart-section .table.cart-total-table tr:nth-child(4) td:nth-child(1) {
+    color: #194041 !important;
+}
+
+.add-to-cart-section .table.cart-total-table tr:nth-child(4) td:nth-child(2) {
+    color: #194041 !important;
+    font-size: 29px !important;
+}
+
+/* ----- Add to Cart PAGE END ----------------------------------------------- */
+
+/* ----- Store PAGE Start ----------------------------------------------- */
+
+section.store-product-section {
+    position: relative;
+    padding: 80px 0 80px 0;
+}
+
+section.store-product-section .card {
+    box-shadow: 0px 6px 58.5px rgb(26 26 26 / 25%);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+section.store-product-section .card .card-img .card-img-top {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+section.store-product-section .card h4.card-title {
+    letter-spacing: 0.5px;
+    font-size: 32px;
+    padding-bottom: 5px;
+    color: #194041;
+    text-transform: uppercase;
+    font-family: 'SST Arabic Bold';
+}
+
+section.store-product-section .card .card-rating i {
+    color: #FFA018;
+}
+
+section.store-product-section .card .card-body {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+    padding: 1.25rem .25rem !important;
+}
+
+/* ----- Store PAGE END ----------------------------------------------- */
+
+/* ----- Adventure Trips PAGE Start ----------------------------------------------- */
+
+section.adventure-trips-section {
+    position: relative;
+    padding: 80px 0 80px 0;
+}
+
+section.adventure-trips-section .card {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 3px solid #e0e5f3;
+    margin: 30px 0;
+    width: 100%;
+}
+
+section.adventure-trips-section .card.bg-pattern {
+    position: relative;
+}
+
+section.adventure-trips-section .card.bg-pattern::before {
+    content: "";
+    background-image: url(../images/patterns/pattern-box-type.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 110px;
+    height: 70px;
+    transform: scaleX(-1);
+}
+
+section.adventure-trips-section .card.bg-pattern::after {
+    display: none !important;
+}
+
+/* ----- Adventure Trips PAGE END ----------------------------------------------- */
+
+/* ----- Licenses & Qualification PAGE Start ----------------------------------------------- */
+
+.licenses-qualification-section {
+    position: relative;
+    padding: 80px 0 80px 0;
+}
+
+.licenses-qualification-section .card-img-overlay {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 0.50rem;
+    text-align: center;
+}
+
+.licenses-qualification-section .card {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.licenses-qualification-section img.card-img {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.licenses-qualification-section h3.card-title {
+    letter-spacing: 0.5px;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: #fff;
+    font-family: 'SST Arabic Bold';
+}
+
+.licenses-qualification-section hr {
+    width: 80%;
+    border-top: 3px solid #CFB67A;
+    margin: 2px auto;
+}
+
+.licenses-qualification-section h5.card-title {
+    color: #000;
+    font-family: 'SST Arabic Bold';
+    font-size: 24px;
+}
+
+.licenses-qualification-section .modal_multi span.close.close_multi {
+    font-size: 72px;
+    color: #19393c;
+    font-family: 'SST Arabic Roman';
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.licenses-qualification-section .modal_multi .modal-content-custom h3 {
+    letter-spacing: 0.5px;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: #184041;
+    font-family: 'SST Arabic Bold';
+}
+
+.licenses-qualification-section .modal_multi .modal-content-custom p {
+    font-size: 23px;
+    line-height: 37px;
+    color: #000000;
+    font-family: 'SST Arabic Roman';
+    text-align: left;
+}
+
+.g-pattern {
+    position: relative;
+}
+
+.g-pattern::before {
+    background-image: url(../images/patterns/G-2.png);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: -140px;
+    left: 55%;
+    width: 170px;
+    height: 250px;
+    z-index: 1;
+}
+
+.g-pattern::after {
+    background-image: url(../images/patterns/G-3.png);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 210px;
+    left: 0;
+    width: 200px;
+    height: 270px;
+    z-index: -1;
+}
+
+.g-outline-pattern::after {
+    background-image: url(../images/patterns/pattern-02.png);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    right: -8px;
+    width: 168px;
+    height: 215px;
+}
+
+/* ----- Licenses & Qualification PAGE END ----------------------------------------------- */
+
+/* ----- BOOKING FORM PAGE START ----------------------------------------------- */
+
+.booking-section {
+    position: relative;
+    padding: 80px 0 80px 0;
+}
+
+.booking-section .card {
+    background-color: #ffffff;
+    border: 3px solid #e0e5f3;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.booking-section .card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 2.25rem 1.25rem;
+}
+
+.booking-section input, .booking-section textarea, .booking-section select {
+    border: 2px solid #e0e5f3;
+    font-size: 24px;
+    color: #4f4f4f;
+    font-family: "SST Arabic Roman";
+    letter-spacing: 0.5px;
+    border-radius: 0;
+}
+
+.booking-section select {
+    font-size: 24px;
+    color: #4f4f4f;
+    line-height: 33px;
+    min-height: 56px;
+    border: 2px solid #e0e5f3;
+    appearance: none;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMiAxMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjIgMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiM5MTkxOTE7fQ0KPC9zdHlsZT4NCjx0aXRsZT5TaGFwZSAzMiBjb3B5IDc8L3RpdGxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEwLjksMTNMMCwyLjZsMi42LTIuNUwxMC45LDhsOC41LThMMjIsMi41TDEwLjksMTN6Ii8+DQo8L3N2Zz4NCg==);
+    background-size: .6em;
+    background-position: calc(100% - 1em) center;
+    background-repeat: no-repeat;
+}
+
+.booking-section input {
+    min-height: 56px;
+    max-height: 56px;
+}
+
+.booking-heading-th {
+    font-size: 36px !important;
+    padding: 1.5rem .75rem 0rem .75rem !important;
+    font-family: 'DIN Next LT Arabic Lights';
+    letter-spacing: 0.5px;
+}
+
+.booking-heading-th hr {
+    border-top: 5px solid #184041;
+    width: 157px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: -4px;
+    z-index: 1;
+    position: relative;
+}
+
+.booking-section .table.booking-total-table td {
+    font-size: 21px;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    vertical-align: middle;
+    border: 0;
+}
+
+.booking-section .table.booking-total-table th {
+    border: 0;
+}
+
+.booking-section .table.booking-total-table tr:nth-child(1) {
+    border-bottom: 3px solid #cfcfcf;
+}
+
+.booking-section .table.booking-total-table tr:nth-child(5) {
+    border-top: 3px solid #cfcfcf;
+}
+
+.booking-section .table.booking-total-table tr:nth-child(5) td:nth-child(1) {
+    color: #184041;
+}
+
+.booking-section .table.booking-total-table tr:nth-child(5) td:nth-child(2) {
+    color: #184041;
+    font-size: 29px;
+}
+
+.booking-section .table.booking-total-table tr.padding-nth-child td:nth-child(1), .booking-section .table.booking-total-table td:nth-child(2) {
+    padding: 1.25rem .75rem;
+}
+
+.booking-section .table.booking-total-table tr td:nth-child(1), .booking-section .table.booking-total-table td:nth-child(2) {
+    padding: .5rem .75rem;
+}
+
+/* ----- BOOKING FORM PAGE END ----------------------------------------------- */
+
+/* ----- CONTACT PAGE START ----------------------------------------------- */
+
+.contact-section {
+    position: relative;
+    padding: 80px 0 80px 0;
+}
+
+.contact-form-div .form-row .form-group {
+    margin-bottom: 2.5rem;
+}
+
+.contact-section input, .contact-section textarea, .contact-section select {
+    border: 2px solid #e0e5f3;
+    font-size: 24px;
+    color: #4f4f4f;
+    font-family: "SST Arabic Roman";
+    letter-spacing: 0.5px;
+    border-radius: 0;
+    padding: .375rem .75rem;
+}
+
+.contact-section select {
+    font-size: 24px;
+    color: #4f4f4f;
+    line-height: 33px;
+    min-height: 56px;
+    border: 2px solid #e0e5f3;
+    appearance: none;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMiAxMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjIgMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiM5MTkxOTE7fQ0KPC9zdHlsZT4NCjx0aXRsZT5TaGFwZSAzMiBjb3B5IDc8L3RpdGxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEwLjksMTNMMCwyLjZsMi42LTIuNUwxMC45LDhsOC41LThMMjIsMi41TDEwLjksMTN6Ii8+DQo8L3N2Zz4NCg==);
+    background-size: .6em;
+    background-position: calc(100% - 1em) center;
+    background-repeat: no-repeat;
+}
+
+.contact-section input {
+    min-height: 56px;
+    max-height: 56px;
+}
+
+.contact_map_div {
+    /* width: 100%; */
+    width: 100%;
+    height: 733px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contact_map {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-info-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.info_icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background-color: #184041;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_icon i {
+    color: #cfb579;
+    font-size: 34px;
+}
+
+.info_content h6 {
+    font-family: 'DIN Next LT Arabic Regular';
+    font-size: 26px;
+    color: #000;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+}
+
+.info_content p {
+    font-family: 'DIN Next LT Arabic Regular';
+    font-size: 21px;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+/* ----- CONTACT PAGE END ----------------------------------------------- */
+
+/* ----- REGISTER PAGE START ----------------------------------------------- */
+
+.register-section {
+    position: relative;
+    padding: 80px 0 80px 0;
+}
+
+.register-service-banner {
+    /* height: 100vh; */
+    background: url(../images/background/BG_7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 350px 0;
+    position: relative;
+}
+
+.register-service-banner .banner_content {
+    width: 50%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.register-section .card {
+    background-color: #ffffff;
+    border: 3px solid #e0e5f3;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.register-section .card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 2.25rem 1.25rem;
+}
+
+.register-section input, .register-section textarea, .register-section select {
+    border: 2px solid #e0e5f3;
+    font-size: 24px;
+    color: #4f4f4f;
+    font-family: "SST Arabic Roman";
+    letter-spacing: 0.5px;
+    border-radius: 0;
+}
+
+.register-section select {
+    font-size: 24px;
+    color: #4f4f4f;
+    line-height: 33px;
+    min-height: 56px;
+    border: 2px solid #e0e5f3;
+    appearance: none;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMiAxMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjIgMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiM5MTkxOTE7fQ0KPC9zdHlsZT4NCjx0aXRsZT5TaGFwZSAzMiBjb3B5IDc8L3RpdGxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEwLjksMTNMMCwyLjZsMi42LTIuNUwxMC45LDhsOC41LThMMjIsMi41TDEwLjksMTN6Ii8+DQo8L3N2Zz4NCg==);
+    background-size: .6em;
+    background-position: calc(100% - 1em) center;
+    background-repeat: no-repeat;
+}
+
+/* ----- REGISTER PAGE END ----------------------------------------------- */
+
+/* ----- PARTNERS PAGE START ----------------------------------------------- */
+
+.partners-section {
+    position: relative;
+    padding: 80px 0 80px 0;
+}
+
+.partners-section .card {
+    /* width: 382px; */
+    height: 364px;
+    filter: drop-shadow(0px 6px 58.5px rgba(26, 26, 26, 0.25));
+    background-color: #184041;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s all;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.partners-section .card:hover {
+    background-color: #cfb579;
+    transition: 0.5s all;
+}
+
+.partners-section .card-img-div {
+    width: 295px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s all;
+}
+
+.partners-section .card-img-div img {
+    width: 100%;
+    height: 100%;
+}
+
+.partners-section .card .card-img-overlay {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.partners-section .card .card-img-overlay p {
+    font-family: 'SST Arabic Light';
+    font-size: 23px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.partners-section .card:hover .card-img-overlay {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.partners-section .card:hover .card-img-div {
+    width: 290px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.5;
+}
+
+/* ----- PARTNERS PAGE END ----------------------------------------------- */
+
+/* ----- FAQ PAGE START ----------------------------------------------- */
+
+.faq-section {
+    position: relative;
+    padding: 80px 0 80px 0;
+}
+
+.faq-section .accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    min-height: 83px;
+    background-color: #184041;
+    font-size: 27px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Raleway";
+    margin-top: 20px;
+}
+
+.faq-section .accordion span {
+    margin-right: 15px;
+}
+
+.faq-section .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    border: 2px solid #e0e5f3;
+}
+
+.faq-section .panel p {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Poppins";
+    padding: 18px 0;
+}
+
+.faq-section button.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size: 27px;
+}
+
+.faq-section button.accordion.active:after {
+    content: "\2212";
+}
+
+.form-faq input {
+    min-height: 56px;
+    background-color: #ffffff;
+    border: 2px solid #e0e5f3;
+    border-radius: 0;
+    font-size: 24px;
+    color: #4f4f4f;
+    font-family: "SST Arabic Roman";
+}
+
+.form-faq .btn.cart-gh-btn {
+    padding: 8px 50px;
+    border: 0;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 3px solid #194041;
+    background: #CFB67A;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'SST Arabic Bold';
+}
+
+/* ----- FAQ PAGE END ----------------------------------------------- */
+
+/* ----- FAQ PAGE START ----------------------------------------------- */
+
+.about-ghamra-section {
+    position: relative;
+    padding: 0;
+    margin-top: -100px;
+}
+
+/* ----- FAQ PAGE END ----------------------------------------------- */
+
+/* ----- EXPLORE PAGE START ----------------------------------------------- */
+
+.explore-section {
+    position: relative;
+    padding: 80px 0 0 0;
+}
+
+/* ----- EXPLORE PAGE END ----------------------------------------------- */
+
+/* ----- CUSTOMERS WE SERVICED PAGE START ----------------------------------------------- */
+
+.customers-we-serviced-section {
+    position: relative;
+    padding: 80px 0 80px 0;
+}
+
+/* ----- CUSTOMERS WE SERVICED PAGE END ----------------------------------------------- */
+
+/* ----- CHECK OUT PAGE START ----------------------------------------------- */
+
+.check-out-section .card {
+    background-color: #ffffff;
+    border: 3px solid #e0e5f3;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.check-out-section .card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 2.25rem 1.25rem;
+}
+
+.check-out-section input, .check-out-section textarea, .check-out-section select {
+    border: 2px solid #e0e5f3;
+    font-size: 24px;
+    color: #4f4f4f;
+    font-family: "SST Arabic Roman";
+    letter-spacing: 0.5px;
+    border-radius: 0;
+}
+
+.check-out-section select {
+    font-size: 24px;
+    color: #4f4f4f;
+    line-height: 33px;
+    min-height: 56px;
+    border: 2px solid #e0e5f3;
+    appearance: none;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMiAxMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjIgMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiM5MTkxOTE7fQ0KPC9zdHlsZT4NCjx0aXRsZT5TaGFwZSAzMiBjb3B5IDc8L3RpdGxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEwLjksMTNMMCwyLjZsMi42LTIuNUwxMC45LDhsOC41LThMMjIsMi41TDEwLjksMTN6Ii8+DQo8L3N2Zz4NCg==);
+    background-size: .6em;
+    background-position: calc(100% - 1em) center;
+    background-repeat: no-repeat;
+}
+
+.check-out-section input {
+    min-height: 56px;
+    max-height: 56px;
+}
+
+/* ----- CHECK OUT PAGE END ----------------------------------------------- */
+
+section.back {
+    margin-bottom: -10px;
+}
+
+/* -----*** INNER PAGES ***----------------------------------------------- */
+
+/* ----- LOGIN PAGE Start ----------------------------------------------- */
+
+.login-service-banner {
+    /* height: 100vh; */
+    background: url(../images/background/BG_6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 350px 0;
+    position: relative;
+}
+
+.login-service-banner .banner_content {
+    width: 50%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* ----- LOGIN PAGE PAGE END ----------------------------------------------- */

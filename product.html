@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+   <!-- Required meta tags -->
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="keywords" content="...">
+   <meta name="description" content="..." />
+   <title>Ghamra</title>
+
+
+
+   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/all.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <!-- <script data-require="jquery@3.1.1" data-semver="3.1.1"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
+   <style>
+      .banner_title h1 {
+         /* font-size: 50px; */
+         font-family: 'SST Arabic Bold';
+         font-size: 80px;
+         color: #fff;
+         font-weight: 700;
+         letter-spacing: 0.5px;
+      }
+
+      .adventure-trips-section .main-content .sort-field {
+         margin: 0 15px;
+      }
+
+      .adventure-trips-section .main-content .sort-field label {
+         font-size: 19px;
+         color: #919191;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+         margin-right: 1rem;
+      }
+
+      .adventure-trips-section .main-content .sort-field select {
+         font-size: 19px;
+         color: #919191;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+         background: transparent;
+         border: 2px solid #e0e5f3;
+         height: 57px;
+         width: 258px;
+      }
+
+      .side-menu-accordion-btn {
+         color: #fff;
+         cursor: pointer;
+         padding: 18px;
+         width: 100%;
+         border: none;
+         text-align: left;
+         outline: none;
+         transition: 0.4s;
+         background-color: #184041;
+         font-size: 24px;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+      }
+
+      .side-menu-accordion-btn:after {
+         content: '\2304';
+         color: #fff;
+         font-weight: bold;
+         float: right;
+         margin-left: 0;
+         letter-spacing: 5px;
+      }
+
+      .panel-active:after {
+         content: "\2303";
+      }
+
+      .panel {
+         padding: 0 20px;
+         background-color: #fff;
+         max-height: 0;
+         overflow: hidden;
+         transition: max-height 0.2s ease-out;
+         border-left: 3px solid #e0e5f3;
+         border-right: 3px solid #e0e5f3;
+         border-bottom: 3px solid #e0e5f3;
+      }
+
+      .filter-price p {
+         font-size: 16px;
+         letter-spacing: 0.5px;
+         color: #262525;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+         margin: 0;
+      }
+
+      .page-navigation .pagination .page-item .page-link {
+         font-size: 26px;
+         line-height: 26px;
+         color: #474747;
+         font-weight: 500;
+         font-family: "D IN Next LT Arabic";
+         text-align: center;
+         background-color: #ffffff;
+         border: 1.5px solid #e0e5f3;
+         border-right: 0 !important;
+         transition: 0.3s all;
+      }
+
+      .page-navigation .pagination .page-link:hover {
+         background-color: #cfb579;
+         transition: 0.3s all;
+         color: #fff;
+      }
+
+      .page-navigation .pagination .page-link.active {
+         background-color: #cfb579;
+         transition: 0.3s all;
+         color: #fff;
+      }
+
+      .page-navigation .pagination .page-link:focus {
+         box-shadow: none;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group {
+         display: block;
+         margin-bottom: 5px;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group input {
+         padding: 0;
+         height: initial;
+         width: initial;
+         margin-bottom: 0;
+         display: none;
+         cursor: pointer;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group label {
+         position: relative;
+         cursor: pointer;
+         font-size: 24px;
+         color: #313131;
+         font-family: 'SST Arabic Roman';
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group label:before {
+         content: '';
+         -webkit-appearance: none;
+         padding: 10px;
+         display: inline-block;
+         position: relative;
+         vertical-align: middle;
+         cursor: pointer;
+         margin-right: 10px;
+         width: 26px;
+         height: 24px;
+         background-color: #ffffff;
+         border: 2px solid #dbe0e9;
+         border-top-left-radius: 10px;
+         border-bottom-right-radius: 10px;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group input:checked+label:after {
+         content: '';
+         display: block;
+         position: absolute;
+         top: 12px;
+         left: 9px;
+         width: 6px;
+         height: 14px;
+         border: solid #184041;
+         border-width: 0 2px 2px 0;
+         transform: rotate(45deg);
+      }
+
+      .personalize-trip-head {
+         font-size: 34px;
+         color: #ffffff;
+         font-weight: bold;
+         font-family: "SST Arabic Bold";
+         text-align: center;
+         height: 77px;
+         background-color: #cfb579;
+         align-items: center;
+         display: flex;
+         justify-content: center;
+      }
+
+      .personalize-trip-content {
+         font-size: 18px;
+         color: #000000;
+         font-weight: 300;
+         font-family: "SST Arabic Light";
+         text-align: center;
+      }
+
+      .btn.show-result-gh-btn {
+         padding: 8px 50px;
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         font-size: 21px;
+         font-weight: 700;
+         color: #fff;
+         background: #CFB67A;
+         border-bottom: 3px solid #184041;
+         font-family: 'SST Arabic Bold';
+      }
+
+      .nav-tabs .nav-link {
+         min-width: 430px;
+         font-size: 33px;
+         /* line-height: 58px; */
+         color: #000;
+         font-family: "DIN Next LT Arabic Medium";
+         letter-spacing: 0.5px;
+         border: 4px solid #e0e5f3;
+         border-top: 0;
+         border-left: 0;
+         border-right: 0;
+         text-align: center;
+      }
+
+      .nav-tabs .nav-item.show .nav-link,
+      .nav-tabs .nav-link.active {
+         color: #184041;
+         font-size: 39px;
+         font-family: "DIN Next LT Arabic Medium";
+         letter-spacing: 0.5px;
+         border-bottom: 4px solid #19393c;
+         border-top: 0;
+         border-left: 0;
+         border-right: 0;
+      }
+
+      .nav-tabs {
+         border-bottom: none;
+      }
+
+      .tab-pane {
+         padding: 40px 20px;
+         background-color: #ffffff;
+         /* border: 3px solid #e0e5f3; */
+      }
+
+      .tab-pane h3 {
+         font-size: 19px;
+         color: #1a1a1a;
+         font-family: "SST Arabic Bold";
+         letter-spacing: 0.5px;
+         margin-bottom: 1rem;
+      }
+
+      .tab-pane p {
+         font-size: 31px;
+         line-height: 44px;
+         color: #202020;
+         font-family: "DIN Next LT Arabic Light";
+         letter-spacing: 0.5px;
+      }
+
+
+      /* Hide the images by default */
+      .mySlides {
+         display: none;
+         /* background-color: #000000; */
+         /* border: 3px solid #e0e5f3; */
+         border-top-left-radius: 50px;
+         border-bottom-right-radius: 50px;
+         position: relative;
+         overflow: hidden;
+         /* height: 600px; */
+         height: 710px;
+         width: 100%;
+         /* width: 710px; */
+      }
+
+      .mySlides img {
+         width: 100%;
+         height: 100%;
+         position: relative;
+      }
+
+      .row-gallery {
+         position: relative;
+         display: flex;
+         /* justify-content: center; */
+         /* align-items: center; */
+         margin: 20px 0;
+         flex-direction: column;
+         /* width: 20%; */
+         width: 13%;
+         margin-left: -30px;
+         margin-right: 20px;
+      }
+
+      .row-gallery:after {
+         content: "";
+         display: table;
+         clear: both;
+      }
+
+      .image-gallery-carousel {
+         display: flex;
+         flex-direction: row;
+      }
+
+      /* Six columns side by side */
+      .grid-gallery {
+         float: left;
+         width: 99px;
+         margin: 10px;
+         position: relative;
+         overflow: hidden;
+         height: 101px;
+         background: #f2f2f2;
+         border-radius: 0;
+      }
+
+      .grid-gallery img {
+         width: 100%;
+         position: relative;
+         height: 100%;
+      }
+
+      .gallery-img-view {
+         /* width: 80%; */
+         width: 87%;
+      }
+
+
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+         opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+         opacity: 1;
+      }
+
+      .card.card-testi {
+         border-top-left-radius: 0 !important;
+         border-bottom-right-radius: 0 !important;
+         margin: 30px 15px 30px 15px !important;
+         background-color: #ffffff !important;
+         border: 3px solid #e0e5f3 !important;
+      }
+
+      .card.card-testi .testi-prof {
+         /* width: 66px;
+         height: 66px; */
+         width: 85px;
+         height: 85px;
+         border-radius: 33px;
+         overflow: hidden;
+         position: relative;
+      }
+
+      .card.card-testi .testi-prof img {
+         width: 100%;
+         height: 100%;
+         position: relative;
+      }
+
+      .card.card-testi .card-title {
+         font-size: 21px;
+         color: #000000;
+         font-family: "SST Arabic Bold";
+         letter-spacing: 0.5px;
+      }
+
+      .card.card-testi .card-title i {
+         color: #ffa11a;
+      }
+
+      .card.card-testi .card-title span {
+         font-size: 14px;
+         color: #656565;
+         font-family: "SST Arabic Roman";
+         letter-spacing: 0.5px;
+      }
+
+      .card.card-testi .card-title span i {
+         color: #656565;
+      }
+
+      .card.card-testi .card-text {
+         font-size: 21px;
+         color: #000000;
+         font-family: "SST Arabic Roman";
+         letter-spacing: 0.5px;
+      }
+
+      .card.card-review-form {
+         border-top-left-radius: 0 !important;
+         border-bottom-right-radius: 0 !important;
+         border: 0 !important;
+         margin: 0 !important;
+         width: 100% !important;
+      }
+
+      .card.card-review-form .card-header {
+         background: #184041;
+         color: #fff;
+      }
+
+      .card.card-review-form .card-header h2 {
+         font-size: 30px;
+         color: #ffffff;
+         font-family: "SST Arabic Bold";
+         letter-spacing: 0.5px;
+      }
+
+      .card.card-review-form .card-body {
+         border: 3px solid #e0e5f3;
+      }
+
+      .adventure-review-form input {
+         height: 56px;
+      }
+
+      .adventure-image-gallery {
+         /* background-color: #ffffff;
+         border: 3px solid #e0e5f3; */
+         /* padding: 60px 15px 15px 15px; */
+         padding: 15px;
+
+      }
+
+      .adventure-image-gallery.bg-pattern::before {
+         background-image: url(assets/images/patterns/pattern-box-type.png);
+         background-repeat: no-repeat;
+         content: "";
+         position: absolute;
+         top: -40px;
+         /* right: -120px; */
+         right: 0px;
+         width: 110px;
+         /* height: 100%; */
+         height: 70px;
+         /* z-index: -1; */
+         transform: scaleX(-1);
+      }
+
+      .adventure-image-gallery.bg-pattern::after {
+         background-image: url(../images/patterns/pattern-box-type.png);
+         background-repeat: no-repeat;
+         content: "";
+         position: absolute;
+         top: 0;
+         /* right: -120px; */
+         left: 0px;
+         width: 110px;
+         height: 70px;
+         /* z-index: -1; */
+         display: none;
+      }
+
+      .adventure-img-gallery-content .patterng-bg::after {
+         background-image: url(assets/images/patterns/pattern-box-type.png);
+         background-repeat: no-repeat;
+         content: "";
+         position: absolute;
+         bottom: 0;
+         right: 15px;
+         width: 110px;
+         height: 70px;
+      }
+
+      .adventure-tabs nav {
+         border-bottom: 4px solid #e0e5f3;
+      }
+
+      .adventure-tabs nav .nav-tabs {
+         margin-bottom: -4px;
+      }
+
+      .product-content h2 {
+         font-size: 70px;
+         color: #184041;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+      }
+
+      .product-content .rating {
+         display: flex;
+         align-items: center;
+         margin-top: 15px;
+      }
+
+      .product-content .rating i {
+         color: #ffa11a;
+         font-size: 21px;
+         margin-right: 5px;
+      }
+
+      .product-content .rating p {
+         margin: 0;
+         font-size: 18px;
+         color: #303030;
+         font-weight: 700;
+         font-family: "Montserrat";
+      }
+
+      .price {
+         padding: 20px 0;
+      }
+
+      .price h4 {
+         font-size: 45px;
+         color: #010101;
+         font-weight: 700;
+         font-family: "Montserrat";
+      }
+
+      .product-feature h5 {
+         font-size: 26px;
+         letter-spacing: 0px;
+         line-height: 39px;
+         color: #184041;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+      }
+
+      .product-feature p {
+         font-size: 20px;
+         letter-spacing: 1px;
+         line-height: 34px;
+         color: #000000;
+         font-weight: 500;
+         font-family: "Raleway";
+      }
+
+      .product-content .social p {
+         font-size: 14px;
+         color: #000000;
+         font-family: "SST Arabic Bold";
+         letter-spacing: 0.5px;
+         margin-bottom: 0;
+      }
+
+      .product-content .social .icons {
+         width: 402px;
+         height: 50px;
+         background-color: #153d3f;
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         padding-left: 10px;
+      }
+
+      .product-content .social .icons i {
+         font-size: 33px;
+         padding: 8px 15px;
+         color: #fff;
+         border-right: 3px solid #CFB67A;
+      }
+
+      .product-content .social .icons i:last-child {
+         border-right: none;
+      }
+
+      .product-content-form select {
+         font-size: 22px;
+         color: #919191;
+         line-height: 33px;
+         min-height: 56px;
+         border: 2px solid #e0e5f3;
+         font-family: 'DIN Next LT Arabic Medium';
+         appearance: none;
+         background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMiAxMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjIgMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiM5MTkxOTE7fQ0KPC9zdHlsZT4NCjx0aXRsZT5TaGFwZSAzMiBjb3B5IDc8L3RpdGxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEwLjksMTNMMCwyLjZsMi42LTIuNUwxMC45LDhsOC41LThMMjIsMi41TDEwLjksMTN6Ii8+DQo8L3N2Zz4NCg==);
+         background-size: .6em;
+         background-position: calc(100% - 1em) center;
+         background-repeat: no-repeat;
+      }
+
+      .product-content-form hr {
+         border: 2px solid #e0e5f3;
+         width: 100%;
+      }
+
+      .quantity {
+         /* display: inline-block; */
+         display: flex;
+         align-items: center;
+      }
+
+      .quantity .input-text.qty {
+         width: 120px;
+         height: 87px;
+         padding: 0 5px;
+         text-align: center;
+         background-color: #fff;
+         border: 1.5px solid #cfcfcf;
+
+         font-size: 40px;
+         letter-spacing: 0px;
+         line-height: 15px;
+         color: #000000;
+         font-family: "D IN Next LT Arabic";
+      }
+
+      .quantity.buttons_added {
+         text-align: left;
+         position: relative;
+         white-space: nowrap;
+         vertical-align: top;
+      }
+
+      .quantity.buttons_added input {
+         display: inline-block;
+         margin: 0;
+         vertical-align: top;
+         box-shadow: none;
+      }
+
+      .quantity.buttons_added .minus,
+      .quantity.buttons_added .plus {
+         padding: 8px 10px;
+         width: 50px;
+         height: 87px;
+         background-color: #ffffff;
+         border: 1.5px solid #cfcfcf;
+         cursor: pointer;
+         font-size: 40px;
+      }
+
+      .quantity.buttons_added .minus {
+         border-right: 0;
+      }
+
+      .quantity.buttons_added .plus {
+         border-left: 0;
+      }
+
+      .quantity.buttons_added .minus:hover,
+      .quantity.buttons_added .plus:hover {
+         background: #eeeeee;
+      }
+
+      .quantity input::-webkit-outer-spin-button,
+      .quantity input::-webkit-inner-spin-button {
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         margin: 0;
+      }
+
+      .quantity.buttons_added .minus:focus,
+      .quantity.buttons_added .plus:focus {
+         outline: none;
+      }
+
+      .shopping-card-btn {
+         background: #194041;
+         color: #fff;
+         margin: 0 15px 0 0;
+         border: 0;
+         border-top-right-radius: 15px;
+         border-bottom-left-radius: 15px;
+         border-top-left-radius: 0;
+         border-bottom-right-radius: 0;
+         display: flex;
+         align-items: center;
+         width: 58px;
+         height: 53px;
+      }
+
+      .shopping-card-btn img {
+         width: 100%;
+         height: 100%;
+      }
+
+      .btn.gh-buy-btn {
+         padding: 8px 50px;
+         border: 0;
+         /* border-top-right-radius: 50px; */
+         /* border-bottom-left-radius: 50px; */
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         border-bottom: 3px solid #194041;
+         background: #CFB67A;
+         font-size: 33px;
+         font-weight: 700;
+         color: #fff;
+      }
+
+      .store-section .card .card-overlay {
+         position: absolute;
+         bottom: 0;
+         background: rgb(25 64 65 / 30%);
+         color: #f1f1f1;
+         width: 100%;
+         transition: .5s ease;
+         opacity: 0;
+         color: white;
+         font-size: 20px;
+         padding: 20px;
+         text-align: center;
+         height: 100%;
+         border-top-left-radius: 50px;
+         display: flex;
+         align-items: flex-end;
+      }
+
+      .store-section .card:hover .card-overlay {
+         transition: .5s ease;
+         opacity: 1;
+      }
+
+      .store-section .card-img {
+         position: relative;
+      }
+
+      .store-section .shopping-card-btn {         
+         background: #194041;
+         color: #fff;
+         margin: 0 10px;
+         border: 0;
+         border-top-right-radius: 15px;
+         border-bottom-left-radius: 15px;
+         border-top-left-radius: 0;
+         border-bottom-right-radius: 0;
+         display: flex;
+         align-items: center;
+      }
+   </style>
+
+</head>
+
+<body class="bg-white">
+
+
+   <!-- /* ----- HEADER START ----------------------------------------------- */ -->
+   <div class="top_bar">
+      <div class="container-fluid">
+         <div class="row py-3">
+            <div class="col-md-6 col-sm-12 col-lg-6"></div>
+            <div class="col-md-6 col-sm-12 col-lg-6">
+               <div class="d-flex align-items-center justify-content-end topbar-right-div">
+                  <div class="topbar_right pr-3">
+                     <div class="lang_div">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right border-x-1 px-3">
+                     <div class="lang_div">
+                        <select name="currency" id="currency">
+                           <option value="currency" selected>Currency</option>
+                           <option value="pkr">PKR</option>
+                           <option value="yen">Yen</option>
+                           <option value="dollar">Dollar</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right pl-3">
+                     <div class="d-flex white align-items-center topbar_login">
+                        <div class="text-right mr-2 topbar_icon">
+                           <i class="fas fa-user mr-2"></i>
+                           <a href="" class="color-white">
+                              Login/Register
+                           </a>
+                        </div>
+                        <div class="footer_content">
+                           <a href="" class="color-white ml-4">
+                              <img src="assets/images/icons/calendar.svg" alt="">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse container-fluid" id="navbarTogglerDemo01">
+         <a class="navbar-brand" href="#">
+            <img src="assets/images/logo/Logo_1.svg" alt="nav_logo" width="150%">
+         </a>
+         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Journey
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Explore
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Safety & Quality</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Us
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <img src="assets/images/icons/cart.svg" alt="">
+               </a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <!-- /* ----- HEADER end ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME BANNER SECTION START ----------------------------------------------- */ -->
+
+   <section class="service-banner">
+      <div class="container-fluid">
+         <div class="banner_content">
+            <div class="banner_title text-center px-5">
+               <h1 class="brush_stroke_bg">Products</h1>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME BANNER SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME TOUR SECTION START ----------------------------------------------- */ -->
+
+   <section class="adventure-trips-section">
+      <div class="container-fluid">
+         <div class="py-5">
+
+            <div class="row mx-5 mt-0 mb-2 pt-2 px-5 pb-5w">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 main-content">
+
+                  <div class="row">
+                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                           <div class="adventure-image-gallery bg-pattern">
+                              <div class="image-gallery-carousel pt-5">
+                                 <div class="row-gallery">
+                                    <div class="grid-gallery">
+                                       <img class="demo cursor" src="assets/images/table-pics/torch.png"
+                                          style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                                    </div>
+                                    <div class="grid-gallery">
+                                       <img class="demo cursor" src="assets/images/table-pics/torch_1.png"
+                                          style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                                    </div>
+                                    <div class="grid-gallery">
+                                       <img class="demo cursor" src="assets/images/table-pics/torch.png"
+                                          style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                                    </div>
+                                 </div>
+
+                                 <div class="gallery-img-view">
+                                    <div class="mySlides">
+                                       <img src="assets/images/table-pics/torch.png" style="width:100%">
+                                    </div>
+
+                                    <div class="mySlides">
+                                       <img src="assets/images/table-pics/torch_1.png" style="width:100%">
+                                    </div>
+
+                                    <div class="mySlides">
+                                       <img src="assets/images/table-pics/torch.png" style="width:100%">
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                           <div class="adventure-img-gallery-content">
+                              <div class="row">
+                                 <div class="col-sm-12 col-md-12 col-lg-12 product-content">
+                                    <h2>
+                                       LED TORCH LIGHT
+                                    </h2>
+                                    <div class="rating">
+                                       <i class="fa fa-star" aria-hidden="true"></i>
+                                       <i class="ml-2 fa fa-star" aria-hidden="true"></i>
+                                       <i class="ml-2 fa fa-star" aria-hidden="true"></i>
+                                       <i class="ml-2 fa fa-star" aria-hidden="true"></i>
+                                       <i class="ml-2 fa fa-star-o" aria-hidden="true"></i>
+                                       <p>4.5</p>
+                                    </div>
+                                    <div class="price">
+                                       <h4>
+                                          $160.75
+                                       </h4>
+                                    </div>
+                                    <div class="product-feature">
+                                       <h5>
+                                          Product Feature
+                                       </h5>
+                                       <p>
+                                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolre eu
+                                          fugiat nulla pariatur excepteur sint occaecat cupidatat non. Duis aute irure
+                                          dolor in reprehenderit in voluptate velit esse.
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12 col-md-4 col-lg-4 product-content py-5">
+                                    <div class="quantity-product">
+                                       <div class="quantity buttons_added">
+                                          <input type="button" value="-" class="minus"><input type="number" step="1"
+                                             min="1" max="" name="quantity" value="1" title="Qty"
+                                             class="input-text qty text" size="4" pattern="" inputmode=""><input
+                                             type="button" value="+" class="plus">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12 col-md-8 col-lg-8 product-content py-5">
+                                    <div class="social">
+                                       <p>Share <i class="fa fa-share-alt ml-1" aria-hidden="true"></i></p>
+                                       <div class="icons">
+                                          <i class=" fa fa-twitter" aria-hidden="true"></i>
+                                          <i class="fa fa-instagram" aria-hidden="true"></i>
+                                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                                          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                          <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                          <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12 col-md-12 col-lg-12 product-content-form py-4">
+                                    <form>
+                                       <div class="form-row">
+                                          <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                                             <select id="inputState" class="form-control">
+                                                <option selected="">Color</option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                                             <select id="inputState" class="form-control">
+                                                <option selected="">Size</option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                             </select>
+                                          </div>
+                                          <hr>
+                                          <div class="form-group col-sm-12 col-md-12 col-lg-12 pl-0">
+                                             <div class="d-flex align-items-center w-100">
+                                                <button class="btn shopping-card-btn">
+                                                   <img src="assets/images/icons/cart_white.svg" alt="cart">
+                                                </button>
+                                                <button class="btn shopping-card-btn">
+                                                   <img src="assets/images/icons/eye_white.svg" alt="cart">
+                                                </button>
+                                                <button class="btn shopping-card-btn">
+                                                   <img src="assets/images/icons/heart.svg" alt="cart">
+                                                </button>
+                                                <button onclick="" class="btn gh-buy-btn">Buy Now</button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                           <div class="adventure-tabs py-5">
+                              <nav>
+                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                                       href="#nav-home" role="tab" aria-controls="nav-home"
+                                       aria-selected="true">Description</a>
+                                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                       href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                       aria-selected="false">Additional Information</a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                       href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                       aria-selected="false">Reviews</a>
+                                 </div>
+                              </nav>
+                              <div class="tab-content" id="nav-tabContent">
+                                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                    aria-labelledby="nav-home-tab">
+
+                                    <p>
+                                       Ac dis vestibulum ut primis eleifend at neque at ornare mus nostra non senectus
+                                       magna natoque porta scelerisque molestie taciti lobortis torquent ullamcorper a
+                                       ullamcorper. Hac suspendisse varius ut et consectetur eu in nisi vestibulum
+                                       consectetur ultricies in dictum consectetur eu hendrerit ante tortor sagittis
+                                       etiam porta scelerisque molestie ostra non senectus magna natoque .
+                                    </p>
+
+                                 </div>
+                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                    aria-labelledby="nav-profile-tab">...</div>
+                                 <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                    aria-labelledby="nav-contact-tab">...</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <section class="store-section pt-0">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+               <div class="container">
+                  <div class="section_title text-center px-5">
+                     <h1>Related Products</h1>
+                     <hr />
+                     <p>Lorem ipsum, in graphical and textual context</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid px-5 bg-pattern py-5">
+            <div class="py-5">
+               <div class="card-deck mx-5 mt-0 mb-2 p-5">
+                  <div class="card border-0 shadow">
+                     <div class="card-img">
+                        <img class="card-img-top" src="assets/images/card-images/Image_7.png" alt="Card image cap">
+                        <div class="card-overlay">
+                           <div class="d-flex align-items-center justify-content-center w-100">
+                              <button class="btn shopping-card-btn">
+                                 <img src="assets/images/icons/cart_white.svg" alt="cart">
+                              </button>
+                              <button class="btn shopping-card-btn">
+                                 <img src="assets/images/icons/eye_white.svg" alt="cart">
+                              </button>
+                              <button class="btn shopping-card-btn">
+                                 <img src="assets/images/icons/heart.svg" alt="cart">
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-body text-center">
+                        <h4 class="card-title">LED TORCH LIGHT</h4>
+                        <h5 class="card-title-2">$160.00</h5>
+                        <div class="row">
+                           <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                              <div class="card-right-div">
+   
+                                 <div class="card-rating">
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="far fa-star"></i>
+                                 </div>
+                              </div>
+                           </div>
+   
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card border-0 shadow">
+                     <div class="card-img">
+                        <img class="card-img-top" src="assets/images/card-images/Image_8.png" alt="Card image cap">
+                        <div class="card-overlay">
+                           <div class="d-flex align-items-center justify-content-center w-100">
+                              <button class="btn shopping-card-btn">
+                                 <img src="assets/images/icons/cart_white.svg" alt="cart">
+                              </button>
+                              <button class="btn shopping-card-btn">
+                                 <img src="assets/images/icons/eye_white.svg" alt="cart">
+                              </button>
+                              <button class="btn shopping-card-btn">
+                                 <img src="assets/images/icons/heart.svg" alt="cart">
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-body text-center">
+                        <h4 class="card-title">LED TORCH LIGHT</h4>
+                        <h5 class="card-title-2">$160.00</h5>
+                        <div class="row">
+                           <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                              <div class="card-right-div">
+   
+                                 <div class="card-rating">
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="far fa-star"></i>
+                                 </div>
+                              </div>
+                           </div>
+   
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card border-0 shadow">
+                     <div class="card-img">
+                        <img class="card-img-top" src="assets/images/card-images/Image_9.png" alt="Card image cap">
+                        <div class="card-overlay">
+                           <div class="d-flex align-items-center justify-content-center w-100">
+                              <button class="btn shopping-card-btn">
+                                 <img src="assets/images/icons/cart_white.svg" alt="cart">
+                              </button>
+                              <button class="btn shopping-card-btn">
+                                 <img src="assets/images/icons/eye_white.svg" alt="cart">
+                              </button>
+                              <button class="btn shopping-card-btn">
+                                 <img src="assets/images/icons/heart.svg" alt="cart">
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-body text-center">
+                        <h4 class="card-title">LED TORCH LIGHT</h4>
+                        <h5 class="card-title-2">$160.00</h5>
+                        <div class="row">
+                           <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                              <div class="card-right-div">
+   
+                                 <div class="card-rating">
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="far fa-star"></i>
+                                 </div>
+                              </div>
+                           </div>
+   
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card border-0 shadow">
+                     <div class="card-img">
+                        <img class="card-img-top" src="assets/images/card-images/Image_10.png" alt="Card image cap">
+                        <div class="card-overlay">
+                           <div class="d-flex align-items-center justify-content-center w-100">
+                              <button class="btn shopping-card-btn">
+                                 <img src="assets/images/icons/cart_white.svg" alt="cart">
+                              </button>
+                              <button class="btn shopping-card-btn">
+                                 <img src="assets/images/icons/eye_white.svg" alt="cart">
+                              </button>
+                              <button class="btn shopping-card-btn">
+                                 <img src="assets/images/icons/heart.svg" alt="cart">
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-body text-center">
+                        <h4 class="card-title">LED TORCH LIGHT</h4>
+                        <h5 class="card-title-2">$160.00</h5>
+                        <div class="row">
+                           <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                              <div class="card-right-div">
+   
+                                 <div class="card-rating">
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="fas fa-star mr-1"></i>
+                                    <i class="far fa-star"></i>
+                                 </div>
+                              </div>
+                           </div>
+   
+                        </div>
+                     </div>
+                  </div>
+               </div>
+   
+               <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                     <button onclick="" class="btn gh-btn">View More</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME TOUR SECTION END ----------------------------------------------- */ -->
+
+
+   <!-- /* ----- HOME Footer BG SECTION Start ----------------------------------------------- */ -->
+
+   <section class="back">
+      <img src="assets/images/background/footer.png" alt="" width="100%">
+   </section>
+
+   <!-- /* ----- HOME Footer BG SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- FOOTER START ----------------------------------------------- */ -->
+
+   <footer id="footer" class="footer p-5">
+      <div class="container-fluid">
+         <div class="row widgets">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+               <div class="footer_logo">
+                  <img src="assets/images/logo/Logo_2.png" alt="Footer Logo">
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 about-us pr-3">
+               <div class="sec-title">
+                  <div class="footer_map_div">
+                     <iframe src="https://www.google.com/maps/d/embed?mid=10HNhSmt3DIADu2pyqdFZTYOmatk"
+                        class="footer_map" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 contact-us pr-5 mt-4">
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>Address</h6>
+                     <p>Suite # 01, 2st Floor Tokyo Center</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>PHONE</h6>
+                     <p>+123 456 789 90</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>EMAIL</h6>
+                     <p>example@gmail.com</p>
+                  </div>
+               </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 quick-link pr-5">
+               <div class="sec-title">
+                  <h5 class="mb-3 white">Quick Links</h5>
+               </div>
+               <div class="row white">
+                  <div class="col-md-12">
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Privacy Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Terms of Use</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">FAQ</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Cancellation Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Explore</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 newsletter">
+               <div class="contact-us">
+                  <div class="sec-title">
+                     <h5 class="mb-3 white">Our Newsletter</h5>
+                  </div>
+                  <div class="newsletter-form mt-4">
+                     <form method="get" class="search-form" action="">
+                        <input type="search" class="form-control" placeholder="Your Email">
+                        <button class="btn" type="submit">Send</button>
+                     </form>
+                  </div>
+                  <div class="d-flex align-items-center my-4">
+                     <div class="social_icons">
+                        <ul class="d-flex align-items-center px-0 color-white my-0">
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-facebook-f"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-instagram"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-linkedin-in"></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="lang_div w-100 text-right">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div id="bottom-bar" class="bottom-bar p-3">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+               <div class="copyright-text">
+                  Copyright © 2020 <span class="highlight_brown">Kreatix</span> 2021 - 2022. All rights reserved.
+               </div>
+            </div>
+            <!-- <div class="col-lg-6 col-md-6 col-sm-12">
+               <ul class="d-flex align-items-center justify-content-end right_div">
+                  <li><a href="#">Privacy Policy </a></li>
+                  <li class="bottom_vr_gap"> | </li>
+                  <li><a href="#">Terms & Condition </a></li>
+               </ul>
+            </div> -->
+         </div>
+      </div>
+   </div>
+
+   <!-- /* ----- FOOTER END ----------------------------------------------- */ -->
+
+</body>
+
+<script>
+   var acc = document.getElementsByClassName("side-menu-accordion-btn");
+   var i;
+
+   for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+         this.classList.toggle("panel-active");
+         var panel = this.nextElementSibling;
+         if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+         } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+         }
+      });
+   }
+</script>
+
+<script>
+   var slideIndex = 1;
+   showSlides(slideIndex);
+
+   function plusSlides(n) {
+      showSlides(slideIndex += n);
+   }
+
+   function currentSlide(n) {
+      showSlides(slideIndex = n);
+   }
+
+   function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+   }
+</script>
+
+<script>
+   function wcqib_refresh_quantity_increments() {
+      jQuery("div.quantity:not(.buttons_added), td.quantity:not(.buttons_added)").each(function (a, b) {
+         var c = jQuery(b);
+         c.addClass("buttons_added"), c.children().first().before('<input type="button" value="-" class="minus" />'), c.children().last().after('<input type="button" value="+" class="plus" />')
+      })
+   }
+   String.prototype.getDecimals || (String.prototype.getDecimals = function () {
+      var a = this,
+         b = ("" + a).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);
+      return b ? Math.max(0, (b[1] ? b[1].length : 0) - (b[2] ? +b[2] : 0)) : 0
+   }), jQuery(document).ready(function () {
+      wcqib_refresh_quantity_increments()
+   }), jQuery(document).on("updated_wc_div", function () {
+      wcqib_refresh_quantity_increments()
+   }), jQuery(document).on("click", ".plus, .minus", function () {
+      var a = jQuery(this).closest(".quantity").find(".qty"),
+         b = parseFloat(a.val()),
+         c = parseFloat(a.attr("max")),
+         d = parseFloat(a.attr("min")),
+         e = a.attr("step");
+      b && "" !== b && "NaN" !== b || (b = 0), "" !== c && "NaN" !== c || (c = ""), "" !== d && "NaN" !== d || (d = 0), "any" !== e && "" !== e && void 0 !== e && "NaN" !== parseFloat(e) || (e = 1), jQuery(this).is(".plus") ? c && b >= c ? a.val(c) : a.val((b + parseFloat(e)).toFixed(e.getDecimals())) : d && b <= d ? a.val(d) : b > 0 && a.val((b - parseFloat(e)).toFixed(e.getDecimals())), a.trigger("change")
+   });
+</script>
+
+
+</html>

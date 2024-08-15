@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+   <!-- Required meta tags -->
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="keywords" content="...">
+   <meta name="description" content="..." />
+   <title>Ghamra</title>
+
+
+
+   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/all.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+   <style>
+      .services-inner-section .img-overlay {
+         position: absolute;
+         bottom: 0;
+         background: rgb(25 64 65 / 30%);
+         color: #f1f1f1;
+         width: 100%;
+         transition: .5s ease;
+         opacity: 1;
+         color: white;
+         font-size: 20px;
+         padding: 20px;
+         text-align: center;
+         height: 100%;
+         display: flex;
+         align-items: flex-end;
+         border-top-left-radius: 50px;
+         border-bottom-right-radius: 50px;
+      }
+
+      .post-image {
+         width: 773px;
+         height: 521px;
+         background-color: #000000;
+         border-top-left-radius: 50px;
+         border-bottom-right-radius: 50px;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .post-image img {
+         position: relative;
+         transform: translateY(-50%);
+         top: 50%;
+         height: 100%;
+      }
+
+      .post-content h2 {
+         font-size: 60px;
+         color: #184041;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+         padding-bottom: 5px;
+         margin-bottom: 10px;
+         padding-bottom: 0;
+         font-family: 'SST Arabic Bold';
+      }
+
+      .post-content p {
+         font-size: 24px;
+         letter-spacing: 0.5px;
+         color: #000;
+         font-family: 'SST Arabic Roman';
+         text-align: justify;
+      }
+
+      .filter-form .card-title {
+         font-size: 38px;
+         color: #184041;
+         letter-spacing: 0.5px;
+         font-family: "SST Arabic Bold";
+         margin-bottom: 2.75rem;
+      }
+
+      .filter-form .filter-select {
+         font-size: 30px;
+         /* line-height: 38px; */
+         line-height: 33px;
+         color: #000000;
+         font-family: 'Mulish', sans-serif;
+         font-weight: 700;
+         min-height: 68px;
+         border-top-left-radius: 50px;
+         border-bottom-right-radius: 50px;
+         padding: 15px 50px;
+         border: 2px solid #e0e5f3;
+         /* background: #fff !important; */
+      }
+
+      .filter-form hr {
+         border-top: 3px solid #e0e5f3;
+         border-top: 3px solid #e0e5f3;
+         position: absolute;
+         width: 80%;
+         margin: auto;
+         transform: translate(-50%, -50%);
+         left: 50%;
+         top: 57%;
+         z-index: -1;
+      }
+   </style>
+
+</head>
+
+<body class="inner-page-color">
+
+
+   <!-- /* ----- HEADER START ----------------------------------------------- */ -->
+   <div class="top_bar">
+      <div class="container-fluid">
+         <div class="row py-3">
+            <div class="col-md-6 col-sm-12 col-lg-6"></div>
+            <div class="col-md-6 col-sm-12 col-lg-6">
+               <div class="d-flex align-items-center justify-content-end topbar-right-div">
+                  <div class="topbar_right pr-3">
+                     <div class="lang_div">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right border-x-1 px-3">
+                     <div class="lang_div">
+                        <select name="currency" id="currency">
+                           <option value="currency" selected>Currency</option>
+                           <option value="pkr">PKR</option>
+                           <option value="yen">Yen</option>
+                           <option value="dollar">Dollar</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right pl-3">
+                     <div class="d-flex white align-items-center topbar_login">
+                        <div class="text-right mr-2 topbar_icon">
+                           <i class="fas fa-user mr-2"></i>
+                           <a href="" class="color-white">
+                              Login/Register
+                           </a>
+                        </div>
+                        <div class="footer_content">
+                           <a href="" class="color-white ml-4">
+                              <img src="assets/images/icons/calendar.svg" alt="">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse container-fluid" id="navbarTogglerDemo01">
+         <a class="navbar-brand" href="#">
+            <img src="assets/images/logo/Logo_1.svg" alt="nav_logo" width="150%">
+         </a>
+         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Journey
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Explore
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Safety & Quality</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Us
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <img src="assets/images/icons/cart.svg" alt="">
+               </a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <!-- /* ----- HEADER end ----------------------------------------------- */ -->
+
+
+   <!-- /* ----- HOME BANNER SECTION START ----------------------------------------------- */ -->
+
+   <section class="service-banner">
+      <div class="container-fluid">
+         <div class="banner_content">
+            <div class="banner_title text-center px-5">
+               <h1 class="brush_stroke_bg">Schedule Trip</h1>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME BANNER SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- FORM SECTION START ----------------------------------------------- */ -->
+
+   <section class="filter-form">
+      <div class="container-fluid">
+         <div class="card border-0 bg-transparent mx-1 mt-4 mb-2 pt-2 px-5 pb-5">
+            <div class="card-body">
+               <h5 class="card-title">Filter Single Day Tours</h5>
+
+               <form action="#">
+                  <div class="row">
+                     <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                           <select class="form-control filter-select form-control-lg" id="filter-select-1">
+                              <option>By Location</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                           <select class="form-control filter-select form-control-lg" id="filter-select-2">
+                              <option>By Activity</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                           <select class="form-control filter-select form-control-lg" id="filter-select-3">
+                              <option>By Minimum Age</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                        <div class="form-group">
+                           <select class="form-control filter-select form-control-lg" id="filter-select-4">
+                              <option>By Price</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <hr />
+               </form>
+
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- FORM SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- Schedule Trip SECTION START ----------------------------------------------- */ -->
+
+   <section class="schedule-trip-section">
+      <div class="container-fluid">
+         <div class="bg-pattern py-5">
+            <div class="card-deck mx-1 mt-4 mb-2 pt-2 px-5 pb-5">
+               <div class="card text-white border-0">
+                  <img class="card-img" src="assets/images/card-images/Image_17.png" alt="Card image">
+                  <div class="card-img-overlay">
+                     <h3 class="card-title my-0">Urban jungle your city</h3>
+                     <hr>
+                     <h5 class="card-title my-0">Two days package</h5>
+                  </div>
+               </div>
+               <div class="card text-white border-0">
+                  <img class="card-img" src="assets/images/card-images/Image_18.png" alt="Card image">
+                  <div class="card-img-overlay">
+                     <h3 class="card-title my-0">Top hiking trails forest</h3>
+                     <hr>
+                     <h5 class="card-title my-0">Two days package</h5>
+                  </div>
+               </div>
+               <div class="card text-white border-0">
+                  <img class="card-img" src="assets/images/card-images/Image_19.png" alt="Card image">
+                  <div class="card-img-overlay">
+                     <h3 class="card-title my-0">Hikes in iceland mountain</h3>
+                     <hr>
+                     <h5 class="card-title my-0">Two days package</h5>
+                  </div>
+               </div>
+
+            </div>
+            <div class="card-deck mx-1 mt-4 mb-2 pt-2 px-5 pb-5">
+               <div class="card text-white border-0">
+                  <img class="card-img" src="assets/images/card-images/Image_17.png" alt="Card image">
+                  <div class="card-img-overlay">
+                     <h3 class="card-title my-0">Urban jungle your city</h3>
+                     <hr>
+                     <h5 class="card-title my-0">Two days package</h5>
+                  </div>
+               </div>
+               <div class="card text-white border-0">
+                  <img class="card-img" src="assets/images/card-images/Image_18.png" alt="Card image">
+                  <div class="card-img-overlay">
+                     <h3 class="card-title my-0">Top hiking trails forest</h3>
+                     <hr>
+                     <h5 class="card-title my-0">Two days package</h5>
+                  </div>
+               </div>
+               <div class="card text-white border-0">
+                  <img class="card-img" src="assets/images/card-images/Image_19.png" alt="Card image">
+                  <div class="card-img-overlay">
+                     <h3 class="card-title my-0">Hikes in iceland mountain</h3>
+                     <hr>
+                     <h5 class="card-title my-0">Two days package</h5>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- Schedule Trip SECTION END ----------------------------------------------- */ -->
+
+
+   <!-- /* ----- HOME Footer BG SECTION Start ----------------------------------------------- */ -->
+
+   <section class="back">
+      <img src="assets/images/background/footer.png" alt="" width="100%">
+   </section>
+
+   <!-- /* ----- HOME Footer BG SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- FOOTER START ----------------------------------------------- */ -->
+
+   <footer id="footer" class="footer p-5">
+      <div class="container-fluid">
+         <div class="row widgets">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+               <div class="footer_logo">
+                  <img src="assets/images/logo/Logo_2.png" alt="Footer Logo">
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 about-us pr-3">
+               <div class="sec-title">
+                  <div class="footer_map_div">
+                     <iframe src="https://www.google.com/maps/d/embed?mid=10HNhSmt3DIADu2pyqdFZTYOmatk"
+                        class="footer_map" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 contact-us pr-5 mt-4">
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>Address</h6>
+                     <p>Suite # 01, 2st Floor Tokyo Center</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>PHONE</h6>
+                     <p>+123 456 789 90</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>EMAIL</h6>
+                     <p>example@gmail.com</p>
+                  </div>
+               </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 quick-link pr-5">
+               <div class="sec-title">
+                  <h5 class="mb-3 white">Quick Links</h5>
+               </div>
+               <div class="row white">
+                  <div class="col-md-12">
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Privacy Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Terms of Use</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">FAQ</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Cancellation Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Explore</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 newsletter">
+               <div class="contact-us">
+                  <div class="sec-title">
+                     <h5 class="mb-3 white">Our Newsletter</h5>
+                  </div>
+                  <div class="newsletter-form mt-4">
+                     <form method="get" class="search-form" action="">
+                        <input type="search" class="form-control" placeholder="Your Email">
+                        <button class="btn" type="submit">Send</button>
+                     </form>
+                  </div>
+                  <div class="d-flex align-items-center my-4">
+                     <div class="social_icons">
+                        <ul class="d-flex align-items-center px-0 color-white my-0">
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-facebook-f"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-instagram"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-linkedin-in"></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="lang_div w-100 text-right">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div id="bottom-bar" class="bottom-bar p-3">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+               <div class="copyright-text">
+                  Copyright © 2020 <span class="highlight_brown">Kreatix</span> 2021 - 2022. All rights reserved.
+               </div>
+            </div>
+            <!-- <div class="col-lg-6 col-md-6 col-sm-12">
+               <ul class="d-flex align-items-center justify-content-end right_div">
+                  <li><a href="#">Privacy Policy </a></li>
+                  <li class="bottom_vr_gap"> | </li>
+                  <li><a href="#">Terms & Condition </a></li>
+               </ul>
+            </div> -->
+         </div>
+      </div>
+   </div>
+
+   <!-- /* ----- FOOTER END ----------------------------------------------- */ -->
+
+</body>
+
+</html>

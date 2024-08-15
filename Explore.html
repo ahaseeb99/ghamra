@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+   <!-- Required meta tags -->
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="keywords" content="...">
+   <meta name="description" content="..." />
+   <title>Ghamra</title>
+
+
+
+   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/all.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <!-- <script data-require="jquery@3.1.1" data-semver="3.1.1"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
+   <style>
+      .banner_title h1 {
+         /* font-size: 50px; */
+         font-family: 'SST Arabic Bold';
+         font-size: 80px;
+         color: #fff;
+         font-weight: 700;
+         letter-spacing: 0.5px;
+      }
+
+      .adventure-trips-section .main-content .sort-field {
+         margin: 0 15px;
+      }
+
+      .adventure-trips-section .main-content .sort-field label {
+         font-size: 19px;
+         color: #919191;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+         margin-right: 1rem;
+      }
+
+      .adventure-trips-section .main-content .sort-field select {
+         font-size: 19px;
+         color: #919191;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+         background: transparent;
+         border: 2px solid #e0e5f3;
+         height: 57px;
+         width: 258px;
+      }
+
+      .side-menu-accordion-btn {
+         color: #fff;
+         cursor: pointer;
+         padding: 18px;
+         width: 100%;
+         border: none;
+         text-align: left;
+         outline: none;
+         transition: 0.4s;
+         background-color: #184041;
+         font-size: 24px;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+      }
+
+      .side-menu-accordion-btn:after {
+         content: '\2304';
+         color: #fff;
+         font-weight: bold;
+         float: right;
+         margin-left: 0;
+         letter-spacing: 5px;
+      }
+
+      .panel-active:after {
+         content: "\2303";
+      }
+
+      .panel {
+         padding: 0 20px;
+         background-color: #fff;
+         max-height: 0;
+         overflow: hidden;
+         transition: max-height 0.2s ease-out;
+         border-left: 3px solid #e0e5f3;
+         border-right: 3px solid #e0e5f3;
+         border-bottom: 3px solid #e0e5f3;
+      }
+
+      .btn.cart-gh-btn {
+         padding: 8px 50px;
+         border: 0;
+         /* border-top-right-radius: 50px; */
+         /* border-bottom-left-radius: 50px; */
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         border-bottom: 3px solid #194041;
+         background: #CFB67A;
+         font-size: 21px;
+         font-weight: 700;
+         color: #fff;
+         font-family: 'SST Arabic Bold';
+      }
+
+      .btn.filter-gh-btn {
+         /* padding: 8px 50px; */
+         border: 0;
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         border-bottom: 3px solid #194041;
+         background: #CFB67A;
+         font-size: 21px;
+         font-weight: 700;
+         color: #fff;
+         font-family: 'SST Arabic Bold';
+         width: 100%;
+      }
+
+      .filter-price p {
+         font-size: 16px;
+         letter-spacing: 0.5px;
+         color: #262525;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+         margin: 0;
+      }
+
+      .page-navigation .pagination .page-item .page-link {
+         font-size: 26px;
+         line-height: 26px;
+         color: #474747;
+         font-weight: 500;
+         font-family: "D IN Next LT Arabic";
+         text-align: center;
+         background-color: #ffffff;
+         border: 1.5px solid #e0e5f3;
+         border-right: 0 !important;
+         transition: 0.3s all;
+      }
+
+      .page-navigation .pagination .page-link:hover {
+         background-color: #cfb579;
+         transition: 0.3s all;
+         color: #fff;
+      }
+
+      .page-navigation .pagination .page-link.active {
+         background-color: #cfb579;
+         transition: 0.3s all;
+         color: #fff;
+      }
+
+      .page-navigation .pagination .page-link:focus {
+         box-shadow: none;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group {
+         display: block;
+         margin-bottom: 5px;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group input {
+         padding: 0;
+         height: initial;
+         width: initial;
+         margin-bottom: 0;
+         display: none;
+         cursor: pointer;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group label {
+         position: relative;
+         cursor: pointer;
+         font-size: 24px;
+         color: #313131;
+         font-family: 'SST Arabic Roman';
+      }
+
+      .side-menu-acoordion .archive .form-group.custom-form-group label {
+         position: relative;
+         cursor: pointer;
+         font-size: 24px;
+         color: #313131;
+         font-family: 'SST Arabic Roman';
+         width: 100%;
+      }
+
+      .side-menu-acoordion .archive .form-group.custom-form-group label span {
+         position: absolute;
+         right: 0px;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group label:before {
+         content: '';
+         -webkit-appearance: none;
+         padding: 10px;
+         display: inline-block;
+         position: relative;
+         vertical-align: middle;
+         cursor: pointer;
+         margin-right: 10px;
+         width: 26px;
+         height: 24px;
+         background-color: #ffffff;
+         border: 2px solid #dbe0e9;
+         border-top-left-radius: 10px;
+         border-bottom-right-radius: 10px;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group input:checked+label:after {
+         content: '';
+         display: block;
+         position: absolute;
+         top: 12px;
+         left: 9px;
+         width: 6px;
+         height: 14px;
+         border: solid #184041;
+         border-width: 0 2px 2px 0;
+         transform: rotate(45deg);
+      }
+
+      .personalize-trip-head {
+         font-size: 34px;
+         color: #ffffff;
+         font-weight: bold;
+         font-family: "SST Arabic Bold";
+         text-align: center;
+         height: 77px;
+         background-color: #cfb579;
+         align-items: center;
+         display: flex;
+         justify-content: center;
+      }
+
+      .personalize-trip-content {
+         font-size: 18px;
+         color: #000000;
+         font-weight: 300;
+         font-family: "SST Arabic Light";
+         text-align: center;
+      }
+
+      .btn.show-result-gh-btn {
+         padding: 8px 50px;
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         background: transparent;
+         font-size: 21px;
+         font-weight: 700;
+         color: #CFB67A;
+         border: 3px solid #CFB67A;
+         font-family: 'SST Arabic Bold';
+      }
+
+      .btn.show-result-gh-btn:hover {
+         transition: 0.3s all;
+         color: #fff;
+         background: #CFB67A;
+         border: 3px solid #CFB67A;
+         font-family: 'SST Arabic Bold';
+      }
+
+
+      .card {
+         border-top-right-radius: 50px;
+         border-bottom-left-radius: 50px;
+         overflow: hidden;
+      }
+
+      .card.horizontle {
+         max-height: 548px;
+         min-height: 548px;
+      }
+
+      .card .card-img-div {
+         position: relative;
+         width: 100%;
+         max-width: 594px;
+         min-height: 548px;
+      }
+
+      .card .card-img-div img {
+         width: 100%;
+         height: 100%;
+
+      }
+
+      .card.horizontle .overlay {
+         bottom: 35px;
+      }
+
+      .overlay {
+         position: absolute;
+         bottom: 0;
+         background: #184041e0;
+         color: #f1f1f1;
+         width: 100%;
+         transition: .5s ease;
+         opacity: 1;
+         color: white;
+         font-size: 20px;
+         padding: 30px 20px;
+         text-align: center;
+         font-size: 36px;
+         line-height: 51px;
+         color: #ffffff;
+         font-weight: 600;
+         font-family: "Poppins";
+      }
+
+      .explore-section .card-title {
+         font-size: 44px;
+         line-height: 51px;
+         color: #184041;
+         font-family: "SST Arabic Bold";
+         letter-spacing: 0.5px;
+      }
+
+      .explore-section .card-text {
+         font-size: 24px;
+         line-height: 36px;
+         color: #040707;
+         font-weight: 400;
+         font-family: "Poppins";
+         text-align: justify;
+      }
+
+      .btn.cart-gh-btn {
+         padding: 8px 50px;
+         border: 0;
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         border-bottom: 3px solid #194041;
+         background: #CFB67A;
+         font-size: 34px;
+         font-weight: 700;
+         color: #fff;
+         font-family: 'SST Arabic Bold';
+      }
+
+      .side-menu-acoordion input.form-control {
+         font-size: 31px;
+         line-height: 40px;
+         color: #000000;
+         font-weight: 700;
+         font-family: "Mulish";
+         padding: .75rem 9rem 0.75rem 2rem;
+         background-color: #ffffff;
+         border: 2px solid #e0e5f3;
+         border-bottom-left-radius: 50px;
+         border-top-right-radius: 50px !important;
+      }
+
+      .side-menu-acoordion button#button-addon2 {
+         background-color: #cfb579;
+         font-size: 31px;
+         font-weight: 700;
+         font-family: "Mulish";
+         border: 2px solid #e0e5f3;
+         border-bottom-left-radius: 50px;
+         border-top-right-radius: 50px;
+         color: #fff;
+         width: 137px;
+         margin-left: -137px;
+      }
+
+      .side-menu-acoordion .author {
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+         width: 100%;
+         margin: 20px 0;
+      }
+
+      .side-menu-acoordion .author-img-div {
+         width: 120px;
+         background: rebeccapurple;
+         border: 3px solid #e0e5f3;
+         overflow: hidden;
+         height: 120px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .side-menu-acoordion .author-img-div img {
+         width: 100%;
+         height: 100%;
+      }
+
+      .side-menu-acoordion .author-title h3 {
+         font-size: 26px;
+         line-height: 48px;
+         color: #313131;
+         font-family: "SST Arabic Roman";
+         letter-spacing: 0.5px;
+      }
+   </style>
+
+</head>
+
+<body class="inner-page-color">
+
+
+   <!-- /* ----- HEADER START ----------------------------------------------- */ -->
+   <div class="top_bar">
+      <div class="container-fluid">
+         <div class="row py-3">
+            <div class="col-md-6 col-sm-12 col-lg-6"></div>
+            <div class="col-md-6 col-sm-12 col-lg-6">
+               <div class="d-flex align-items-center justify-content-end topbar-right-div">
+                  <div class="topbar_right pr-3">
+                     <div class="lang_div">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right border-x-1 px-3">
+                     <div class="lang_div">
+                        <select name="currency" id="currency">
+                           <option value="currency" selected>Currency</option>
+                           <option value="pkr">PKR</option>
+                           <option value="yen">Yen</option>
+                           <option value="dollar">Dollar</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right pl-3">
+                     <div class="d-flex white align-items-center topbar_login">
+                        <div class="text-right mr-2 topbar_icon">
+                           <i class="fas fa-user mr-2"></i>
+                           <a href="" class="color-white">
+                              Login/Register
+                           </a>
+                        </div>
+                        <div class="footer_content">
+                           <a href="" class="color-white ml-4">
+                              <img src="assets/images/icons/calendar.svg" alt="">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse container-fluid" id="navbarTogglerDemo01">
+         <a class="navbar-brand" href="#">
+            <img src="assets/images/logo/Logo_1.svg" alt="nav_logo" width="150%">
+         </a>
+         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Journey
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Explore
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Safety & Quality</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Us
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <img src="assets/images/icons/cart.svg" alt="">
+               </a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <!-- /* ----- HEADER end ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME BANNER SECTION START ----------------------------------------------- */ -->
+
+   <section class="service-banner">
+      <div class="container-fluid">
+         <div class="banner_content">
+            <div class="banner_title text-center px-5">
+               <h1 class="brush_stroke_bg">Explore</h1>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME BANNER SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME TOUR SECTION START ----------------------------------------------- */ -->
+
+   <section class="explore-section">
+      <div class="container-fluid">
+         <div class=" bg-pattern py-5">
+
+            <div class="row mx-5 my-5">
+               <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 main-content">
+
+                  <div class="row">
+                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="adventure-list-card">
+                           <div class="card horizontle mb-5">
+                              <div class="row no-gutters">
+                                 <div class="col-sm-6">
+                                    <div class="card-img-div">
+                                       <img class="card-img" src="assets/images/card-images/Image_35.png"
+                                          alt="Suresh Dasari Card">
+                                       <div class="overlay">June 03, 2019</div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="card-body px-4 py-5">
+                                       <h5 class="card-title">
+                                          We're supporting
+                                          #SaveOutdoorEd
+                                       </h5>
+                                       <p class="card-text pb-4">
+                                          Outdoor education centers all over the UK are facing closure or have
+                                          permanently closed since the first lockdown Outdoor education centers all over
+                                          the UK are facing closure or have permanently closed
+                                       </p>
+                                       <div class="text-center">
+                                          <button onclick="" class="btn cart-gh-btn">Read More</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="card-deck">
+                              <div class="card mb-5">
+                                 <div class="card-img-div">
+                                    <img class="card-img" src="assets/images/card-images/Image_35.png"
+                                       alt="Suresh Dasari Card">
+                                    <div class="overlay">June 03, 2019</div>
+                                 </div>
+                                 <div class="card-body px-4 py-5 text-center">
+                                    <h5 class="card-title">
+                                       We're supporting
+                                       #SaveOutdoorEd
+                                    </h5>
+                                    <p class="card-text pb-4">
+                                       Outdoor education centers all over the UK are facing closure or have
+                                       permanently closed since the first lockdown Outdoor education centers all over
+                                       the UK are facing closure or have permanently closed
+                                    </p>
+                                    <div class="text-center">
+                                       <button onclick="" class="btn cart-gh-btn">Read More</button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card mb-5">
+                                 <div class="card-img-div">
+                                    <img class="card-img" src="assets/images/card-images/Image_35.png"
+                                       alt="Suresh Dasari Card">
+                                    <div class="overlay">June 03, 2019</div>
+                                 </div>
+                                 <div class="card-body px-4 py-5 text-center">
+                                    <h5 class="card-title">
+                                       We're supporting
+                                       #SaveOutdoorEd
+                                    </h5>
+                                    <p class="card-text pb-4">
+                                       Outdoor education centers all over the UK are facing closure or have
+                                       permanently closed since the first lockdown Outdoor education centers all over
+                                       the UK are facing closure or have permanently closed
+                                    </p>
+                                    <div class="text-center">
+                                       <button onclick="" class="btn cart-gh-btn">Read More</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-deck">
+                              <div class="card mb-5">
+                                 <div class="card-img-div">
+                                    <img class="card-img" src="assets/images/card-images/Image_35.png"
+                                       alt="Suresh Dasari Card">
+                                    <div class="overlay">June 03, 2019</div>
+                                 </div>
+                                 <div class="card-body px-4 py-5 text-center">
+                                    <h5 class="card-title">
+                                       We're supporting
+                                       #SaveOutdoorEd
+                                    </h5>
+                                    <p class="card-text pb-4">
+                                       Outdoor education centers all over the UK are facing closure or have
+                                       permanently closed since the first lockdown Outdoor education centers all over
+                                       the UK are facing closure or have permanently closed
+                                    </p>
+                                    <div class="text-center">
+                                       <button onclick="" class="btn cart-gh-btn">Read More</button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card mb-5">
+                                 <div class="card-img-div">
+                                    <img class="card-img" src="assets/images/card-images/Image_35.png"
+                                       alt="Suresh Dasari Card">
+                                    <div class="overlay">June 03, 2019</div>
+                                 </div>
+                                 <div class="card-body px-4 py-5 text-center">
+                                    <h5 class="card-title">
+                                       We're supporting
+                                       #SaveOutdoorEd
+                                    </h5>
+                                    <p class="card-text pb-4">
+                                       Outdoor education centers all over the UK are facing closure or have
+                                       permanently closed since the first lockdown Outdoor education centers all over
+                                       the UK are facing closure or have permanently closed
+                                    </p>
+                                    <div class="text-center">
+                                       <button onclick="" class="btn cart-gh-btn">Read More</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="row my-5">
+                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <nav class="page-navigation">
+                           <ul class="pagination">
+                              <li class="page-item prev"><a class="page-link" href="#">PREV</a></li>
+                              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item next"><a class="page-link" href="#">Next</a></li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 side-menu-adventure">
+                  <div class="side-menu-acoordion">
+                     <button class="side-menu-accordion-btn panel-active">Search</button>
+                     <div class="panel" style="max-height: 350px;">
+                        <div style="padding: 18px 0;">
+
+                           <form>
+                              <div class="input-group mb-3">
+                                 <input type="text" class="form-control" placeholder="Recipient's username"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                 <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                       <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                 </div>
+                              </div>
+                           </form>
+
+                        </div>
+                     </div>
+
+                     <button class="side-menu-accordion-btn panel-active">Ghamra</button>
+                     <div class="panel" style="max-height: 350px;">
+                        <div style="padding: 18px 0;">
+
+                           <form>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox1" class="custom-theme-check">
+                                 <label for="checkbox1" class="custom-theme-label">Hiking Trip</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox2" class="custom-theme-check">
+                                 <label for="checkbox2" class="custom-theme-label">IceLand Trip</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox3" class="custom-theme-check">
+                                 <label for="checkbox3" class="custom-theme-label">Desert Safari Trip</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox4" class="custom-theme-check">
+                                 <label for="checkbox4" class="custom-theme-label">Forest Trip</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox5" class="custom-theme-check">
+                                 <label for="checkbox5" class="custom-theme-label">Kund Malir Trip</label>
+                              </div>
+                           </form>
+
+                        </div>
+                     </div>
+
+                     <button class="side-menu-accordion-btn panel-active">Destination</button>
+                     <div class="panel" style="max-height: 350px;">
+                        <div style="padding: 18px 0;">
+
+                           <form>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox6" class="custom-theme-check">
+                                 <label for="checkbox6" class="custom-theme-label">Movie Night</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox7" class="custom-theme-check">
+                                 <label for="checkbox7" class="custom-theme-label">Movie Night</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox8" class="custom-theme-check">
+                                 <label for="checkbox8" class="custom-theme-label">Movie Night</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="9" class="custom-theme-check">
+                                 <label for="9" class="custom-theme-label">Movie Night</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox10" class="custom-theme-check">
+                                 <label for="checkbox10" class="custom-theme-label">Movie Night</label>
+                              </div>
+                           </form>
+
+                        </div>
+                     </div>
+
+                     <button class="side-menu-accordion-btn panel-active">Authors</button>
+                     <div class="panel" style="max-height: 500px;">
+                        <div style="padding: 18px 0;">
+
+                           <div class="author">
+                              <div class="author-img-div">
+                                 <img src="assets/images/profile-pic/p-2.png" alt="">
+                              </div>
+                              <div class="author-title">
+                                 <h3>
+                                    Sukie Chapman
+                                 </h3>
+                              </div>
+                              <div class="author-title">
+                                 <h3>
+                                    97
+                                 </h3>
+                              </div>
+                           </div>
+                           <div class="author">
+                              <div class="author-img-div">
+                                 <img src="assets/images/profile-pic/p-2.png" alt="">
+                              </div>
+                              <div class="author-title">
+                                 <h3>
+                                    Sukie Chapman
+                                 </h3>
+                              </div>
+                              <div class="author-title">
+                                 <h3>
+                                    97
+                                 </h3>
+                              </div>
+                           </div>
+                           <div class="author">
+                              <div class="author-img-div">
+                                 <img src="assets/images/profile-pic/p-2.png" alt="">
+                              </div>
+                              <div class="author-title">
+                                 <h3>
+                                    Sukie Chapman
+                                 </h3>
+                              </div>
+                              <div class="author-title">
+                                 <h3>
+                                    97
+                                 </h3>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <button class="side-menu-accordion-btn panel-active">Archive</button>
+                     <div class="panel archive" style="max-height: 350px;">
+                        <div style="padding: 18px 0;">
+
+                           <form>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox14" class="custom-theme-check">
+                                 <label for="checkbox14" class="custom-theme-label">
+                                    2021
+                                    <span>7</span>
+                                 </label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox15" class="custom-theme-check">
+                                 <label for="checkbox15" class="custom-theme-label">
+                                    2020
+                                    <span>27</span>
+                                 </label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox16" class="custom-theme-check">
+                                 <label for="checkbox16" class="custom-theme-label">
+                                    2019
+                                    <span>39</span>
+                                 </label>
+                              </div>
+                           </form>
+
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME TOUR SECTION END ----------------------------------------------- */ -->
+
+
+   <!-- /* ----- HOME Footer BG SECTION Start ----------------------------------------------- */ -->
+
+   <section class="back">
+      <img src="assets/images/background/footer.png" alt="" width="100%">
+   </section>
+
+   <!-- /* ----- HOME Footer BG SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- FOOTER START ----------------------------------------------- */ -->
+
+   <footer id="footer" class="footer p-5">
+      <div class="container-fluid">
+         <div class="row widgets">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+               <div class="footer_logo">
+                  <img src="assets/images/logo/Logo_2.png" alt="Footer Logo">
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 about-us pr-3">
+               <div class="sec-title">
+                  <div class="footer_map_div">
+                     <iframe src="https://www.google.com/maps/d/embed?mid=10HNhSmt3DIADu2pyqdFZTYOmatk"
+                        class="footer_map" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 contact-us pr-5 mt-4">
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>Address</h6>
+                     <p>Suite # 01, 2st Floor Tokyo Center</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>PHONE</h6>
+                     <p>+123 456 789 90</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>EMAIL</h6>
+                     <p>example@gmail.com</p>
+                  </div>
+               </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 quick-link pr-5">
+               <div class="sec-title">
+                  <h5 class="mb-3 white">Quick Links</h5>
+               </div>
+               <div class="row white">
+                  <div class="col-md-12">
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Privacy Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Terms of Use</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">FAQ</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Cancellation Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Explore</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 newsletter">
+               <div class="contact-us">
+                  <div class="sec-title">
+                     <h5 class="mb-3 white">Our Newsletter</h5>
+                  </div>
+                  <div class="newsletter-form mt-4">
+                     <form method="get" class="search-form" action="">
+                        <input type="search" class="form-control" placeholder="Your Email">
+                        <button class="btn" type="submit">Send</button>
+                     </form>
+                  </div>
+                  <div class="d-flex align-items-center my-4">
+                     <div class="social_icons">
+                        <ul class="d-flex align-items-center px-0 color-white my-0">
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-facebook-f"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-instagram"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-linkedin-in"></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="lang_div w-100 text-right">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div id="bottom-bar" class="bottom-bar p-3">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+               <div class="copyright-text">
+                  Copyright © 2020 <span class="highlight_brown">Kreatix</span> 2021 - 2022. All rights reserved.
+               </div>
+            </div>
+            <!-- <div class="col-lg-6 col-md-6 col-sm-12">
+               <ul class="d-flex align-items-center justify-content-end right_div">
+                  <li><a href="#">Privacy Policy </a></li>
+                  <li class="bottom_vr_gap"> | </li>
+                  <li><a href="#">Terms & Condition </a></li>
+               </ul>
+            </div> -->
+         </div>
+      </div>
+   </div>
+
+   <!-- /* ----- FOOTER END ----------------------------------------------- */ -->
+
+</body>
+
+<script>
+   var acc = document.getElementsByClassName("side-menu-accordion-btn");
+   var i;
+
+   for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+         this.classList.toggle("panel-active");
+         var panel = this.nextElementSibling;
+         if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+         } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+         }
+      });
+   }
+</script>
+
+
+</html>

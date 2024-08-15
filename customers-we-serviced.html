@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+   <!-- Required meta tags -->
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="keywords" content="...">
+   <meta name="description" content="..." />
+   <title>Ghamra</title>
+
+
+
+   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/all.css">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+   <style>
+      .customers-we-serviced-section select {
+         color: #4f4f4f;
+         min-height: 56px;
+         border: 2px solid #e0e5f3;
+         appearance: none;
+         background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyMiAxMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjIgMTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiM5MTkxOTE7fQ0KPC9zdHlsZT4NCjx0aXRsZT5TaGFwZSAzMiBjb3B5IDc8L3RpdGxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEwLjksMTNMMCwyLjZsMi42LTIuNUwxMC45LDhsOC41LThMMjIsMi41TDEwLjksMTN6Ii8+DQo8L3N2Zz4NCg==);
+         background-size: .6em;
+         background-position: calc(100% - 1em) center;
+         background-repeat: no-repeat;
+         font-size: 30px;
+         line-height: 38px;
+         color: #000000;
+         font-weight: 700;
+         font-family: "Mulish";
+         border-bottom-left-radius: 50px;
+         border-top-right-radius: 50px;
+         padding: .375rem 2rem;
+      }
+
+      .customers-we-serviced-section .btn.cart-gh-btn {
+         padding: 8px 50px;
+         border: 0;
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         border-bottom: 3px solid #acacac;
+         background: #CFB67A;
+         font-size: 39px;
+         font-weight: 700;
+         color: #fff;
+         font-family: 'SST Arabic Bold';
+      }
+
+      .customers-we-serviced-section .custom-grid-gallery {
+         flex-direction: column;
+      }
+
+      .customers-we-serviced-section .custom-grid-gallery .column-custom {
+         padding: 10px;
+      }
+
+      .customers-we-serviced-section .custom-grid-gallery .column-custom .img-div {
+         width: 610px;
+         height: 404px;
+         overflow: hidden;
+         position: relative;
+         border-top-right-radius: 60px;
+         border-bottom-left-radius: 60px;
+      }
+
+      .customers-we-serviced-section .custom-grid-gallery .column-custom .img-div-2 {
+         overflow: hidden;
+         position: relative;
+         border-top-right-radius: 60px;
+         border-bottom-left-radius: 60px;
+         width: 430px;
+         height: 645px;
+      }
+
+      .customers-we-serviced-section .custom-grid-gallery .column-custom .img-div-3 {
+         overflow: hidden;
+         position: relative;
+         border-top-right-radius: 60px;
+         border-bottom-left-radius: 60px;
+         width: 429px;
+         height: 281px;
+      }
+
+      .customers-we-serviced-section .custom-grid-gallery .column-custom .img-div img,
+      .customers-we-serviced-section .custom-grid-gallery .column-custom .img-div-2 img {
+         width: 100%;
+         height: 100%;
+      }
+
+      .customers-we-serviced-section .custom-grid-gallery .column-custom .img-div .overlay,
+      .customers-we-serviced-section .custom-grid-gallery .column-custom .img-div-2 .overlay,
+      .customers-we-serviced-section .custom-grid-gallery .column-custom .img-div-3 .overlay {
+         position: absolute;
+         bottom: 0;
+         color: #f1f1f1;
+         width: 100%;
+         transition: .5s ease;
+         opacity: 1;
+         color: white;
+         font-size: 20px;
+         padding: 30px 20px;
+         text-align: center;
+         font-size: 38px;
+         line-height: 51px;
+         color: #ffffff;
+         font-weight: 600;
+         font-family: "Poppins";
+      }
+   </style>
+
+</head>
+
+<body class="inner-page-color">
+
+
+   <!-- /* ----- HEADER START ----------------------------------------------- */ -->
+   <div class="top_bar">
+      <div class="container-fluid">
+         <div class="row py-3">
+            <div class="col-md-6 col-sm-12 col-lg-6"></div>
+            <div class="col-md-6 col-sm-12 col-lg-6">
+               <div class="d-flex align-items-center justify-content-end topbar-right-div">
+                  <div class="topbar_right pr-3">
+                     <div class="lang_div">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right border-x-1 px-3">
+                     <div class="lang_div">
+                        <select name="currency" id="currency">
+                           <option value="currency" selected>Currency</option>
+                           <option value="pkr">PKR</option>
+                           <option value="yen">Yen</option>
+                           <option value="dollar">Dollar</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right pl-3">
+                     <div class="d-flex white align-items-center topbar_login">
+                        <div class="text-right mr-2 topbar_icon">
+                           <i class="fas fa-user mr-2"></i>
+                           <a href="" class="color-white">
+                              Login/Register
+                           </a>
+                        </div>
+                        <div class="footer_content">
+                           <a href="" class="color-white ml-4">
+                              <img src="assets/images/icons/calendar.svg" alt="">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse container-fluid" id="navbarTogglerDemo01">
+         <a class="navbar-brand" href="#">
+            <img src="assets/images/logo/Logo_1.svg" alt="nav_logo" width="150%">
+         </a>
+         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Journey
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Explore
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Safety & Quality</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Us
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <img src="assets/images/icons/cart.svg" alt="">
+               </a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <!-- /* ----- HEADER end ----------------------------------------------- */ -->
+
+
+   <!-- /* ----- HOME BANNER SECTION START ----------------------------------------------- */ -->
+
+   <section class="service-banner">
+      <div class="container-fluid">
+         <div class="banner_content">
+            <div class="banner_title text-center px-5">
+               <h1 class="brush_stroke_bg" style="font-size: 90px;">Customers we Serviced</h1>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME BANNER SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME TOUR SECTION START ----------------------------------------------- */ -->
+
+   <section class="customers-we-serviced-section">
+      <div class="container-fluid">
+         <div class="pt-5">
+            <div class="row mx-5 mt-0 mb-2 pt-2 px-5 pb-5w">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                  <select id="inputState" class="form-control">
+                     <option selected=""> Select </option>
+                     <option>Male</option>
+                     <option>Female</option>
+                  </select>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                  <select id="inputState" class="form-control">
+                     <option selected=""> Country </option>
+                     <option>Male</option>
+                     <option>Female</option>
+                  </select>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                  <select id="inputState" class="form-control">
+                     <option selected=""> Region </option>
+                     <option>Male</option>
+                     <option>Female</option>
+                  </select>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                  <select id="inputState" class="form-control">
+                     <option selected=""> Trip Type </option>
+                     <option>Male</option>
+                     <option>Female</option>
+                  </select>
+               </div>
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 py-5">
+                  <div class="text-center">
+                     <button onclick="" class="btn cart-gh-btn mx-auto">Register</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bg-pattern py-5">
+            <div class="d-flex">
+               <div class="d-flex custom-grid-gallery ml-5 mr-2 py-5">
+                  <div class="column-custom">
+                     <div class="img-div">
+                        <img src="assets/images/card-images/Image_36.png" alt="">
+                        <div class="overlay">Desert Safari</div>
+                     </div>
+                  </div>
+                  <div class="column-custom">
+                     <div class="img-div">
+                        <img src="assets/images/card-images/Image_36.png" alt="">
+                        <div class="overlay">Desert Safari</div>
+                     </div>
+                  </div>
+                  <div class="column-custom">
+                     <div class="img-div">
+                        <img src="assets/images/card-images/Image_36.png" alt="">
+                        <div class="overlay">Desert Safari</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="d-flex custom-grid-gallery mx-2 py-5">
+                  <div class="column-custom">
+                     <div class="img-div-2">
+                        <img src="assets/images/card-images/Image_37.png" alt="">
+                        <div class="overlay">Desert Safari</div>
+                     </div>
+                  </div>
+                  <div class="column-custom">
+                     <div class="img-div-3">
+                        <img src="assets/images/card-images/Image_38.png" alt="">
+                        <div class="overlay">Desert Safari</div>
+                     </div>
+                  </div>
+                  <div class="column-custom">
+                     <div class="img-div-3">
+                        <img src="assets/images/card-images/Image_38.png" alt="">
+                        <div class="overlay">Desert Safari</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="d-flex custom-grid-gallery mr-5 ml-2 py-5">
+                  <div class="column-custom">
+                     <div class="img-div">
+                        <img src="assets/images/card-images/Image_36.png" alt="">
+                        <div class="overlay">Desert Safari</div>
+                     </div>
+                  </div>
+                  <div class="column-custom">
+                     <div class="img-div">
+                        <img src="assets/images/card-images/Image_36.png" alt="">
+                        <div class="overlay">Desert Safari</div>
+                     </div>
+                  </div>
+                  <div class="column-custom">
+                     <div class="img-div">
+                        <img src="assets/images/card-images/Image_36.png" alt="">
+                        <div class="overlay">Desert Safari</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME TOUR SECTION END ----------------------------------------------- */ -->
+
+
+   <!-- /* ----- HOME Footer BG SECTION Start ----------------------------------------------- */ -->
+
+   <section class="back">
+      <img src="assets/images/background/footer.png" alt="" width="100%">
+   </section>
+
+   <!-- /* ----- HOME Footer BG SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- FOOTER START ----------------------------------------------- */ -->
+
+   <footer id="footer" class="footer p-5">
+      <div class="container-fluid">
+         <div class="row widgets">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+               <div class="footer_logo">
+                  <img src="assets/images/logo/Logo_2.png" alt="Footer Logo">
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 about-us pr-3">
+               <div class="sec-title">
+                  <div class="footer_map_div">
+                     <iframe src="https://www.google.com/maps/d/embed?mid=10HNhSmt3DIADu2pyqdFZTYOmatk"
+                        class="footer_map" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 contact-us pr-5 mt-4">
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>Address</h6>
+                     <p>Suite # 01, 2st Floor Tokyo Center</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>PHONE</h6>
+                     <p>+123 456 789 90</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>EMAIL</h6>
+                     <p>example@gmail.com</p>
+                  </div>
+               </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 quick-link pr-5">
+               <div class="sec-title">
+                  <h5 class="mb-3 white">Quick Links</h5>
+               </div>
+               <div class="row white">
+                  <div class="col-md-12">
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Privacy Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Terms of Use</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">FAQ</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Cancellation Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Explore</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 newsletter">
+               <div class="contact-us">
+                  <div class="sec-title">
+                     <h5 class="mb-3 white">Our Newsletter</h5>
+                  </div>
+                  <div class="newsletter-form mt-4">
+                     <form method="get" class="search-form" action="">
+                        <input type="search" class="form-control" placeholder="Your Email">
+                        <button class="btn" type="submit">Send</button>
+                     </form>
+                  </div>
+                  <div class="d-flex align-items-center my-4">
+                     <div class="social_icons">
+                        <ul class="d-flex align-items-center px-0 color-white my-0">
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-facebook-f"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-instagram"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-linkedin-in"></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="lang_div w-100 text-right">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div id="bottom-bar" class="bottom-bar p-3">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+               <div class="copyright-text">
+                  Copyright © 2020 <span class="highlight_brown">Kreatix</span> 2021 - 2022. All rights reserved.
+               </div>
+            </div>
+            <!-- <div class="col-lg-6 col-md-6 col-sm-12">
+               <ul class="d-flex align-items-center justify-content-end right_div">
+                  <li><a href="#">Privacy Policy </a></li>
+                  <li class="bottom_vr_gap"> | </li>
+                  <li><a href="#">Terms & Condition </a></li>
+               </ul>
+            </div> -->
+         </div>
+      </div>
+   </div>
+
+   <!-- /* ----- FOOTER END ----------------------------------------------- */ -->
+
+</body>
+
+</html>

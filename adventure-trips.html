@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+   <!-- Required meta tags -->
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="keywords" content="...">
+   <meta name="description" content="..." />
+   <title>Ghamra</title>
+
+
+
+   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/all.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <!-- <script data-require="jquery@3.1.1" data-semver="3.1.1"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
+   <style>
+      .banner_title h1 {
+         /* font-size: 50px; */
+         font-family: 'SST Arabic Bold';
+         font-size: 80px;
+         color: #fff;
+         font-weight: 700;
+         letter-spacing: 0.5px;
+      }
+
+      .adventure-trips-section .main-content .sort-field {
+         margin: 0 15px;
+      }
+
+      .adventure-trips-section .main-content .sort-field label {
+         font-size: 19px;
+         color: #919191;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+         margin-right: 1rem;
+      }
+
+      .adventure-trips-section .main-content .sort-field select {
+         font-size: 19px;
+         color: #919191;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+         background: transparent;
+         border: 2px solid #e0e5f3;
+         height: 57px;
+         width: 258px;
+      }
+
+      .side-menu-accordion-btn {
+         color: #fff;
+         cursor: pointer;
+         padding: 18px;
+         width: 100%;
+         border: none;
+         text-align: left;
+         outline: none;
+         transition: 0.4s;
+         background-color: #184041;
+         font-size: 24px;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+      }
+
+      .side-menu-accordion-btn:after {
+         content: '\2304';
+         color: #fff;
+         font-weight: bold;
+         float: right;
+         margin-left: 0;
+         letter-spacing: 5px;
+      }
+
+      .panel-active:after {
+         content: "\2303";
+      }
+
+      .panel {
+         padding: 0 20px;
+         background-color: transparent;
+         /* max-height: 0; */
+         overflow: hidden;
+         transition: max-height 0.2s ease-out;
+         border-left: 3px solid #e0e5f3;
+         border-right: 3px solid #e0e5f3;
+         border-bottom: 3px solid #e0e5f3;
+      }
+
+      .btn.cart-gh-btn {
+         padding: 8px 50px;
+         border: 0;
+         /* border-top-right-radius: 50px; */
+         /* border-bottom-left-radius: 50px; */
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         border-bottom: 3px solid #194041;
+         background: #CFB67A;
+         font-size: 21px;
+         font-weight: 700;
+         color: #fff;
+         font-family: 'SST Arabic Bold';
+      }
+
+      .btn.filter-gh-btn {
+         /* padding: 8px 50px; */
+         border: 0;
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         border-bottom: 3px solid #194041;
+         background: #CFB67A;
+         font-size: 21px;
+         font-weight: 700;
+         color: #fff;
+         font-family: 'SST Arabic Bold';
+         width: 100%;
+      }
+
+      .filter-price p {
+         font-size: 16px;
+         letter-spacing: 0.5px;
+         color: #262525;
+         font-weight: 500;
+         font-family: "DIN Next LT Arabic Medium";
+         margin: 0;
+      }
+
+      .page-navigation .pagination .page-item .page-link {
+         font-size: 26px;
+         line-height: 26px;
+         color: #474747;
+         font-weight: 500;
+         font-family: "D IN Next LT Arabic";
+         text-align: center;
+         background-color: #ffffff;
+         border: 1.5px solid #e0e5f3;
+         border-right: 0 !important;
+         transition: 0.3s all;
+      }
+
+      .page-navigation .pagination .page-link:hover {
+         background-color: #cfb579;
+         transition: 0.3s all;
+         color: #fff;
+      }
+
+      .page-navigation .pagination .page-link.active {
+         background-color: #cfb579;
+         transition: 0.3s all;
+         color: #fff;
+      }
+
+      .page-navigation .pagination .page-link:focus {
+         box-shadow: none;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group {
+         display: block;
+         margin-bottom: 5px;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group input {
+         padding: 0;
+         height: initial;
+         width: initial;
+         margin-bottom: 0;
+         display: none;
+         cursor: pointer;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group label {
+         position: relative;
+         cursor: pointer;
+         font-size: 24px;
+         color: #313131;
+         font-family: 'SST Arabic Roman';
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group label:before {
+         content: '';
+         -webkit-appearance: none;
+         padding: 10px;
+         display: inline-block;
+         position: relative;
+         vertical-align: middle;
+         cursor: pointer;
+         margin-right: 10px;
+         width: 26px;
+         height: 24px;
+         background-color: #ffffff;
+         border: 2px solid #dbe0e9;
+         border-top-left-radius: 10px;
+         border-bottom-right-radius: 10px;
+      }
+
+      .side-menu-acoordion .form-group.custom-form-group input:checked+label:after {
+         content: '';
+         display: block;
+         position: absolute;
+         top: 12px;
+         left: 9px;
+         width: 6px;
+         height: 14px;
+         border: solid #184041;
+         border-width: 0 2px 2px 0;
+         transform: rotate(45deg);
+      }
+
+      .personalize-trip-head {
+         font-size: 34px;
+         color: #ffffff;
+         font-weight: bold;
+         font-family: "SST Arabic Bold";
+         text-align: center;
+         height: 77px;
+         background-color: #cfb579;
+         align-items: center;
+         display: flex;
+         justify-content: center;
+      }
+
+      .personalize-trip-content {
+         font-size: 18px;
+         color: #000000;
+         font-weight: 300;
+         font-family: "SST Arabic Light";
+         text-align: center;
+      }
+
+      .btn.show-result-gh-btn {
+         padding: 8px 50px;
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         background: transparent;
+         font-size: 21px;
+         font-weight: 700;
+         color: #CFB67A;
+         border: 3px solid #CFB67A;
+         font-family: 'SST Arabic Bold';
+      }
+
+      .btn.show-result-gh-btn:hover {
+         transition: 0.3s all;
+         color: #fff;
+         background: #CFB67A;
+         border: 3px solid #CFB67A;
+         font-family: 'SST Arabic Bold';
+      }
+
+      .adventure-list-card .card {
+         width: 100%;
+      }
+
+      .adventure-list-card .card-img-div {
+         border-top-left-radius: 50px;
+         /* border-bottom-right-radius: 50px; */
+         position: relative;
+         overflow: hidden;
+         height: 100%;
+         background: #184041;
+         z-index: 1;
+      }
+
+      .adventure-list-card .card-img-div img.card-img {
+         height: 100%;
+         width: 100%;
+         border-bottom-right-radius: 50px;
+      }
+
+      .adventure-list-card .card .card-title {
+         letter-spacing: 0.5px;
+         font-size: 32px;
+         padding-bottom: 5px;
+         color: #194041;
+         text-transform: uppercase;
+         font-family: 'SST Arabic Bold';
+      }
+
+      .adventure-list-card .card .card-text {
+         font-size: 22px;
+         color: #000000;
+         font-family: "SST Arabic Roman";
+      }
+
+      .adventure-list-card .card h5.card-link {
+         font-size: 15px;
+         color: #cfb579;
+         font-weight: bold;
+         font-family: "SST Arabic Bold";
+         text-align: center;
+      }
+
+      .adventure-list-card .card h5.card-link span {
+         font-size: 27px;
+         color: #000;
+         font-weight: bold;
+         font-family: "SST Arabic Bold";
+         text-align: center;
+         display: block;
+         margin-top: 10px;
+      }
+
+      .adventure-list-card .card .card-footer-custom h5.card-link span {
+         font-size: 27px;
+         color: #fff;
+         font-weight: bold;
+         font-family: "SST Arabic Bold";
+         text-align: center;
+         display: inline-block;
+         margin-left: 10px;
+      }
+
+      .adventure-list-card .card .card-footer-custom h5.card-link {
+         font-size: 18px;
+         color: #cfb579;
+         font-weight: bold;
+         font-family: "SST Arabic Bold";
+         text-align: center;
+         display: flex;
+         align-items: center;
+      }
+
+      .adventure-list-card .card .card-footer-custom {
+         padding: 0 2rem;
+         background-color: #184041;
+         border-top: 0;
+         margin-left: -10px;
+         border-bottom-right-radius: 50px;
+      }
+
+      .adventure-list-card .card hr {
+         border-top: 2px solid #e0e5f3;
+         margin-bottom: 0 !important;
+      }
+
+      #more {
+         display: none;
+      }
+      #read-more {
+         text-decoration: underline;
+      }
+   </style>
+
+</head>
+
+<body class="inner-page-color">
+
+
+   <!-- /* ----- HEADER START ----------------------------------------------- */ -->
+   <div class="top_bar">
+      <div class="container-fluid">
+         <div class="row py-3">
+            <div class="col-md-6 col-sm-12 col-lg-6"></div>
+            <div class="col-md-6 col-sm-12 col-lg-6">
+               <div class="d-flex align-items-center justify-content-end topbar-right-div">
+                  <div class="topbar_right pr-3">
+                     <div class="lang_div">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right border-x-1 px-3">
+                     <div class="lang_div">
+                        <select name="currency" id="currency">
+                           <option value="currency" selected>Currency</option>
+                           <option value="pkr">PKR</option>
+                           <option value="yen">Yen</option>
+                           <option value="dollar">Dollar</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right pl-3">
+                     <div class="d-flex white align-items-center topbar_login">
+                        <div class="text-right mr-2 topbar_icon">
+                           <i class="fas fa-user mr-2"></i>
+                           <a href="" class="color-white">
+                              Login/Register
+                           </a>
+                        </div>
+                        <div class="footer_content">
+                           <a href="" class="color-white ml-4">
+                              <img src="assets/images/icons/calendar.svg" alt="">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse container-fluid" id="navbarTogglerDemo01">
+         <a class="navbar-brand" href="#">
+            <img src="assets/images/logo/Logo_1.svg" alt="nav_logo" width="150%">
+         </a>
+         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Journey
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Explore
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Safety & Quality</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Us
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <img src="assets/images/icons/cart.svg" alt="">
+               </a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <!-- /* ----- HEADER end ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME BANNER SECTION START ----------------------------------------------- */ -->
+
+   <section class="service-banner">
+      <div class="container-fluid">
+         <div class="banner_content">
+            <div class="banner_title text-center px-5">
+               <h1 class="brush_stroke_bg">Adventure Trips</h1>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME BANNER SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME TOUR SECTION START ----------------------------------------------- */ -->
+
+   <section class="adventure-trips-section">
+      <div class="container-fluid">
+         <div class="py-5">
+            <div class="row mx-5 mt-0 mb-2 pt-2 px-5 pb-5w">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 main-content">
+                  <div class=" d-flex align-items-center justify-content-between">
+                     <div class="left">
+                        <div class="form-group form-inline sort-field">
+                           <label for="email">View By: </label>
+                           <select id="inputState" class="form-control">
+                              <option selected>10 - 25</option>
+                              <option>...</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row mx-5 mt-0 mb-2 pt-2 px-5 pb-5w">
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 main-content">
+
+                  <div class="row">
+                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="adventure-list-card">
+                           <div class="card bg-pattern">
+                              <div class="row no-gutters">
+                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                    <div class="card-img-div">
+                                       <img class="card-img" src="assets/images/card-images/Image_11.png" alt=""
+                                          width="100%">
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="padding: 30px 0 0 0;">
+                                    <div class="card-body pb-0">
+                                       <h5 class="card-title">Desert Safari Trips</h5>
+                                       <p class="card-text">Lorem ipsum is a name for a common type of placeholder text.
+                                          Also known as filler or dummy text, this is simply copy that serves to fill a
+                                          space.</p>
+                                    </div>
+                                    <hr />
+                                    <div class="card-body">
+                                       <div class="d-flex align-items-center justify-content-between">
+                                          <h5 href="#" class="card-link">Price per person
+                                             <span>$2000</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Number of seats remaining
+                                             <span>07</span>
+                                          </h5>
+                                       </div>
+                                    </div>
+                                    <div class="card-footer-custom">
+                                       <div class="d-flex align-items-center justify-content-between">
+                                          <h5 href="#" class="card-link">Trip Date:
+                                             <span>$2000</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Cities:
+                                             <span>Dubai</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Region
+                                             <span>UAE</span>
+                                          </h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card bg-pattern">
+                              <div class="row no-gutters">
+                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                    <div class="card-img-div">
+                                       <img class="card-img" src="assets/images/card-images/Image_12.png" alt=""
+                                          width="100%">
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="padding: 30px 0 0 0;">
+                                    <div class="card-body pb-0">
+                                       <h5 class="card-title">Kund Malir Trips</h5>
+                                       <p class="card-text">Lorem ipsum is a name for a common type of placeholder text.
+                                          Also known as filler or dummy text, this is simply copy that serves to fill a
+                                          space.</p>
+                                    </div>
+                                    <hr />
+                                    <div class="card-body">
+                                       <div class="d-flex align-items-center justify-content-between">
+                                          <h5 href="#" class="card-link">Price per person
+                                             <span>$2000</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Number of seats remaining
+                                             <span>07</span>
+                                          </h5>
+                                       </div>
+                                    </div>
+                                    <div class="card-footer-custom">
+                                       <div class="d-flex align-items-center justify-content-between">
+                                          <h5 href="#" class="card-link">Trip Date:
+                                             <span>$2000</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Cities:
+                                             <span>Dubai</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Region
+                                             <span>UAE</span>
+                                          </h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card bg-pattern">
+                              <div class="row no-gutters">
+                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                    <div class="card-img-div">
+                                       <img class="card-img" src="assets/images/card-images/Image_11.png" alt=""
+                                          width="100%">
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="padding: 30px 0 0 0;">
+                                    <div class="card-body pb-0">
+                                       <h5 class="card-title">Desert Safari Trips</h5>
+                                       <p class="card-text">Lorem ipsum is a name for a common type of placeholder text.
+                                          Also known as filler or dummy text, this is simply copy that serves to fill a
+                                          space.</p>
+                                    </div>
+                                    <hr />
+                                    <div class="card-body">
+                                       <div class="d-flex align-items-center justify-content-between">
+                                          <h5 href="#" class="card-link">Price per person
+                                             <span>$2000</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Number of seats remaining
+                                             <span>07</span>
+                                          </h5>
+                                       </div>
+                                    </div>
+                                    <div class="card-footer-custom">
+                                       <div class="d-flex align-items-center justify-content-between">
+                                          <h5 href="#" class="card-link">Trip Date:
+                                             <span>$2000</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Cities:
+                                             <span>Dubai</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Region
+                                             <span>UAE</span>
+                                          </h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card bg-pattern">
+                              <div class="row no-gutters">
+                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                    <div class="card-img-div">
+                                       <img class="card-img" src="assets/images/card-images/Image_12.png" alt=""
+                                          width="100%">
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="padding: 30px 0 0 0;">
+                                    <div class="card-body pb-0">
+                                       <h5 class="card-title">Kund Malir Trips</h5>
+                                       <p class="card-text">Lorem ipsum is a name for a common type of placeholder text.
+                                          Also known as filler or dummy text, this is simply copy that serves to fill a
+                                          space.</p>
+                                    </div>
+                                    <hr />
+                                    <div class="card-body">
+                                       <div class="d-flex align-items-center justify-content-between">
+                                          <h5 href="#" class="card-link">Price per person
+                                             <span>$2000</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Number of seats remaining
+                                             <span>07</span>
+                                          </h5>
+                                       </div>
+                                    </div>
+                                    <div class="card-footer-custom">
+                                       <div class="d-flex align-items-center justify-content-between">
+                                          <h5 href="#" class="card-link">Trip Date:
+                                             <span>$2000</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Cities:
+                                             <span>Dubai</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Region
+                                             <span>UAE</span>
+                                          </h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card bg-pattern">
+                              <div class="row no-gutters">
+                                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                    <div class="card-img-div">
+                                       <img class="card-img" src="assets/images/card-images/Image_11.png" alt=""
+                                          width="100%">
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="padding: 30px 0 0 0;">
+                                    <div class="card-body pb-0">
+                                       <h5 class="card-title">Desert Safari Trips</h5>
+                                       <p class="card-text">Lorem ipsum is a name for a common type of placeholder text.
+                                          Also known as filler or dummy text, this is simply copy that serves to fill a
+                                          space.</p>
+                                    </div>
+                                    <hr />
+                                    <div class="card-body">
+                                       <div class="d-flex align-items-center justify-content-between">
+                                          <h5 href="#" class="card-link">Price per person
+                                             <span>$2000</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Number of seats remaining
+                                             <span>07</span>
+                                          </h5>
+                                       </div>
+                                    </div>
+                                    <div class="card-footer-custom">
+                                       <div class="d-flex align-items-center justify-content-between">
+                                          <h5 href="#" class="card-link">Trip Date:
+                                             <span>$2000</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Cities:
+                                             <span>Dubai</span>
+                                          </h5>
+                                          <h5 href="#" class="card-link">Region
+                                             <span>UAE</span>
+                                          </h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="row my-5">
+                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <nav class="page-navigation">
+                           <ul class="pagination">
+                              <li class="page-item prev"><a class="page-link" href="#">PREV</a></li>
+                              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item next"><a class="page-link" href="#">Next</a></li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 side-menu-adventure">
+                  <div class="side-menu-acoordion">
+                     <button class="side-menu-accordion-btn panel-active">Adventure</button>
+                     <div class="panel" style="max-height: 350px;">
+                        <div style="padding: 18px 0;">
+
+                           <form>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox1" class="custom-theme-check">
+                                 <label for="checkbox1" class="custom-theme-label">Hiking Trip</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox2" class="custom-theme-check">
+                                 <label for="checkbox2" class="custom-theme-label">IceLand Trip</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox3" class="custom-theme-check">
+                                 <label for="checkbox3" class="custom-theme-label">Desert Safari Trip</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox4" class="custom-theme-check">
+                                 <label for="checkbox4" class="custom-theme-label">Forest Trip</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox5" class="custom-theme-check">
+                                 <label for="checkbox5" class="custom-theme-label">Kund Malir Trip</label>
+                              </div>
+                              <div class="form-group text-center mt-3">
+                                 <button onclick="" class="btn show-result-gh-btn">Show Result</button>
+                              </div>
+                           </form>
+
+                        </div>
+                     </div>
+
+                     <button class="side-menu-accordion-btn panel-active">Categories</button>
+                     <div class="panel" style="min-height: 350px;">
+                        <div style="padding: 18px 0;">
+
+                           <form>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox6" class="custom-theme-check">
+                                 <label for="checkbox6" class="custom-theme-label">Movie Night</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox7" class="custom-theme-check">
+                                 <label for="checkbox7" class="custom-theme-label">Movie Night</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox8" class="custom-theme-check">
+                                 <label for="checkbox8" class="custom-theme-label">Movie Night</label>
+                              </div>
+                              <span id="dots"></span>
+                              <span id="more">
+                                 <div class="form-group custom-form-group">
+                                    <input type="checkbox" id="9" class="custom-theme-check">
+                                    <label for="9" class="custom-theme-label">Movie Night</label>
+                                 </div>
+                                 <div class="form-group custom-form-group">
+                                    <input type="checkbox" id="checkbox10" class="custom-theme-check">
+                                    <label for="checkbox10" class="custom-theme-label">Movie Night</label>
+                                 </div>
+                              </span>
+                              <a onclick="myFunction()" class="btn" id="read-more">Read more...</a>
+
+                              <div class="form-group text-center mt-3">
+                                 <button onclick="" class="btn show-result-gh-btn">Show Result</button>
+                              </div>
+                           </form>
+
+                        </div>
+                     </div>
+
+                     <button class="side-menu-accordion-btn panel-active">Country - Region</button>
+                     <div class="panel" style="max-height: 350px;">
+                        <div style="padding: 18px 0;">
+
+                           <form>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox11" class="custom-theme-check">
+                                 <label for="checkbox11" class="custom-theme-label">Dubai - UAE</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox12" class="custom-theme-check">
+                                 <label for="checkbox12" class="custom-theme-label">Thailand - Uthai Thani</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox13" class="custom-theme-check">
+                                 <label for="checkbox13" class="custom-theme-label">Turkey - Istanbul</label>
+                              </div>
+                              <div class="form-group text-center mt-3">
+                                 <button onclick="" class="btn show-result-gh-btn">Show Result</button>
+                              </div>
+                           </form>
+
+                        </div>
+                     </div>
+
+                     <button class="side-menu-accordion-btn panel-active">Trip Date</button>
+                     <div class="panel" style="max-height: 350px;">
+                        <div style="padding: 18px 0;">
+
+                           <form>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox14" class="custom-theme-check">
+                                 <label for="checkbox14" class="custom-theme-label">11/05/2021</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox15" class="custom-theme-check">
+                                 <label for="checkbox15" class="custom-theme-label">05/07/2021</label>
+                              </div>
+                              <div class="form-group custom-form-group">
+                                 <input type="checkbox" id="checkbox16" class="custom-theme-check">
+                                 <label for="checkbox16" class="custom-theme-label">25/09/2021</label>
+                              </div>
+                              <div class="form-group text-center mt-3">
+                                 <button onclick="" class="btn show-result-gh-btn">Show Result</button>
+                              </div>
+                           </form>
+
+                        </div>
+                     </div>
+
+                     <button class="side-menu-accordion-btn panel-active">Duratin of the trip</button>
+                     <div class="panel" style="max-height: 350px; padding: 0;">
+                        <div style="padding: 0;">
+                           <div class="personalize-trip">
+                              <h1 class="personalize-trip-head">Personalize Trip </h1>
+                              <p class="personalize-trip-content">
+                                 You didn't find the suitable package? why not Personalize Trips your own special trip!"
+                              </p>
+                              <div class="form-group text-center">
+                                 <button onclick="" class="btn cart-gh-btn">Book Now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME TOUR SECTION END ----------------------------------------------- */ -->
+
+
+   <!-- /* ----- HOME Footer BG SECTION Start ----------------------------------------------- */ -->
+
+   <section class="back">
+      <img src="assets/images/background/footer.png" alt="" width="100%">
+   </section>
+
+   <!-- /* ----- HOME Footer BG SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- FOOTER START ----------------------------------------------- */ -->
+
+   <footer id="footer" class="footer p-5">
+      <div class="container-fluid">
+         <div class="row widgets">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+               <div class="footer_logo">
+                  <img src="assets/images/logo/Logo_2.png" alt="Footer Logo">
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 about-us pr-3">
+               <div class="sec-title">
+                  <div class="footer_map_div">
+                     <iframe src="https://www.google.com/maps/d/embed?mid=10HNhSmt3DIADu2pyqdFZTYOmatk"
+                        class="footer_map" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 contact-us pr-5 mt-4">
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>Address</h6>
+                     <p>Suite # 01, 2st Floor Tokyo Center</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>PHONE</h6>
+                     <p>+123 456 789 90</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>EMAIL</h6>
+                     <p>example@gmail.com</p>
+                  </div>
+               </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 quick-link pr-5">
+               <div class="sec-title">
+                  <h5 class="mb-3 white">Quick Links</h5>
+               </div>
+               <div class="row white">
+                  <div class="col-md-12">
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Privacy Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Terms of Use</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">FAQ</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Cancellation Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Explore</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 newsletter">
+               <div class="contact-us">
+                  <div class="sec-title">
+                     <h5 class="mb-3 white">Our Newsletter</h5>
+                  </div>
+                  <div class="newsletter-form mt-4">
+                     <form method="get" class="search-form" action="">
+                        <input type="search" class="form-control" placeholder="Your Email">
+                        <button class="btn" type="submit">Send</button>
+                     </form>
+                  </div>
+                  <div class="d-flex align-items-center my-4">
+                     <div class="social_icons">
+                        <ul class="d-flex align-items-center px-0 color-white my-0">
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-facebook-f"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-instagram"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-linkedin-in"></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="lang_div w-100 text-right">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div id="bottom-bar" class="bottom-bar p-3">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+               <div class="copyright-text">
+                  Copyright © 2020 <span class="highlight_brown">Kreatix</span> 2021 - 2022. All rights reserved.
+               </div>
+            </div>
+            <!-- <div class="col-lg-6 col-md-6 col-sm-12">
+               <ul class="d-flex align-items-center justify-content-end right_div">
+                  <li><a href="#">Privacy Policy </a></li>
+                  <li class="bottom_vr_gap"> | </li>
+                  <li><a href="#">Terms & Condition </a></li>
+               </ul>
+            </div> -->
+         </div>
+      </div>
+   </div>
+
+   <!-- /* ----- FOOTER END ----------------------------------------------- */ -->
+
+</body>
+
+<script>
+   var acc = document.getElementsByClassName("side-menu-accordion-btn");
+   var i;
+
+   for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+         this.classList.toggle("panel-active");
+         var panel = this.nextElementSibling;
+         if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+         } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+         }
+      });
+   }
+</script>
+
+<script>
+   function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("read-more");
+
+      if (dots.style.display === "none") {
+         dots.style.display = "inline";
+         btnText.innerHTML = "Read more...";
+         moreText.style.display = "none";
+      } else {
+         dots.style.display = "none";
+         btnText.innerHTML = "Read less...";
+         moreText.style.display = "inline";
+      }
+   }
+</script>
+
+</html>

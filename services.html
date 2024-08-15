@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+   <!-- Required meta tags -->
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="keywords" content="...">
+   <meta name="description" content="..." />
+   <title>Ghamra</title>
+
+
+
+   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/all.css">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+   <style>
+      .service-section .card .card-overlay {
+         position: absolute;
+         bottom: 0;
+         background: rgb(25 64 65 / 30%);
+         color: #f1f1f1;
+         width: 100%;
+         transition: .5s ease;
+         opacity: 1;
+         color: white;
+         font-size: 20px;
+         padding: 20px;
+         text-align: center;
+         height: 100%;
+         display: flex;
+         align-items: flex-end;
+         border-top-left-radius: 50px;
+         border-bottom-right-radius: 50px;
+      }
+
+      .service-section .card .card-img {
+         position: relative;
+         height: 233px;
+         overflow: hidden;
+         border-top-left-radius: 50px !important;
+         border-bottom-right-radius: 50px !important;
+      }
+
+      .w-80 {
+         width: 80%;
+      }
+
+      .btn.learn-gh-btn {
+         padding: 8px 50px;
+         border: 0;
+         /* border-top-right-radius: 50px; */
+         /* border-bottom-left-radius: 50px; */
+         border-top-right-radius: 80px;
+         border-bottom-left-radius: 80px;
+         border-top-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         border-bottom: 3px solid #194041;
+         background: #CFB67A;
+         font-size: 23px;
+         font-weight: 700;
+         color: #fff;
+         font-family: 'SST Arabic Bold';
+      }
+
+      /* The Modal (background) */
+      .modal {
+         display: none;
+         position: fixed;
+         z-index: 99;
+         padding-top: 100px;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         overflow: auto;
+         background-color: #184041bf;
+      }
+
+      /* Modal Content */
+      .modal-content {
+         background-color: #fefefe;
+         margin: auto;
+         padding: 20px;
+         border: 1px solid #888;
+         width: 85%;
+         transform: translateY(10%);
+      }
+
+      .modal-img-custom {
+         height: 475px;
+         border-top-left-radius: 50px;
+         border-bottom-right-radius: 50px;
+         position: relative;
+         overflow: hidden;
+         z-index: 1;
+      }
+
+      .modal-img-custom img {
+         position: relative;
+         transform: translateY(-50%);
+         top: 50%;
+         height: 100%;
+      }
+
+      .service-section .modal_multi span.close.close_multi {
+         font-size: 72px;
+         color: #19393c;
+         font-family: 'SST Arabic Roman';
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+
+      }
+
+      .service-section .modal_multi .modal-content-custom h3 {
+         letter-spacing: 0.5px;
+         font-size: 60px;
+         text-transform: uppercase;
+         padding-bottom: 5px;
+         color: #184041;
+         font-family: 'SST Arabic Bold';
+      }
+
+      .service-section .modal_multi .modal-content-custom p {
+         font-size: 23px;
+         line-height: 37px;
+         color: #000000;
+         font-family: 'SST Arabic Roman';
+         text-align: left;
+      }
+   </style>
+
+</head>
+
+<body>
+
+
+   <!-- /* ----- HEADER START ----------------------------------------------- */ -->
+   <div class="top_bar">
+      <div class="container-fluid">
+         <div class="row py-3">
+            <div class="col-md-6 col-sm-12 col-lg-6"></div>
+            <div class="col-md-6 col-sm-12 col-lg-6">
+               <div class="d-flex align-items-center justify-content-end topbar-right-div">
+                  <div class="topbar_right pr-3">
+                     <div class="lang_div">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right border-x-1 px-3">
+                     <div class="lang_div">
+                        <select name="currency" id="currency">
+                           <option value="currency" selected>Currency</option>
+                           <option value="pkr">PKR</option>
+                           <option value="yen">Yen</option>
+                           <option value="dollar">Dollar</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="topbar_right pl-3">
+                     <div class="d-flex white align-items-center topbar_login">
+                        <div class="text-right mr-2 topbar_icon">
+                           <i class="fas fa-user mr-2"></i>
+                           <a href="" class="color-white">
+                              Login/Register
+                           </a>
+                        </div>
+                        <div class="footer_content">
+                           <a href="" class="color-white ml-4">
+                              <img src="assets/images/icons/calendar.svg" alt="">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse container-fluid" id="navbarTogglerDemo01">
+         <a class="navbar-brand" href="#">
+            <img src="assets/images/logo/Logo_1.svg" alt="nav_logo" width="150%">
+         </a>
+         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Journey
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Explore
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Safety & Quality</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Us
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <img src="assets/images/icons/cart.svg" alt="">
+               </a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <!-- /* ----- HEADER end ----------------------------------------------- */ -->
+
+
+   <!-- /* ----- HOME BANNER SECTION START ----------------------------------------------- */ -->
+
+   <section class="service-banner">
+      <div class="container-fluid">
+         <div class="banner_content">
+            <div class="banner_title text-center px-5">
+               <h1 class="brush_stroke_bg">Services</h1>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME BANNER SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME ADVENTRE SECTION START ----------------------------------------------- */ -->
+
+   <section class="service-section">
+      <div class="container-fluid">
+
+         <div class="container-fluid">
+
+            <div class="card-deck mx-5 mb-2 p-5">
+               <div class="card border-0 shadow">
+                  <div class="card-img">
+                     <img class="card-img-top" src="assets/images/card-images/Image_13.png" alt="Card image cap">
+                     <div class="card-overlay"></div>
+                  </div>
+                  <div class="card-body text-center">
+                     <h4 class="card-title">Zip Lines</h4>
+                     <p class="card-text w-80 mx-auto py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                     </p>
+                     <button class="btn learn-gh-btn  myBtn_multi">Learn More</button>
+                  </div>
+               </div>
+               <div class="card border-0 shadow">
+                  <div class="card-img">
+                     <img class="card-img-top" src="assets/images/card-images/Image_14.png" alt="Card image cap">
+                     <div class="card-overlay"></div>
+                  </div>
+                  <div class="card-body text-center">
+                     <h4 class="card-title">Kayaking</h4>
+                     <p class="card-text w-80 mx-auto py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                     </p>
+                     <button class="btn learn-gh-btn  myBtn_multi">Learn More</button>
+                  </div>
+               </div>
+               <div class="card border-0 shadow">
+                  <div class="card-img">
+                     <img class="card-img-top" src="assets/images/card-images/Image_15.png" alt="Card image cap">
+                     <div class="card-overlay"></div>
+                  </div>
+                  <div class="card-body text-center">
+                     <h4 class="card-title">Bungee Jumping</h4>
+                     <p class="card-text w-80 mx-auto py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                     </p>
+                     <button class="btn learn-gh-btn  myBtn_multi">Learn More</button>
+                  </div>
+               </div>
+               <div class="card border-0 shadow">
+                  <div class="card-img">
+                     <img class="card-img-top" src="assets/images/card-images/Image_16.png" alt="Card image cap">
+                     <div class="card-overlay"></div>
+                  </div>
+                  <div class="card-body text-center">
+                     <h4 class="card-title">Hiking</h4>
+                     <p class="card-text w-80 mx-auto py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                     </p>
+                     <button class="btn learn-gh-btn  myBtn_multi">Learn More</button>
+                  </div>
+               </div>
+            </div>
+            <div class="card-deck mx-5 mb-2 p-5">
+               <div class="card border-0 shadow">
+                  <div class="card-img">
+                     <img class="card-img-top" src="assets/images/card-images/Image_13.png" alt="Card image cap">
+                     <div class="card-overlay"></div>
+                  </div>
+                  <div class="card-body text-center">
+                     <h4 class="card-title">Zip Lines</h4>
+                     <p class="card-text w-80 mx-auto py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                     </p>
+                     <button class="btn learn-gh-btn  myBtn_multi">Learn More</button>
+                  </div>
+               </div>
+               <div class="card border-0 shadow">
+                  <div class="card-img">
+                     <img class="card-img-top" src="assets/images/card-images/Image_14.png" alt="Card image cap">
+                     <div class="card-overlay"></div>
+                  </div>
+                  <div class="card-body text-center">
+                     <h4 class="card-title">Kayaking</h4>
+                     <p class="card-text w-80 mx-auto py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                     </p>
+                     <button class="btn learn-gh-btn  myBtn_multi">Learn More</button>
+                  </div>
+               </div>
+               <div class="card border-0 shadow">
+                  <div class="card-img">
+                     <img class="card-img-top" src="assets/images/card-images/Image_15.png" alt="Card image cap">
+                     <div class="card-overlay"></div>
+                  </div>
+                  <div class="card-body text-center">
+                     <h4 class="card-title">Bungee Jumping</h4>
+                     <p class="card-text w-80 mx-auto py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                     </p>
+                     <button class="btn learn-gh-btn  myBtn_multi">Learn More</button>
+                  </div>
+               </div>
+               <div class="card border-0 shadow">
+                  <div class="card-img">
+                     <img class="card-img-top" src="assets/images/card-images/Image_16.png" alt="Card image cap">
+                     <div class="card-overlay"></div>
+                  </div>
+                  <div class="card-body text-center">
+                     <h4 class="card-title">Hiking</h4>
+                     <p class="card-text w-80 mx-auto py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                     </p>
+                     <button class="btn learn-gh-btn  myBtn_multi">Learn More</button>
+                  </div>
+               </div>
+            </div>
+
+
+
+            <!-- MODALS START-->
+            <!-- The Modal -->
+            <div class="modal modal_multi">
+
+               <!-- Modal content -->
+               <div class="modal-content g-pattern">
+                  <span class="close close_multi" style="padding: 20px 20px 0 20px;">
+                     <img src="assets/images/icons/x.svg" alt="">
+                  </span>
+
+                  <div class="row d-flex align-items-center py-5 g-outline-pattern" style="padding: 0 20px 20px 20px;">
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-content-custom">
+                           <h3>Zip Lines</h3>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Quis ipsum
+                              suspendisse ultrices gravida. Risus commodo viverraLorem ipsum dolor sit amet,
+                              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                           </p>
+                           <p>
+                              viverra maecenas accumsan lacus vel facilisis.Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. maecenas
+                              accumsan lacus vel facilisis
+                              viverra maecenas accumsan.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-img-custom">
+                           <img src="assets/images/card-images/Image_23.png" width="100%" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <!-- The Modal -->
+            <div class="modal modal_multi">
+
+               <!-- Modal content -->
+               <div class="modal-content g-pattern">
+                  <span class="close close_multi" style="padding: 20px 20px 0 20px;">
+                     <img src="assets/images/icons/x.svg" alt="">
+                  </span>
+
+                  <div class="row d-flex align-items-center py-5 g-outline-pattern" style="padding: 0 20px 20px 20px;">
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-content-custom">
+                           <h3>Kayaking</h3>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Quis ipsum
+                              suspendisse ultrices gravida. Risus commodo viverraLorem ipsum dolor sit amet,
+                              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                           </p>
+                           <p>
+                              viverra maecenas accumsan lacus vel facilisis.Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. maecenas
+                              accumsan lacus vel facilisis
+                              viverra maecenas accumsan.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-img-custom">
+                           <img src="assets/images/card-images/Image_24.png" width="100%" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <!-- The Modal -->
+            <div class="modal modal_multi">
+
+               <!-- Modal content -->
+               <div class="modal-content g-pattern">
+                  <span class="close close_multi" style="padding: 20px 20px 0 20px;">
+                     <img src="assets/images/icons/x.svg" alt="">
+                  </span>
+
+                  <div class="row d-flex align-items-center py-5 g-outline-pattern" style="padding: 0 20px 20px 20px;">
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-content-custom">
+                           <h3>Bungee Jumping</h3>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Quis ipsum
+                              suspendisse ultrices gravida. Risus commodo viverraLorem ipsum dolor sit amet,
+                              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                           </p>
+                           <p>
+                              viverra maecenas accumsan lacus vel facilisis.Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. maecenas
+                              accumsan lacus vel facilisis
+                              viverra maecenas accumsan.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-img-custom">
+                           <img src="assets/images/card-images/Image_25.png" width="100%" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <!-- The Modal -->
+            <div class="modal modal_multi">
+
+               <!-- Modal content -->
+               <div class="modal-content g-pattern">
+                  <span class="close close_multi" style="padding: 20px 20px 0 20px;">
+                     <img src="assets/images/icons/x.svg" alt="">
+                  </span>
+
+                  <div class="row d-flex align-items-center py-5 g-outline-pattern" style="padding: 0 20px 20px 20px;">
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-content-custom">
+                           <h3>Kiking</h3>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Quis ipsum
+                              suspendisse ultrices gravida. Risus commodo viverraLorem ipsum dolor sit amet,
+                              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                           </p>
+                           <p>
+                              viverra maecenas accumsan lacus vel facilisis.Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. maecenas
+                              accumsan lacus vel facilisis
+                              viverra maecenas accumsan.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-img-custom">
+                           <img src="assets/images/card-images/Image_25.png" width="100%" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+
+            <!-- The Modal -->
+            <div class="modal modal_multi">
+
+               <!-- Modal content -->
+               <div class="modal-content g-pattern">
+                  <span class="close close_multi" style="padding: 20px 20px 0 20px;">
+                     <img src="assets/images/icons/x.svg" alt="">
+                  </span>
+
+                  <div class="row d-flex align-items-center py-5 g-outline-pattern" style="padding: 0 20px 20px 20px;">
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-content-custom">
+                           <h3>Zip Lines</h3>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Quis ipsum
+                              suspendisse ultrices gravida. Risus commodo viverraLorem ipsum dolor sit amet,
+                              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                           </p>
+                           <p>
+                              viverra maecenas accumsan lacus vel facilisis.Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. maecenas
+                              accumsan lacus vel facilisis
+                              viverra maecenas accumsan.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-img-custom">
+                           <img src="assets/images/card-images/Image_23.png" width="100%" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <!-- The Modal -->
+            <div class="modal modal_multi">
+
+               <!-- Modal content -->
+               <div class="modal-content g-pattern">
+                  <span class="close close_multi" style="padding: 20px 20px 0 20px;">
+                     <img src="assets/images/icons/x.svg" alt="">
+                  </span>
+
+                  <div class="row d-flex align-items-center py-5 g-outline-pattern" style="padding: 0 20px 20px 20px;">
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-content-custom">
+                           <h3>Kayaking</h3>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Quis ipsum
+                              suspendisse ultrices gravida. Risus commodo viverraLorem ipsum dolor sit amet,
+                              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                           </p>
+                           <p>
+                              viverra maecenas accumsan lacus vel facilisis.Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. maecenas
+                              accumsan lacus vel facilisis
+                              viverra maecenas accumsan.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-img-custom">
+                           <img src="assets/images/card-images/Image_24.png" width="100%" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <!-- The Modal -->
+            <div class="modal modal_multi">
+
+               <!-- Modal content -->
+               <div class="modal-content g-pattern">
+                  <span class="close close_multi" style="padding: 20px 20px 0 20px;">
+                     <img src="assets/images/icons/x.svg" alt="">
+                  </span>
+
+                  <div class="row d-flex align-items-center py-5 g-outline-pattern" style="padding: 0 20px 20px 20px;">
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-content-custom">
+                           <h3>Bungee Jumping</h3>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Quis ipsum
+                              suspendisse ultrices gravida. Risus commodo viverraLorem ipsum dolor sit amet,
+                              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                           </p>
+                           <p>
+                              viverra maecenas accumsan lacus vel facilisis.Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. maecenas
+                              accumsan lacus vel facilisis
+                              viverra maecenas accumsan.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-img-custom">
+                           <img src="assets/images/card-images/Image_25.png" width="100%" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <!-- The Modal -->
+            <div class="modal modal_multi">
+
+               <!-- Modal content -->
+               <div class="modal-content g-pattern">
+                  <span class="close close_multi" style="padding: 20px 20px 0 20px;">
+                     <img src="assets/images/icons/x.svg" alt="">
+                  </span>
+
+                  <div class="row d-flex align-items-center py-5 g-outline-pattern" style="padding: 0 20px 20px 20px;">
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-content-custom">
+                           <h3>Kiking</h3>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.Quis ipsum
+                              suspendisse ultrices gravida. Risus commodo viverraLorem ipsum dolor sit amet,
+                              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                              magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                           </p>
+                           <p>
+                              viverra maecenas accumsan lacus vel facilisis.Quis ipsum suspendisse ultrices
+                              gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. maecenas
+                              accumsan lacus vel facilisis
+                              viverra maecenas accumsan.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
+                        <div class="modal-img-custom">
+                           <img src="assets/images/card-images/Image_25.png" width="100%" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <!-- MODALS END-->
+
+
+         </div>
+      </div>
+   </section>
+
+   <!-- /* ----- HOME ADVENTURE SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- HOME Footer BG SECTION Start ----------------------------------------------- */ -->
+
+   <section class="back">
+      <img src="assets/images/background/footer.png" alt="" width="100%">
+   </section>
+
+   <!-- /* ----- HOME Footer BG SECTION END ----------------------------------------------- */ -->
+
+   <!-- /* ----- FOOTER START ----------------------------------------------- */ -->
+
+   <footer id="footer" class="footer p-5">
+      <div class="container-fluid">
+         <div class="row widgets">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+               <div class="footer_logo">
+                  <img src="assets/images/logo/Logo_2.png" alt="Footer Logo">
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 about-us pr-3">
+               <div class="sec-title">
+                  <div class="footer_map_div">
+                     <iframe src="https://www.google.com/maps/d/embed?mid=10HNhSmt3DIADu2pyqdFZTYOmatk"
+                        class="footer_map" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 contact-us pr-5 mt-4">
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>Address</h6>
+                     <p>Suite # 01, 2st Floor Tokyo Center</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>PHONE</h6>
+                     <p>+123 456 789 90</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="d-flex white align-items-center footer_contact">
+                  <div class="text-right mr-3 footer_icon">
+                     <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="footer_content">
+                     <h6>EMAIL</h6>
+                     <p>example@gmail.com</p>
+                  </div>
+               </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 quick-link pr-5">
+               <div class="sec-title">
+                  <h5 class="mb-3 white">Quick Links</h5>
+               </div>
+               <div class="row white">
+                  <div class="col-md-12">
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Privacy Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Terms of Use</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">FAQ</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Cancellation Policy</a>
+                        </div>
+                     </div>
+                     <div class="d-flex white align-items-center footer_contact">
+                        <div class="text-right mr-3 footer_icon">
+                           <img src="assets/images/patterns/bullet.png" width="100%" alt="bullet">
+                        </div>
+                        <div class="footer_content">
+                           <a href="#">Explore</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 newsletter">
+               <div class="contact-us">
+                  <div class="sec-title">
+                     <h5 class="mb-3 white">Our Newsletter</h5>
+                  </div>
+                  <div class="newsletter-form mt-4">
+                     <form method="get" class="search-form" action="">
+                        <input type="search" class="form-control" placeholder="Your Email">
+                        <button class="btn" type="submit">Send</button>
+                     </form>
+                  </div>
+                  <div class="d-flex align-items-center my-4">
+                     <div class="social_icons">
+                        <ul class="d-flex align-items-center px-0 color-white my-0">
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-facebook-f"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-instagram"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-twitter"></i>
+                              </a>
+                           </li>
+                           <li class="mx-2">
+                              <a href="#">
+                                 <i class="fab fa-linkedin-in"></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="lang_div w-100 text-right">
+                        <select name="lang" id="lang">
+                           <option value="English" selected>English</option>
+                           <option value="Urdu">Urdu</option>
+                           <option value="Spanish">Spanish</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div id="bottom-bar" class="bottom-bar p-3">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+               <div class="copyright-text">
+                  Copyright © 2020 <span class="highlight_brown">Kreatix</span> 2021 - 2022. All rights reserved.
+               </div>
+            </div>
+            <!-- <div class="col-lg-6 col-md-6 col-sm-12">
+               <ul class="d-flex align-items-center justify-content-end right_div">
+                  <li><a href="#">Privacy Policy </a></li>
+                  <li class="bottom_vr_gap"> | </li>
+                  <li><a href="#">Terms & Condition </a></li>
+               </ul>
+            </div> -->
+         </div>
+      </div>
+   </div>
+
+   <!-- /* ----- FOOTER END ----------------------------------------------- */ -->
+
+</body>
+
+<script>
+   // Get the modal
+
+   var modalparent = document.getElementsByClassName("modal_multi");
+
+   // Get the button that opens the modal
+
+   var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+
+   // Get the <span> element that closes the modal
+   var span_close_multi = document.getElementsByClassName("close_multi");
+
+   // When the user clicks the button, open the modal
+   function setDataIndex() {
+
+      for (i = 0; i < modal_btn_multi.length; i++) {
+         modal_btn_multi[i].setAttribute('data-index', i);
+         modalparent[i].setAttribute('data-index', i);
+         span_close_multi[i].setAttribute('data-index', i);
+      }
+   }
+
+
+
+   for (i = 0; i < modal_btn_multi.length; i++) {
+      modal_btn_multi[i].onclick = function () {
+         var ElementIndex = this.getAttribute('data-index');
+         modalparent[ElementIndex].style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span_close_multi[i].onclick = function () {
+         var ElementIndex = this.getAttribute('data-index');
+         modalparent[ElementIndex].style.display = "none";
+      };
+
+   }
+
+   window.onload = function () {
+
+      setDataIndex();
+   };
+
+   window.onclick = function (event) {
+      if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+         modalparent[event.target.getAttribute('data-index')].style.display = "none";
+      }
+
+      // OLD CODE
+      if (event.target === modal) {
+         modal.style.display = "none";
+      }
+   };
+
+   //XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
+
+   // Get the modal
+
+   var modal = document.getElementById('myModal');
+
+   // Get the button that opens the modal
+   var btn = document.getElementById("myBtn");
+
+   // Get the <span> element that closes the modal
+   var span = modal.getElementsByClassName("close")[0]; // Modified by dsones uk
+
+   // When the user clicks on the button, open the modal
+
+   btn.onclick = function () {
+
+      modal.style.display = "block";
+   }
+
+   // When the user clicks on <span> (x), close the modal
+   span.onclick = function () {
+      modal.style.display = "none";
+   }
+
+
+
+</script>
+
+</html>
